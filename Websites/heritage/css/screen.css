@@ -1,0 +1,877 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../scss/_layout.scss */
+html, body {
+  height: 100%;
+  background-image: url("../img/bodyBg.png");
+  background-repeat: repeat;
+}
+
+/* line 6, ../scss/_layout.scss */
+.wrapper {
+  width: 100%;
+  font-family: "微軟正黑體";
+}
+/* line 10, ../scss/_layout.scss */
+.wrapper .container1 .container2 {
+  width: 100%;
+}
+/* line 12, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox {
+  width: 100%;
+  min-width: 960px;
+  background-position: center top;
+  padding: 30px 0 15px 0;
+  background-repeat: no-repeat;
+  margin-top: 55px;
+}
+/* line 19, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont {
+  width: 900px;
+  margin: 0 auto;
+}
+/* line 22, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock {
+  width: 100%;
+}
+/* line 24, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mTitle {
+  padding: 0 0 0 255px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  font-size: 14px;
+  color: #3b3b3b;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+/* line 34, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont {
+  padding: 30px 60px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: url("../img/bg.png");
+  border-top: 10px solid #cccccc;
+  border-bottom: 10px solid #cccccc;
+  width: 100%;
+  margin: 10px 0 65px 0;
+}
+/* line 42, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul {
+  width: 100%;
+}
+/* line 44, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li {
+  width: 100%;
+}
+/* line 46, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li > span {
+  display: block;
+  vertical-align: top;
+}
+/* line 50, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li .mText {
+  width: 430px;
+}
+/* line 52, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li .mText span {
+  display: block;
+}
+/* line 54, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li .mText span.topText {
+  background-image: url("../img/line01.png");
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  min-height: 140px;
+}
+/* line 59, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li .mText span.topText .num {
+  display: inline-block;
+  width: 80px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  vertical-align: top;
+}
+/* line 67, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li .mText span.topText .textInfo {
+  display: inline-block;
+  width: 320px;
+  vertical-align: top;
+}
+/* line 71, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li .mText span.topText .textInfo .title {
+  font-size: 16px;
+  color: #936d36;
+  position: relative;
+  top: 0;
+}
+/* line 76, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li .mText span.topText .textInfo .title .psBlock {
+  display: inline-block;
+  max-width: 260px;
+}
+/* line 79, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li .mText span.topText .textInfo .title .psBlock .arrow {
+  border-top: 3.5px solid transparent;
+  border-right: 4px solid #c0975d;
+  border-bottom: 3.5px solid transparent;
+  display: inline-block;
+  margin: 5px -4px 0 0;
+  vertical-align: top;
+}
+/* line 84, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li .mText span.topText .textInfo .title .psBlock .arrowInfo {
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #c0975d;
+  color: #fff;
+  font-size: 18px;
+  margin: -5px 0 0 4px;
+}
+/* line 95, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li .mText span.topText .textInfo .title .downWay {
+  position: absolute;
+  top: -30px;
+  right: 55px;
+}
+/* line 99, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li .mText span.topText .textInfo .title .downWay .arrow {
+  border-left: 3.5px solid transparent;
+  border-top: 4px solid #c0975d;
+  border-right: 3.5px solid transparent;
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 70px;
+}
+/* line 107, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li .mText span.topText .textInfo .bigFont {
+  font-size: 21px;
+  letter-spacing: 2px;
+}
+/* line 110, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li .mText span.topText .textInfo .bigFont .psBlock {
+  display: none;
+}
+/* line 112, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li .mText span.topText .textInfo .text {
+  color: #333333;
+  font-size: 15px;
+  line-height: 1.6;
+  padding: 2px 0 10px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 118, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li .mText span.topText .textInfo .text a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #896b40;
+}
+/* line 124, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li .mText span.topText .textInfo .text .pointWay .pointInfo {
+  padding: 3px 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 132, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li .mText span.botText {
+  background-image: url("../img/line02.png");
+  background-position: 297px 0;
+  background-repeat: repeat-y;
+  min-height: 140px;
+}
+/* line 139, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li .mText span .pointWay {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  width: 296px;
+  height: 48px;
+  position: relative;
+  top: 0;
+}
+/* line 147, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li .mText span .pointWay .rArrow {
+  position: absolute;
+  border-top: 24px solid transparent;
+  border-left: 26px solid #2fbdf7;
+  border-bottom: 24px solid transparent;
+  display: inline-block;
+}
+/* line 151, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li .mText span .pointWay .pointInfo {
+  display: inline-block;
+  width: 270px;
+  padding: 8px 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  margin-top: -16px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #2fbdf7;
+}
+/* line 165, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li .mImg {
+  float: right;
+  width: 350px;
+  height: 230px;
+}
+/* line 169, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li .mImg a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* line 175, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 182, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.odd .mText {
+  float: left;
+}
+/* line 184, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.odd .mText .botText {
+  background-position: 297px 0;
+}
+/* line 186, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.odd .mText .pointWay {
+  display: block;
+  float: left;
+}
+/* line 189, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.odd .mText .pointWay .rArrow {
+  top: 0px;
+  right: 0px;
+}
+/* line 193, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.odd .mText .pointWay .pointInfo {
+  text-align: right;
+  top: 50%;
+  left: 0;
+}
+/* line 200, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.odd .mText .yellowBlock .rArrow {
+  border-top: 24px solid transparent;
+  border-left: 26px solid #ffba00;
+  border-bottom: 24px solid transparent;
+  display: inline-block;
+}
+/* line 201, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.odd .mText .yellowBlock .pointInfo {
+  background-color: #ffba00;
+}
+/* line 204, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.odd .mText .pinkBlock .rArrow {
+  border-top: 24px solid transparent;
+  border-left: 26px solid #ff6085;
+  border-bottom: 24px solid transparent;
+  display: inline-block;
+}
+/* line 205, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.odd .mText .pinkBlock .pointInfo {
+  background-color: #ff6085;
+}
+/* line 208, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.odd .mText .greenBlock .rArrow {
+  border-top: 24px solid transparent;
+  border-left: 26px solid #85c826;
+  border-bottom: 24px solid transparent;
+  display: inline-block;
+}
+/* line 209, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.odd .mText .greenBlock .pointInfo {
+  background-color: #85c826;
+}
+/* line 212, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.odd .mText .grayBlock .rArrow {
+  border-top: 24px solid transparent;
+  border-left: 26px solid #a7a7a7;
+  border-bottom: 24px solid transparent;
+  display: inline-block;
+}
+/* line 213, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.odd .mText .grayBlock .pointInfo {
+  background-color: #a7a7a7;
+}
+/* line 219, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.even .mText {
+  float: right;
+}
+/* line 222, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.even .mText .botText {
+  background-position: 130px 0;
+}
+/* line 224, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.even .mText .pointWay {
+  display: block;
+  float: right;
+}
+/* line 227, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.even .mText .pointWay .rArrow {
+  margin-right: -4px;
+  border-top: 24px solid transparent;
+  border-right: 26px solid #2fbdf7;
+  border-bottom: 24px solid transparent;
+  display: inline-block;
+  border-left: none;
+  top: 0;
+  right: 274px;
+}
+/* line 234, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.even .mText .pointWay .pointInfo {
+  top: 50%;
+  right: 0;
+  text-align: left;
+}
+/* line 241, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.even .mText .yellowBlock .rArrow {
+  border-top: 24px solid transparent;
+  border-right: 26px solid #ffba00;
+  border-bottom: 24px solid transparent;
+  display: inline-block;
+  border-left: none;
+}
+/* line 242, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.even .mText .yellowBlock .pointInfo {
+  background-color: #ffba00;
+}
+/* line 245, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.even .mText .pinkBlock .rArrow {
+  border-top: 24px solid transparent;
+  border-right: 26px solid #ff6085;
+  border-bottom: 24px solid transparent;
+  display: inline-block;
+  border-left: none;
+}
+/* line 246, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.even .mText .pinkBlock .pointInfo {
+  background-color: #ff6085;
+}
+/* line 249, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.even .mText .greenBlock .rArrow {
+  border-top: 24px solid transparent;
+  border-right: 26px solid #85c826;
+  border-bottom: 24px solid transparent;
+  display: inline-block;
+  border-left: none;
+}
+/* line 250, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.even .mText .greenBlock .pointInfo {
+  background-color: #85c826;
+}
+/* line 253, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.even .mText .grayBlock .rArrow {
+  border-top: 24px solid transparent;
+  border-right: 26px solid #a7a7a7;
+  border-bottom: 24px solid transparent;
+  display: inline-block;
+  border-left: none;
+}
+/* line 254, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li.even .mText .grayBlock .pointInfo {
+  background-color: #a7a7a7;
+}
+/* line 261, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li .num {
+  background-image: url("../img/n01.png");
+  margin: 0 -15px 0 -20px;
+}
+/* line 267, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li + li .num {
+  background-image: url("../img/n02.png");
+  margin: 0 10px;
+}
+/* line 272, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li + li + li .num {
+  background-image: url("../img/n03.png");
+}
+/* line 273, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li + li + li + li .num {
+  background-image: url("../img/n04.png");
+}
+/* line 274, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li + li + li + li + li .num {
+  background-image: url("../img/n05.png");
+}
+/* line 275, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li + li + li + li + li + li .num {
+  background-image: url("../img/n06.png");
+}
+/* line 276, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li + li + li + li + li + li + li .num {
+  background-image: url("../img/n07.png");
+}
+/* line 277, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li + li + li + li + li + li + li + li .num {
+  background-image: url("../img/n08.png");
+}
+/* line 278, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul li + li + li + li + li + li + li + li + li .num {
+  background-image: url("../img/n09.png");
+}
+/* line 281, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul .lastLi .mText span.botText {
+  background-image: none;
+}
+/* line 287, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .goTop {
+  position: fixed;
+  display: none;
+  bottom: 50px;
+  left: 50%;
+  margin-left: 500px;
+  width: 78px;
+  height: 78px;
+  background-image: url("../img/goTop.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+/* line 298, ../scss/_layout.scss */
+.wrapper .container1 .container2 .contBox .mainCont .goTop:hover {
+  background-image: url("../img/goTop_hover.png");
+}
+
+/* line 1, ../scss/_hd.scss */
+.headerBox {
+  width: 100%;
+  position: relative;
+  top: 0;
+}
+/* line 5, ../scss/_hd.scss */
+.headerBox .top_header {
+  width: 100%;
+  min-width: 960px;
+  height: 52px;
+  background-color: #fff;
+  border-bottom: 3px solid #c0bfc5;
+  position: fixed;
+  z-index: 999;
+}
+/* line 13, ../scss/_hd.scss */
+.headerBox .top_header .tophd {
+  width: 780px;
+  margin: 0 auto;
+}
+/* line 16, ../scss/_hd.scss */
+.headerBox .top_header .tophd ul {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 19, ../scss/_hd.scss */
+.headerBox .top_header .tophd ul li {
+  display: inline-block;
+  margin: 20px -2px 15px 0px;
+}
+/* line 22, ../scss/_hd.scss */
+.headerBox .top_header .tophd ul li a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #333333;
+  padding: 0 11px 0 7px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-right: 1px solid #333;
+}
+/* line 29, ../scss/_hd.scss */
+.headerBox .top_header .tophd ul li a i {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #333333;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  behavior: url("../PIE/PIE.htc");
+  margin-bottom: 3px;
+  position: relative;
+  top: 0;
+  z-index: 10;
+}
+/* line 46, ../scss/_hd.scss */
+.headerBox .top_header .tophd ul li + li + li + li a {
+  border-right: none;
+}
+/* line 49, ../scss/_hd.scss */
+.headerBox .top_header .tophd .iconBox {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 15px;
+}
+/* line 53, ../scss/_hd.scss */
+.headerBox .top_header .tophd .iconBox a {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/iconbg.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin: 0 2px;
+}
+/* line 62, ../scss/_hd.scss */
+.headerBox .top_header .tophd .iconBox a + a {
+  background-position: -33px 0;
+}
+/* line 63, ../scss/_hd.scss */
+.headerBox .top_header .tophd .iconBox a + a + a {
+  background-position: -66px 0;
+}
+/* line 64, ../scss/_hd.scss */
+.headerBox .top_header .tophd .iconBox a + a + a + a {
+  background-position: -99px 0;
+}
+/* line 65, ../scss/_hd.scss */
+.headerBox .top_header .tophd .iconBox a + a + a + a + a {
+  background-position: -132px 0;
+}
+/* line 69, ../scss/_hd.scss */
+.headerBox .bottom_header {
+  width: 100%;
+  height: 845px;
+  min-width: 960px;
+  background-repeat: no-repeat;
+  background-position: 50% -57px;
+  position: relative;
+  top: 55px;
+}
+/* line 77, ../scss/_hd.scss */
+.headerBox .bottom_header .a_bothd {
+  width: 960px;
+  height: 530px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: 59% 77%;
+  position: relative;
+  top: 0;
+}
+/* line 85, ../scss/_hd.scss */
+.headerBox .bottom_header .a_bothd .commonBtn {
+  width: 139px;
+  height: 138px;
+  background-image: url("../img/btnBg.png");
+}
+/* line 89, ../scss/_hd.scss */
+.headerBox .bottom_header .a_bothd .commonBtn:hover {
+  background-image: url("../img/btnBg_hover.png");
+}
+/* line 92, ../scss/_hd.scss */
+.headerBox .bottom_header .a_bothd .commonBtn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* line 100, ../scss/_hd.scss */
+.headerBox .bottom_header .a_bothd .b02 {
+  position: absolute;
+  right: 35px;
+  top: 256px;
+}
+/* line 104, ../scss/_hd.scss */
+.headerBox .bottom_header .a_bothd .b02 a {
+  background-image: url("../img/btnBg_index02.png");
+}
+/* line 105, ../scss/_hd.scss */
+.headerBox .bottom_header .a_bothd .b02:hover {
+  top: 264px;
+}
+/* line 107, ../scss/_hd.scss */
+.headerBox .bottom_header .a_bothd .b02:hover a {
+  background-image: url("../img/btnBg_hover_index02.png");
+}
+/* line 110, ../scss/_hd.scss */
+.headerBox .bottom_header .a_bothd .b03 {
+  position: absolute;
+  left: 35px;
+  top: 256px;
+}
+/* line 114, ../scss/_hd.scss */
+.headerBox .bottom_header .a_bothd .b03 a {
+  background-image: url("../img/btnBg_index03.png");
+}
+/* line 115, ../scss/_hd.scss */
+.headerBox .bottom_header .a_bothd .b03:hover {
+  top: 264px;
+}
+/* line 117, ../scss/_hd.scss */
+.headerBox .bottom_header .a_bothd .b03:hover a {
+  background-image: url("../img/btnBg_hover_index03.png");
+}
+/* line 121, ../scss/_hd.scss */
+.headerBox .bottom_header .b_bothd {
+  width: 914px;
+  height: 306px;
+  margin: 0 auto;
+  background-image: url("../img/linkBg.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+/* line 128, ../scss/_hd.scss */
+.headerBox .bottom_header .b_bothd .text {
+  width: 100%;
+  height: 120px;
+  margin: 0 auto;
+  background-image: url("../img/commonText.png");
+  background-repeat: no-repeat;
+  background-position: 50% 35px;
+}
+/* line 136, ../scss/_hd.scss */
+.headerBox .bottom_header .b_bothd a {
+  display: inline-block;
+  width: 205px;
+  height: 130px;
+  background-image: url("../img/commonImg01.png");
+  background-repeat: no-repeat;
+  margin: 5px 2px 0 2px;
+}
+/* line 144, ../scss/_hd.scss */
+.headerBox .bottom_header .b_bothd a + a {
+  background-image: url("../img/commonImg02.png");
+}
+/* line 145, ../scss/_hd.scss */
+.headerBox .bottom_header .b_bothd a + a + a {
+  background-image: url("../img/commonImg03.png");
+}
+/* line 146, ../scss/_hd.scss */
+.headerBox .bottom_header .b_bothd a + a + a + a {
+  background-image: url("../img/commonImg04.png");
+}
+
+/* line 154, ../scss/_hd.scss */
+.page_index02 .headerBox .bottom_header {
+  background-image: url("../img/headerBg02.png");
+}
+/* line 156, ../scss/_hd.scss */
+.page_index02 .headerBox .bottom_header .a_bothd {
+  background-image: url("../img/title_indx02.png");
+}
+
+/* line 165, ../scss/_hd.scss */
+.page_index03 .headerBox .bottom_header {
+  background-image: url("../img/headerBg03.png");
+}
+/* line 167, ../scss/_hd.scss */
+.page_index03 .headerBox .bottom_header .a_bothd {
+  background-image: url("../img/title_indx03.png");
+}
+
+/* line 1, ../scss/_ft.scss */
+.footerBox {
+  width: 100%;
+  min-width: 960px;
+  font-family: "微軟正黑體";
+}
+/* line 5, ../scss/_ft.scss */
+.footerBox .footer {
+  width: 960px;
+  height: 139px;
+  margin: -30px auto 0 auto;
+  text-align: center;
+}
+/* line 10, ../scss/_ft.scss */
+.footerBox .footer span {
+  display: inline-block;
+  width: 128px;
+  height: 139px;
+  background-image: url("../img/footerbtnBg.png");
+  background-repeat: no-repeat;
+  margin: 0 25px;
+}
+/* line 17, ../scss/_ft.scss */
+.footerBox .footer span a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+/* line 24, ../scss/_ft.scss */
+.footerBox .footer span.btn3 a {
+  background-image: url("../img/footerbtnBg_index03.png");
+  background-position: 43% 53%;
+}
+/* line 30, ../scss/_ft.scss */
+.footerBox .footer span.btn2 a {
+  background-image: url("../img/footerbtnBg_index02.png");
+  background-position: 43% 47%;
+}
+/* line 37, ../scss/_ft.scss */
+.footerBox > p {
+  font-size: 12px;
+  color: #fff;
+  background-color: #9bc045;
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* line 2, ../scss/_index02.scss */
+.page_index02 .contBox {
+  min-height: 1000px;
+}
+/* line 6, ../scss/_index02.scss */
+.page_index02 .contBox .mainCont .bl01 .mTitle {
+  width: 98%;
+  background-image: url("../img/index02_title01.png");
+}
+/* line 12, ../scss/_index02.scss */
+.page_index02 .contBox .mainCont .bl02 .mTitle {
+  width: 98%;
+  background-image: url("../img/index02_title02.png");
+}
+
+/* line 2, ../scss/_index03.scss */
+.page_index03 .wrapper .container1 .container2 .contBox {
+  min-height: 1000px;
+}
+/* line 9, ../scss/_index03.scss */
+.page_index03 .wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul .even .idex03_Bl01_L2 {
+  background-image: none;
+}
+/* line 12, ../scss/_index03.scss */
+.page_index03 .wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul .even .idex03_Bl01_L2 .topText .textInfo {
+  display: inline-block;
+  width: 330px;
+  margin-left: -5px;
+  position: relative;
+  top: 0;
+}
+/* line 18, ../scss/_index03.scss */
+.page_index03 .wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul .even .idex03_Bl01_L2 .topText .textInfo .graybg {
+  display: block;
+  margin-bottom: 30px;
+  background-color: #b7b7b7;
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 24, ../scss/_index03.scss */
+.page_index03 .wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul .even .idex03_Bl01_L2 .topText .textInfo .graybg p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.6;
+}
+/* line 29, ../scss/_index03.scss */
+.page_index03 .wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul .even .idex03_Bl01_L2 .topText .textInfo .graybg .sTitle {
+  font-size: 18px;
+  color: #322c24;
+}
+/* line 34, ../scss/_index03.scss */
+.page_index03 .wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul .even .idex03_Bl01_L2 .topText .textInfo i {
+  display: block;
+  width: 57px;
+  height: 31px;
+  background-image: url("../img/down.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  margin-left: -28px;
+}
+/* line 45, ../scss/_index03.scss */
+.page_index03 .wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul .even .idex03_Bl01_L2 .topText .textInfo i + i {
+  top: 145px;
+}
+/* line 46, ../scss/_index03.scss */
+.page_index03 .wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul .even .idex03_Bl01_L2 .topText .textInfo i + i + i {
+  width: 31px;
+  height: 57px;
+  background-image: url("../img/left.png");
+  top: 66%;
+  left: -15px;
+}
+/* line 55, ../scss/_index03.scss */
+.page_index03 .wrapper .container1 .container2 .contBox .mainCont .mBlock .mCont ul .even .idex03_Bl01_L2 span.botText {
+  min-height: 30px;
+}
+/* line 62, ../scss/_index03.scss */
+.page_index03 .wrapper .container1 .container2 .contBox .mainCont .bl01 .mTitle {
+  width: 98%;
+  background-image: url("../img/index03_title01.png");
+}

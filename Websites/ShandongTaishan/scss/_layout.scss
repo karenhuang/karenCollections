@@ -1,0 +1,434 @@
+.wrapper{
+  width: 100%;
+  .wrapper_position{
+    min-width: 1000px;
+    background-image: url("../image/indexbg.png");
+    background-repeat: repeat;
+    .wrapper_content{
+      width: 100%;
+      .header{
+        width: 100%;
+        position: relative;
+        top:0;
+        height: 113px;
+        .header_position{
+          width: 100%;
+          height: 113px;
+          background-image: url("../image/menubg.png");
+          background-repeat: repeat-x;
+          position: fixed;
+          top:0;
+          left:0%;
+          z-index: 999;
+          .header_content{
+            width: 970px;
+            padding:0 10px;
+            margin:0 auto;
+            @include box-sizing(border-box);
+            .header_logo{
+              float: left;
+              width:200px;
+              padding:7px 0 0 48px;
+              @include box-sizing(border-box);
+              margin-right: -5px;
+              cursor: pointer;
+            }
+            .header_menu{
+              float: left;
+              width:745px;
+              margin-right: 0;
+              ul{
+                li{
+                  display: block;
+                  float: left;
+                  font-family: "微軟正黑體";
+                  font-size: 18px;
+                  text-align: center;
+                  cursor: pointer;
+                  &:hover{
+                    a{color:#3e372a;}
+                  }
+                  a{
+                    display: block;
+                    width:100%;
+                    height: 100%;
+                    color:#fff;
+                    text-decoration: none;
+                    padding: 40px 0 30px 6px;
+                    @include box-sizing(border-box);
+                    span{display: inline-block;vertical-align: top;}
+                    span:first-child {  width:36px; height: 36px; }
+                    span:first-child+span{
+                      margin-top: 10px;
+                      padding-left:3px;
+                      @include box-sizing(border-box);
+                      border-right: 1px solid #fff;
+                    }
+                  }
+                  &:last-child{
+                    a{
+                      span:first-child+span{
+                        border-right: none;
+                      }
+                    }
+                  }
+                }
+                @mixin menu{
+                  $shandongTaishanmenu: (li 0 154px menu1_off menu1_on 15px) ("li+li" 1 145px menu2_off menu2_on 23px)
+                          ("li+li+li" 2 145px menu3_off menu3_on 23px) ("li+li+li+li" 3 145px menu4_off menu4_on 23px)
+                          ("li+li+li+li+li" 4 145px menu5_off menu5_on 20px);
+                  @each $menu in $shandongTaishanmenu {
+                    $labellevel: nth($menu, 1);
+                    $levelNum: nth($menu, 2);
+                    $levelWidth:nth($menu, 3);
+                    $levelbg:nth($menu, 4);
+                    $levelhoverbg:nth($menu, 5);
+                    $spanpaddingright:nth($menu,6);
+                    @for $levelNum from 0 through 4{
+                      #{$labellevel}{
+                        width: #{$levelWidth} ;
+                        span:first-child{
+                          background-image: url("../image/#{$levelbg}.png");
+                          background-repeat: no-repeat;
+                          background-position: center;
+                        }
+                        span:first-child+span{
+                          padding-right:#{$spanpaddingright};
+                        }
+                        &:hover{
+                          a{ color:#3e372a; }
+                          span:first-child {
+                            background-image: url("../image/#{$levelhoverbg}.png");
+                            background-repeat: no-repeat;
+                            background-position: center;
+                          }
+                        }
+                        &.menuOn{
+                          a{ color:#3e372a; }
+                          span {
+                            background-image: url("../image/#{$levelhoverbg}.png");
+                            background-repeat: no-repeat;
+                            background-position: center;
+                          }
+                          span+span{
+                            background-image: none;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+                @include menu;
+              }
+            }
+          }
+        }
+      }
+
+      .bodyCont{
+        width:100%;
+        .bannerBg_fixed{
+          width:100%;
+          overflow: hidden;
+          position: fixed;
+          z-index: 0;
+          .bannerBg_position{
+            width:970px;
+            height: 430px;
+            padding:0 10px;
+            @include box-sizing(border-box);
+            position: relative;
+            top:0;
+            margin: 0 auto;
+            .bannerBg_bgimg1{
+              height: 430px;
+              width: 1650px;
+              position: absolute;
+              top:0;
+              left:-1000px;
+              background-image: url("../image/mountain.png");
+              background-position: 160% 100%;
+              background-repeat: no-repeat;
+              background-color: #fff;
+            }
+            .bannerBg_bgimg2{
+              height: 430px;
+              width: 1650px;
+              position: absolute;
+              top:0;
+              left:340px;
+              background-image: url("../image/mountain.png");
+              background-position: -60% 100%;
+              background-repeat: no-repeat;
+              background-color: #fff;
+            }
+          }
+        }
+
+        .bodyCont_box{
+          width:100%;
+          .bodyCont_box_position{
+            width:970px;
+            padding:0 10px;
+            margin: 0 auto;
+            position: relative;
+            top:-3px;
+            z-index: 100;
+            @include box-sizing(border-box);
+
+            .autopic{
+              width:100%;
+              .autopic_positon{
+                width:100%;
+                height: 480px;
+                background-image: url("../image/autopicBg.jpg");
+                background-repeat: no-repeat;
+                .autopic_content{
+                  width:100%;
+                  height: 480px;
+                  .autopic_content_title{
+                    width:200px;
+                    height: 480px;
+                    float: left;
+                    padding: 23px  18px 0 18px;
+                    @include box-sizing(border-box);
+                  }
+                  .autopic_content_img{
+                    width:750px;
+                    height: 480px;
+                    float:left;
+                    padding: 17px 17px 17px 0;
+                    @include box-sizing(border-box);
+                    ul{
+                      width:100%;
+                      height: 443px;
+                      position: relative;
+                      top:0;
+                      overflow: hidden;
+                      li{
+                        position: absolute;
+                        top:0;
+                        left:0;
+                      }
+                      .picOn{
+                        z-index:10;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            .bodyCont_info{
+              width:100%;
+              background-image: url("../image/contBg.jpg");
+              background-repeat: repeat;
+              .bodyCont_info_position{
+                width:100%;
+                background-image: url("../image/bottom_mountain.png");
+                background-repeat: no-repeat;
+                background-position: 27px 103%;
+                .bodyCont_info_content{
+                  width:100%;
+                  padding:20px 20px 5px 19px;
+                  @include box-sizing(border-box);
+
+                  .bodyCont_info_details{
+                    width:100%;
+                    margin-bottom: 20px;
+                    border-bottom:1px dotted #6d5221;
+                    &:last-child{border-bottom:none}
+                    .bodyCont_info_details_img{
+                      width:360px;
+                      padding-bottom: 10px;
+                      div{margin-bottom: 5px}
+                      p{
+                        font-size: 13px;
+                        font-family: "新細明體";
+                        color:#6d5221;
+                        line-height: 1.6;
+                        @mixin triangleTopStyle($color, $left, $bottom ,$right) {
+                          border-left: $left solid transparent;
+                          border-bottom: $bottom solid $color;
+                          border-right: $right solid transparent;
+                          display: inline-block;
+                        }
+                        span{
+                          @include triangleTopStyle(#6d5221, 5px, 5px, 5px);
+                        }
+                      }
+                    }
+                    .bodyCont_info_details_text{
+                      width:530px;
+                      text-align: left ;
+                      padding-bottom: 10px;
+                      .imgtitle{display:block; margin-bottom: 10px;}
+                      p{
+                        color:#333333;
+                        font-family: "微軟正黑體";
+                        font-size: 16px;
+                        line-height: 1.6;
+                        margin-bottom: 15px;
+                      }
+                      .colorTitle{
+                        font-size: 20px;
+                        font-family: "微軟正黑體";
+                        border-left: 5px solid #333;
+                        line-height: 1;
+                        padding-left: 8px;
+                        margin-bottom: 10px;
+                      }
+                    }
+
+                    .bodyCont_info_details_blockInfo{
+                      width:280px;
+                      float: left;
+                      margin-right: 35px;
+                      margin-bottom: 10px;
+                      &:nth-child(3n+1){
+                        margin-right: 0px;
+                      }
+                      p{
+                        color:#333333;
+                        font-family: "微軟正黑體";
+                        font-size: 16px;
+                        line-height: 1.6;
+                        margin-bottom: 15px;
+                      }
+                      .colorTitle{
+                        font-size: 20px;
+                        font-family: "微軟正黑體";
+                        border-left: 5px solid #333;
+                        line-height: 1;
+                        padding-left: 8px;
+                        margin-bottom: 10px;
+                      }
+                      .viewtext{
+                        font-size: 13px;
+                        font-family: "新細明體";
+                        color:#6d5221;
+                        line-height: 1.6;
+                        @mixin triangleTopStyle($color, $left, $bottom ,$right) {
+                          border-left: $left solid transparent;
+                          border-bottom: $bottom solid $color;
+                          border-right: $right solid transparent;
+                          display: inline-block;
+                        }
+                        span{
+                          @include triangleTopStyle(#6d5221, 5px, 5px, 5px);
+                        }
+                      }
+                    }
+
+                  }
+
+
+                  //九九重陽節
+                  .ChungYeung{
+                    div:first-child{float: right}
+                    div:last-child{float: left}
+                  }
+
+                  //中國名山
+                  .GreatMountain{
+                    div:first-child{float: left}
+                    div:last-child{float: right}
+                  }
+
+                  //經典四條路線
+                  .Classics{
+                    div:first-child{float: left}
+                    div:last-child{float: right}
+                    .bodyCont_info_details_text{
+                      .colorTitle{
+                        color:#50b618;
+                        border-left: 5px solid #50b618;
+                      }
+                    }
+
+                  }
+
+                  //經典四條路線
+                  .FoodFun{
+                    div:first-child{float: right}
+                    div:last-child{float: left}
+                    .bodyCont_info_details_text{
+                      .colorTitle{
+                        color:#00baff;
+                        border-left: 5px solid #00baff;
+                      }
+                    }
+                  }
+
+                  //周邊景點
+                  .viewoftaishan{
+                    margin-bottom: 0px;
+                    .imgtitle{
+                      display: block;
+                      width:100%;
+                      margin-bottom: 10px;
+                    }
+                    .bodyCont_info_details_blockInfo{
+                      &:nth-child(5){
+                        p{  &:first-child+p{min-height:150px } }
+                      }
+                      .colorTitle{
+                        color:#ff005a;
+                        border-left: 5px solid #ff005a;
+                      }
+                    }
+
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .footer{
+        width: 100%;
+        height: 60px;
+        background-color: #9a8c72;
+        position: relative;
+        top:0;
+        margin-top: -3px;
+        .footer_content{
+          width:970px;
+          height: 60px;
+          padding: 10px 80px 0 80px;
+          margin: 0 auto;
+          @include box-sizing(border-box);
+          .footer_content_text{
+            float: left;
+            width:665px;
+            text-align: center;
+            color:#fff;
+            font-family: "新細明體";
+            font-size: 13px;
+            line-height: 1.8;
+            letter-spacing: 2px;
+            p{margin-top: 15px;}
+            a{
+              color:#fff;
+            }
+          }
+          .footer_content_icon{
+            float: right;
+            width:130px;
+            margin-top: 10px;
+            a{margin-right:5px;}
+          }
+        }
+      }
+
+
+      .fix:after{
+        content:"";
+        display: table;
+        clear: both;
+        *zoom:1;
+      }
+    }
+  }
+}

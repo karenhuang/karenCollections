@@ -1,0 +1,1020 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../scss/_hd.scss */
+.headerBox {
+  width: 100%;
+  font-family: Microsoft JhengHei;
+}
+/* line 4, ../scss/_hd.scss */
+.headerBox .header {
+  min-width: 1024px;
+  margin: 0 auto;
+}
+/* line 7, ../scss/_hd.scss */
+.headerBox .header .hdCont {
+  width: 100%;
+  height: 45px;
+  background-color: #fee41e;
+  position: relative;
+  top: 0;
+  z-index: 20;
+}
+/* line 14, ../scss/_hd.scss */
+.headerBox .header .hdCont .menu {
+  width: 960px;
+  margin: 0 auto;
+}
+/* line 17, ../scss/_hd.scss */
+.headerBox .header .hdCont .menu .navbg {
+  width: 650px;
+  margin-left: 313px;
+}
+/* line 20, ../scss/_hd.scss */
+.headerBox .header .hdCont .menu .navbg li {
+  display: inline-block;
+  min-width: 155px;
+  height: 45px;
+  margin: 0 -18px;
+  vertical-align: top;
+}
+/* line 26, ../scss/_hd.scss */
+.headerBox .header .hdCont .menu .navbg li:hover {
+  background-image: url("../images/navBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 30, ../scss/_hd.scss */
+.headerBox .header .hdCont .menu .navbg li:hover a {
+  color: #fff;
+}
+/* line 32, ../scss/_hd.scss */
+.headerBox .header .hdCont .menu .navbg li a {
+  display: block;
+  max-width: 120px;
+  height: 45px;
+  margin: 0 auto;
+  padding: 13px 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  color: #461a1a;
+  font-weight: bold;
+}
+/* line 44, ../scss/_hd.scss */
+.headerBox .header .hdCont .menu .navbg li a:hover {
+  color: #fff;
+}
+
+/* line 61, ../scss/_hd.scss */
+.page_index .headerBox .header .hdCont .menu .navbg .a1 {
+  background-image: url("../images/navBg.png");
+}
+/* line 63, ../scss/_hd.scss */
+.page_index .headerBox .header .hdCont .menu .navbg .a1 a {
+  color: #fff;
+}
+
+/* line 67, ../scss/_hd.scss */
+.page_rule .headerBox .header .hdCont .menu .navbg .a2 {
+  background-image: url("../images/navBg.png");
+}
+/* line 69, ../scss/_hd.scss */
+.page_rule .headerBox .header .hdCont .menu .navbg .a2 a {
+  color: #fff;
+}
+
+/* line 74, ../scss/_hd.scss */
+.page_anhui5a .headerBox .header .hdCont .menu .navbg .a3 {
+  background-image: url("../images/navBg.png");
+}
+/* line 76, ../scss/_hd.scss */
+.page_anhui5a .headerBox .header .hdCont .menu .navbg .a3 a {
+  color: #fff;
+}
+
+/* line 81, ../scss/_hd.scss */
+.page_winner .headerBox .header .hdCont .menu .navbg .a4 {
+  background-image: url("../images/navBg.png");
+}
+/* line 83, ../scss/_hd.scss */
+.page_winner .headerBox .header .hdCont .menu .navbg .a4 a {
+  color: #fff;
+}
+
+/* line 1, ../scss/_ft.scss */
+.footerBox {
+  width: 100%;
+  min-width: 1024px;
+  height: 90px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  padding: 130px 0 0;
+  background-image: url("../images/ftBg.jpg");
+  background-repeat: repeat-x;
+  background-position: 50% 0;
+  background-color: #d6ac28;
+  font-family: Microsoft JhengHei;
+}
+/* line 15, ../scss/_ft.scss */
+.footerBox .footer {
+  width: 960px;
+  margin: 0 auto;
+}
+/* line 18, ../scss/_ft.scss */
+.footerBox .footer .ftCont {
+  color: #ffffff;
+  width: 820px;
+  margin: 0 auto;
+}
+/* line 22, ../scss/_ft.scss */
+.footerBox .footer .ftCont li {
+  display: inline-block;
+  vertical-align: top;
+  width: 100px;
+  height: 69px;
+  background-image: url("../images/ftlogo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 30, ../scss/_ft.scss */
+.footerBox .footer .ftCont li a {
+  display: block;
+  width: 100px;
+  height: 69px;
+  background-image: url("../images/ftlogo.png");
+  background-repeat: no-repeat;
+}
+/* line 37, ../scss/_ft.scss */
+.footerBox .footer .ftCont li + li {
+  background-image: none;
+  width: 620px;
+}
+/* line 40, ../scss/_ft.scss */
+.footerBox .footer .ftCont li + li p {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 13px;
+}
+/* line 46, ../scss/_ft.scss */
+.footerBox .footer .ftCont li + li + li {
+  background-image: none;
+  width: 28px;
+  height: 28px;
+}
+/* line 50, ../scss/_ft.scss */
+.footerBox .footer .ftCont li + li + li a {
+  width: 28px;
+  height: 28px;
+  background-image: url("../images/fticon.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-top: 23px;
+}
+/* line 59, ../scss/_ft.scss */
+.footerBox .footer .ftCont li + li + li + li {
+  background-image: none;
+  width: 28px;
+}
+/* line 62, ../scss/_ft.scss */
+.footerBox .footer .ftCont li + li + li + li a {
+  width: 28px;
+  background-image: url("../images/fticon.png");
+  background-repeat: no-repeat;
+  background-position: -31px 0;
+}
+/* line 69, ../scss/_ft.scss */
+.footerBox .footer .ftCont li + li + li + li + li {
+  background-image: none;
+  width: 28px;
+}
+/* line 72, ../scss/_ft.scss */
+.footerBox .footer .ftCont li + li + li + li + li a {
+  width: 28px;
+  background-image: url("../images/fticon.png");
+  background-repeat: no-repeat;
+  background-position: -63px 0;
+}
+
+/* line 1, ../scss/_layout.scss */
+html, body {
+  height: 100%;
+  background-color: #fefcef;
+}
+
+/* line 5, ../scss/_layout.scss */
+.wrapper {
+  width: 100%;
+  /* 設定高度最小為100%, 如果內容區塊很多, 可以長大 */
+  min-height: 100%;
+  /* 位置設為relative, 作為footer區塊位置的參考 */
+  position: relative;
+  top: 0;
+}
+/* line 12, ../scss/_layout.scss */
+.wrapper .wrapper_position {
+  min-width: 1024px;
+}
+/* line 14, ../scss/_layout.scss */
+.wrapper .wrapper_position .container {
+  width: 100%;
+  padding-bottom: 110px;
+  background-image: url("../images/contBg.jpg");
+  background-repeat: repeat-x;
+  background-position: 50% 44px;
+}
+/* line 20, ../scss/_layout.scss */
+.wrapper .wrapper_position .container .containerBox {
+  width: 960px;
+  margin: 0 auto;
+}
+/* line 23, ../scss/_layout.scss */
+.wrapper .wrapper_position .container .containerBox .Cont {
+  position: relative;
+  top: 0;
+  z-index: 10;
+}
+/* line 27, ../scss/_layout.scss */
+.wrapper .wrapper_position .container .containerBox .Cont .commonCont {
+  position: relative;
+  top: 0;
+  margin-top: 37px;
+  width: 960px;
+  min-height: 845px;
+}
+/* line 33, ../scss/_layout.scss */
+.wrapper .wrapper_position .container .containerBox .Cont .commonCont .titleImg {
+  width: 729px;
+  height: 111px;
+  background-image: url("../images/topWords.png");
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+/* line 41, ../scss/_layout.scss */
+.wrapper .wrapper_position .container .containerBox .Cont .commonCont .mBox {
+  width: 916px;
+  margin: 0 auto;
+  font-family: Microsoft JhengHei;
+}
+/* line 45, ../scss/_layout.scss */
+.wrapper .wrapper_position .container .containerBox .Cont .commonCont .mBox .boxTop {
+  width: 100%;
+  height: 169px;
+  background-image: url("../images/boxBg_Top.png");
+  background-repeat: no-repeat;
+  padding: 125px 40px 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 53, ../scss/_layout.scss */
+.wrapper .wrapper_position .container .containerBox .Cont .commonCont .mBox .boxMiddle {
+  width: 100%;
+  background-image: url("../images/boxBg_middle.png");
+  background-repeat: repeat-y;
+}
+/* line 57, ../scss/_layout.scss */
+.wrapper .wrapper_position .container .containerBox .Cont .commonCont .mBox .boxMiddle .superwoman {
+  position: absolute;
+  z-index: 30;
+  background-repeat: no-repeat;
+}
+/* line 63, ../scss/_layout.scss */
+.wrapper .wrapper_position .container .containerBox .Cont .commonCont .mBox .boxBottom {
+  width: 100%;
+  height: 79px;
+  background-image: url("../images/boxBg_bottom.png");
+  background-repeat: no-repeat;
+}
+
+/* line 1, ../scss/_index.scss */
+.flashFrame {
+  width: 100%;
+  height: 770px;
+}
+
+/* line 4, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox {
+  width: 916px;
+  margin: 0 auto;
+  font-family: Microsoft JhengHei;
+}
+/* line 9, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxTop > p {
+  font-size: 18px;
+  color: #090908;
+  text-align: right;
+}
+/* line 13, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxTop > p span {
+  font-size: 22px;
+}
+/* line 16, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle {
+  position: relative;
+  top: 0;
+  z-index: 20;
+}
+/* line 20, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .superwoman {
+  width: 331px;
+  height: 312px;
+  background-image: url("../images/anhui5aSuper.png");
+  top: -64px;
+  left: -6px;
+}
+/* line 27, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .topThree {
+  height: 226px;
+}
+/* line 29, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .topThree ul {
+  display: block;
+  width: 660px;
+  margin-left: 166px;
+  padding-top: 3px;
+  position: absolute;
+  top: 0;
+  z-index: 30;
+}
+/* line 37, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .topThree ul li {
+  display: inline-block;
+  vertical-align: top;
+  width: 205px;
+  margin: 0 6px;
+}
+/* line 42, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .topThree ul li a {
+  text-decoration: none;
+}
+/* line 43, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .topThree ul li .img {
+  width: 185px;
+  margin: 0 auto 5px;
+}
+/* line 46, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .topThree ul li .img img {
+  display: block;
+  width: 185px;
+  height: 166px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  behavior: url("../lib/PIE.htc");
+  border: 1px solid #f0b9b2;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  z-index: 10;
+}
+/* line 59, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .topThree ul li .mTitle {
+  display: block;
+}
+/* line 61, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .topThree ul li .mTitle .hot {
+  display: block;
+  float: left;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+  behavior: url("../lib/PIE.htc");
+  border: 2px solid #fa3e26;
+  position: relative;
+  top: 0;
+  z-index: 10;
+  font-size: 12px;
+  text-align: center;
+  color: #fa3e26;
+  font-weight: bold;
+  line-height: 1.4;
+  padding: 5px 0 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 80, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .topThree ul li .mTitle .title, .page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .topThree ul li .mTitle .num {
+  text-align: left;
+  margin-left: 55px;
+  line-height: 1.2;
+}
+/* line 85, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .topThree ul li .mTitle .title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #090908;
+}
+/* line 91, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .topThree ul li .mTitle .num {
+  font-size: 16px;
+  color: #915e06;
+}
+/* line 95, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .topThree ul li .mTitle .num span {
+  font-size: 22px;
+  font-weight: bold;
+}
+/* line 99, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .topThree ul li .mTitle .num i {
+  display: inline-block;
+  vertical-align: top;
+  width: 27px;
+  height: 26px;
+  background-image: url("../images/star.png");
+  margin-left: 6px;
+}
+/* line 112, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .others {
+  margin: 25px 0 0;
+  padding: 0 35px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 116, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .others .redTitle {
+  font-size: 18px;
+  color: #090908;
+  border-left: 11px solid #fa3e26;
+  padding-left: 5px;
+}
+/* line 122, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .others ul {
+  width: 800px;
+  margin: 10px auto 0;
+  padding-bottom: 20px;
+}
+/* line 126, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .others ul li {
+  display: inline-block;
+  vertical-align: top;
+  width: 150px;
+  margin: 0 3px;
+}
+/* line 131, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .others ul li a {
+  text-decoration: none;
+}
+/* line 132, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .others ul li .img {
+  width: 150px;
+  margin: 0 auto 5px;
+}
+/* line 135, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .others ul li .img img {
+  display: block;
+  width: 150px;
+  height: 134px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  behavior: url("../lib/PIE.htc");
+  border: 1px solid #f0b9b2;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  z-index: 10;
+}
+/* line 148, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .others ul li .mTitle {
+  display: block;
+}
+/* line 150, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .others ul li .mTitle .title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #090908;
+  text-align: center;
+  line-height: 1.4;
+}
+/* line 157, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .others ul li .mTitle .num {
+  font-size: 14px;
+  color: #915e06;
+  text-align: center;
+  line-height: 1.2;
+}
+/* line 162, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .others ul li .mTitle .num span {
+  font-size: 18px;
+  font-weight: bold;
+}
+/* line 166, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .others ul li .mTitle .num i {
+  display: inline-block;
+  vertical-align: top;
+  width: 27px;
+  height: 26px;
+  background-image: url("../images/star.png");
+  margin-left: 6px;
+}
+/* line 179, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .redBlock {
+  width: 846px;
+  height: 83px;
+  margin: 0 auto;
+  background-image: url("../images/linkBg.png");
+}
+/* line 184, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .redBlock p {
+  display: block;
+  width: 416px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  padding-top: 24px;
+}
+/* line 195, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .psBlock {
+  color: #090908;
+  text-align: left;
+  padding: 20px 90px 20px 270px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: url("../images/anhui5aAward.png");
+  background-repeat: no-repeat;
+  background-position: 105px 20px;
+}
+/* line 203, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .psBlock .title {
+  font-size: 24px;
+  line-height: 2;
+}
+/* line 207, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .psBlock .text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+/* line 212, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxMiddle .mLink {
+  display: block;
+  width: 515px;
+  height: 63px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fa3e26;
+  background-image: url("../images/botlinkBg.png");
+  background-repeat: no-repeat;
+  padding: 20px 0 0 93px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 226, ../scss/_anhui5a.scss */
+.page_anhui5a .wrapper .wrapper_position .container .containerBox .Cont .anhui5aCont .mBox .boxBottom {
+  margin-top: -30px;
+}
+
+/* line 4, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox {
+  width: 916px;
+  margin: 0 auto;
+  font-family: Microsoft JhengHei;
+}
+/* line 8, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxTop {
+  position: relative;
+  top: 0;
+}
+/* line 11, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxTop .btnTo1, .page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxTop .btnTo2 {
+  display: block;
+  width: 145px;
+  height: 35px;
+  background-repeat: no-repeat;
+  float: right;
+  cursor: pointer;
+  position: absolute;
+  right: 43px;
+  bottom: 4px;
+}
+/* line 22, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxTop .btnTo1 {
+  background-image: url("../images/winnerBtn1.png");
+}
+/* line 26, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxTop .btnTo2 {
+  background-image: url("../images/winnerBtn2.png");
+}
+/* line 31, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle {
+  position: relative;
+  top: 0;
+  z-index: 20;
+}
+/* line 35, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .superwoman {
+  width: 296px;
+  height: 311px;
+  background-image: url("../images/winnerSuper1.png");
+  top: -20px;
+  left: 42px;
+}
+/* line 42, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .tabBox {
+  width: 623px;
+  overflow: hidden;
+  margin-left: 245px;
+  padding-top: 70px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 48, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .tabBox ul {
+  width: 1250px;
+}
+/* line 50, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .tabBox ul li {
+  display: inline-block;
+  width: 625px;
+  margin: 0 -2px;
+  vertical-align: top;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 58, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .tabBox ul li.winner1 .mTitle {
+  font-size: 21px;
+  font-weight: bold;
+  color: #6f4d04;
+  padding: 7px 0 9px 90px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: url("../images/winner1_titleBg.png");
+  background-repeat: no-repeat;
+}
+/* line 67, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .tabBox ul li.winner1 .mDate {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Arial";
+  letter-spacing: 1px;
+  color: #000;
+  padding: 8px 0 8px 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 76, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .tabBox ul li.winner1 .act1Tt {
+  background-position: 0 0;
+}
+/* line 77, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .tabBox ul li.winner1 .act2Tt {
+  background-position: 0 -35px;
+}
+/* line 78, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .tabBox ul li.winner1 .win1tb, .page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .tabBox ul li.winner1 .win2tb {
+  width: 550px;
+  margin: 0 0 50px 10px;
+  border: 1px solid #fa3e26;
+  font-size: 18px;
+}
+/* line 86, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .tabBox ul li.winner1 .win1tb tr {
+  border: 1px solid #fa3e26;
+}
+/* line 88, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .tabBox ul li.winner1 .win1tb tr th {
+  border: 1px solid #fa3e26;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #fa3e26;
+  text-align: center;
+  padding: 15px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 160px;
+}
+/* line 99, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .tabBox ul li.winner1 .win1tb tr th + th {
+  width: 50px;
+}
+/* line 100, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .tabBox ul li.winner1 .win1tb tr th + th + th {
+  width: 120px;
+}
+/* line 101, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .tabBox ul li.winner1 .win1tb tr th + th + th + th {
+  width: 215px;
+}
+/* line 102, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .tabBox ul li.winner1 .win1tb tr td {
+  border: 1px solid #fa3e26;
+  text-align: center;
+  padding: 15px 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #fff;
+  line-height: 1.4;
+  font-weight: bold;
+  font-size: 16px;
+}
+/* line 111, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .tabBox ul li.winner1 .win1tb tr td[rowspan="4"] {
+  padding: 35px 0;
+  line-height: 1.6;
+  font-size: 21px;
+  font-weight: bold;
+}
+/* line 122, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .tabBox ul li.winner1 .win2tb tr {
+  border: 1px solid #fa3e26;
+}
+/* line 124, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .tabBox ul li.winner1 .win2tb tr th {
+  border: 1px solid #fa3e26;
+  color: #fff;
+  background-color: #fa3e26;
+  text-align: center;
+  padding: 15px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 160px;
+  font-weight: bold;
+  font-size: 16px;
+}
+/* line 135, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .tabBox ul li.winner1 .win2tb tr th + th {
+  width: 50px;
+}
+/* line 136, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .tabBox ul li.winner1 .win2tb tr th + th + th {
+  width: 120px;
+}
+/* line 137, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .tabBox ul li.winner1 .win2tb tr th + th + th + th {
+  width: 215px;
+}
+/* line 138, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .tabBox ul li.winner1 .win2tb tr td {
+  border: 1px solid #fa3e26;
+  text-align: center;
+  padding: 15px 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #fff;
+  line-height: 1.4;
+  font-weight: bold;
+  font-size: 16px;
+}
+/* line 147, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .tabBox ul li.winner1 .win2tb tr td[colspan="2"] {
+  padding: 40px 0;
+  line-height: 1.6;
+  font-size: 21px;
+  font-weight: bold;
+}
+/* line 157, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .tabBox ul li.winner2 {
+  padding-top: 25px;
+}
+/* line 159, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxMiddle .tabBox ul li.winner2 > p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+/* line 169, ../scss/_winner.scss */
+.page_winner .wrapper .wrapper_position .container .containerBox .Cont .winnerCont .mBox .boxBottom {
+  margin-top: -30px;
+}
+
+/* line 4, ../scss/_rule.scss */
+.page_rule .wrapper .wrapper_position .container .containerBox .Cont .ruleCont .mBox {
+  width: 916px;
+  margin: 0 auto;
+  font-family: Microsoft JhengHei;
+}
+/* line 8, ../scss/_rule.scss */
+.page_rule .wrapper .wrapper_position .container .containerBox .Cont .ruleCont .mBox .boxMiddle {
+  position: relative;
+  top: 0;
+  z-index: 20;
+  min-height: 700px;
+}
+/* line 14, ../scss/_rule.scss */
+.page_rule .wrapper .wrapper_position .container .containerBox .Cont .ruleCont .mBox .boxMiddle .ruleList .mTitle {
+  width: 690px;
+  line-height: 1.6;
+  font-size: 16px;
+  font-weight: bold;
+  color: #1c1c1c;
+  margin: 0 auto;
+  text-align: left;
+  padding-bottom: 30px;
+}
+/* line 24, ../scss/_rule.scss */
+.page_rule .wrapper .wrapper_position .container .containerBox .Cont .ruleCont .mBox .boxMiddle .ruleList > ul {
+  width: 840px;
+  margin-left: 35px;
+}
+/* line 27, ../scss/_rule.scss */
+.page_rule .wrapper .wrapper_position .container .containerBox .Cont .ruleCont .mBox .boxMiddle .ruleList > ul > li {
+  margin-bottom: 30px;
+}
+/* line 29, ../scss/_rule.scss */
+.page_rule .wrapper .wrapper_position .container .containerBox .Cont .ruleCont .mBox .boxMiddle .ruleList > ul > li > span {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  color: #1e1e1e;
+  line-height: 1.4;
+}
+/* line 35, ../scss/_rule.scss */
+.page_rule .wrapper .wrapper_position .container .containerBox .Cont .ruleCont .mBox .boxMiddle .ruleList > ul > li > span > b {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0f0f0f;
+  margin-bottom: 4px;
+}
+/* line 42, ../scss/_rule.scss */
+.page_rule .wrapper .wrapper_position .container .containerBox .Cont .ruleCont .mBox .boxMiddle .ruleList > ul > li > span > p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+/* line 45, ../scss/_rule.scss */
+.page_rule .wrapper .wrapper_position .container .containerBox .Cont .ruleCont .mBox .boxMiddle .ruleList > ul > li > span > p > a {
+  color: #17769d;
+}
+/* line 46, ../scss/_rule.scss */
+.page_rule .wrapper .wrapper_position .container .containerBox .Cont .ruleCont .mBox .boxMiddle .ruleList > ul > li > span > p.subTitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: #7c3805;
+}
+/* line 50, ../scss/_rule.scss */
+.page_rule .wrapper .wrapper_position .container .containerBox .Cont .ruleCont .mBox .boxMiddle .ruleList > ul > li > span > p.subTitle > i {
+  display: inline-block;
+  width: 66px;
+  height: 23px;
+  margin: 0 10px 15px 0;
+  background-image: url("../images/rule_titleBg.png");
+  background-repeat: no-repeat;
+  text-align: center;
+}
+/* line 61, ../scss/_rule.scss */
+.page_rule .wrapper .wrapper_position .container .containerBox .Cont .ruleCont .mBox .boxMiddle .ruleList > ul > li > span .steps {
+  display: block;
+  width: 721px;
+  height: 119px;
+  background-image: url("../images/steps.png");
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+}
+/* line 69, ../scss/_rule.scss */
+.page_rule .wrapper .wrapper_position .container .containerBox .Cont .ruleCont .mBox .boxMiddle .ruleList > ul > li > span .awardItems {
+  display: block;
+  width: 715px;
+  height: 289px;
+  background-image: url("../images/awards.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 0;
+}
+/* line 77, ../scss/_rule.scss */
+.page_rule .wrapper .wrapper_position .container .containerBox .Cont .ruleCont .mBox .boxMiddle .ruleList > ul > li > span .awardItems .award1, .page_rule .wrapper .wrapper_position .container .containerBox .Cont .ruleCont .mBox .boxMiddle .ruleList > ul > li > span .awardItems .award2 {
+  color: #7c3805;
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  top: -5px;
+}
+/* line 84, ../scss/_rule.scss */
+.page_rule .wrapper .wrapper_position .container .containerBox .Cont .ruleCont .mBox .boxMiddle .ruleList > ul > li > span .awardItems .award1 {
+  left: 0;
+}
+/* line 88, ../scss/_rule.scss */
+.page_rule .wrapper .wrapper_position .container .containerBox .Cont .ruleCont .mBox .boxMiddle .ruleList > ul > li > span .awardItems .award2 {
+  right: 145px;
+}
+/* line 92, ../scss/_rule.scss */
+.page_rule .wrapper .wrapper_position .container .containerBox .Cont .ruleCont .mBox .boxMiddle .ruleList > ul > li > span .awardItems .note {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fa3e26;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+}
+/* line 101, ../scss/_rule.scss */
+.page_rule .wrapper .wrapper_position .container .containerBox .Cont .ruleCont .mBox .boxMiddle .ruleList > ul > li > span.title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 10px 0 0;
+  color: #fa3e26;
+  border-left: 10px solid #fa3e26;
+  padding-left: 6px;
+}
+/* line 110, ../scss/_rule.scss */
+.page_rule .wrapper .wrapper_position .container .containerBox .Cont .ruleCont .mBox .boxMiddle .ruleList > ul > li > span.list01 > ul {
+  width: 780px;
+  margin-left: 36px;
+}
+/* line 113, ../scss/_rule.scss */
+.page_rule .wrapper .wrapper_position .container .containerBox .Cont .ruleCont .mBox .boxMiddle .ruleList > ul > li > span.list01 > ul > li {
+  list-style: decimal;
+  line-height: 1.8;
+  margin: 10px 0;
+}
+/* line 125, ../scss/_rule.scss */
+.page_rule .wrapper .wrapper_position .container .containerBox .Cont .ruleCont .mBox .boxBottom {
+  margin-top: -30px;
+}

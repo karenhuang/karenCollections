@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if (lt IE 9) & (!IEMobile)]>
+        <script src="js/html5shiv.min.js" type="text/javascript"></script>
+    <!--<![endif]-->
+</head>
+
+<body class="lightBox">
+    <div class="imgbox">
+        <ul class="pt_bannerList">
+            <li>
+                <img src="images/lightboximg1.jpg" alt="">
+                <p>月沼的婚禮，為徽色襯上一抹難得的紅月沼的婚禮月沼的婚禮，為徽色襯上一抹難得的紅月沼的婚禮月沼的婚禮，為徽色襯上一抹難得的紅月沼的婚禮月沼的婚禮，為徽色襯上一抹難得的紅月沼的婚禮月沼的婚禮，為徽色襯上一抹難得的紅月沼的婚禮</p>
+            </li>
+            <li>
+                <img src="images/lightboximg1.jpg" alt="">
+                <p>月沼的婚禮，為徽色襯上一抹難得的紅月沼的婚禮</p>
+            </li>
+            <li>
+                <img src="images/lightboximg1.jpg" alt="">
+                <p>月沼的婚禮，為徽色襯上一抹難得的紅月沼的婚禮</p>
+            </li>
+            <li>
+                <img src="images/lightboximg1.jpg" alt="">
+                <p>月沼的婚禮，為徽色襯上一抹難得的紅月沼的婚禮</p>
+            </li>
+            <li>
+                <img src="images/lightboximg1.jpg" alt="">
+                <p>月沼的婚禮，為徽色襯上一抹難得的紅月沼的婚禮</p>
+            </li>
+            <li>
+                <img src="images/lightboximg1.jpg" alt="">
+                <p>月沼的婚禮，為徽色襯上一抹難得的紅月沼的婚禮</p>
+            </li>
+            <li>
+                <img src="images/lightboximg1.jpg" alt="">
+                <p>月沼的婚禮，為徽色襯上一抹難得的紅月沼的婚禮</p>
+            </li>
+            <li>
+                <img src="images/lightboximg1.jpg" alt="">
+                <p>月沼的婚禮，為徽色襯上一抹難得的紅月沼的婚禮</p>
+            </li>
+        </ul>
+        <a class="pt_prev" href="#"></a>
+        <a class="pt_next" href="#"></a>
+    </div>
+</body>
+
+</html>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/slideShow.js" type="text/javascript"></script>
+<script src="js/huangshan.js" type="text/javascript"></script>
+<script>
+$(window).load(function() {
+
+    $(window).resize(function() {
+        $(".pt_bannerList").each(function(index, element) {
+            var target = $(element)
+            target.css({
+                height: target.children("li").outerHeight(true)
+            })
+        });
+    }).resize();
+
+})
+
+var SS2 = new SlideShow_2($(".imgbox").eq(0)).init(true, 1000).auto(3000);
+</script>

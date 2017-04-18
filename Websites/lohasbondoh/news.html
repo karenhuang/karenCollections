@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="news">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/ngApp.js"></script>
+    <script type="text/javascript" src="js/lohasbondoh.js"></script>
+    <link rel="stylesheet" href="css/screen.css"/>
+    <!--[if IE]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <title></title>
+</head>
+<body class="page_newslist">
+    <div class="wrapper">
+        <div class="containerBox">
+            <div class="container">
+                <!--header start-->
+                <div ng-controller="headerCtrl" ng-include="header.url"></div>
+                <!--header end-->
+                <div class="contBox">
+                    <div class="cont">
+                        <div class="newsBox">
+                            <p class="newsTitle"><img src="img/newslist_Title.png" alt=""/></p>
+                            <div class="news_detailBox">
+                                <div class="detailCont">
+                                    <p class="mTitle">微風市集買產品送摸彩券</p>
+                                    <p class="date">2015.01.28</p>
+                                    <div class="mText">
+                                        <div class="newImg"><img src="img/newsImg.jpg" alt=""/></div>
+                                        <div class="text">
+                                            一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字一行50字。
+                                        </div>
+                                    </div>
+                                    <div class="backBtn"><a href="newslist.html">回訊息列表</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--footer start-->
+                <div ng-controller="footerCtrl" ng-include="footer.url"></div>
+                <!--footer end-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+.page_index{
+  .headerBox{
+    .indexhd{
+      text-align: center;
+       &>h1{display: none}
+       .nav{
+         width: 670px;
+         margin-left: 0;
+         a{margin-right: 30px}
+       }
+     }
+    .header{
+      position: relative;
+      top: 0;
+      background-image: none;
+    }
+  }
+
+  .wrapper .containerBox .container .contBox{
+    width: 100%;
+    padding: 0 0 15px 0;
+    .cont{
+      width: 100%;
+      position: relative;
+      top:0;
+      .autopic{
+        width:100%;
+        .autopic_content{
+          position: relative;
+          top:0;
+          .autopic_content_img{
+            height: 607px;
+            overflow: hidden;
+            div{
+              height: 607px;
+              width:100%;
+              background-position: center 0px;
+              position: absolute;
+              top:0;
+              left:0;
+            }
+            .picOn{
+              z-index: 10;
+            }
+          }
+          .autopic_content_opacity{
+            position: absolute;
+            top: 115px;
+            left: 50%;
+            margin-left: -182px;
+            z-index: 20;
+            a{
+              display: block;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footerBox{background-image: none}
+}

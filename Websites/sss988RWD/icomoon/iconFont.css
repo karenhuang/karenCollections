@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'icomoonSss';
+    src:    url('fonts/icomoonSss.eot?ghgj13');
+    src:    url('fonts/icomoonSss.eot?ghgj13#iefix') format('embedded-opentype'),
+        url('fonts/icomoonSss.ttf?ghgj13') format('truetype'),
+        url('fonts/icomoonSss.woff?ghgj13') format('woff'),
+        url('fonts/icomoonSss.svg?ghgj13#icomoonSss') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoonSss' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-deposit:before {
+    content: "\e900";
+}
+.icon-all:before {
+    content: "\e901";
+}
+.icon-cancel:before {
+    content: "\e902";
+}
+.icon-chat:before {
+    content: "\e903";
+}
+.icon-check:before {
+    content: "\e904";
+}
+.icon-contact_line:before {
+    content: "\e905";
+}
+.icon-cross:before {
+    content: "\e906";
+}
+.icon-deposit2:before {
+    content: "\e907";
+}
+.icon-downArrow:before {
+    content: "\e908";
+}
+.icon-ellipsis:before {
+    content: "\e909";
+}
+.icon-email:before {
+    content: "\e90a";
+}
+.icon-email2:before {
+    content: "\e90b";
+}
+.icon-games:before {
+    content: "\e90c";
+}
+.icon-info:before {
+    content: "\e90d";
+}
+.icon-info2:before {
+    content: "\e90e";
+}
+.icon-lock:before {
+    content: "\e90f";
+}
+.icon-logout:before {
+    content: "\e910";
+}
+.icon-mailopen:before {
+    content: "\e911";
+}
+.icon-man:before {
+    content: "\e912";
+}
+.icon-minus:before {
+    content: "\e913";
+}
+.icon-nextArrow:before {
+    content: "\e914";
+}
+.icon-online:before {
+    content: "\e915";
+}
+.icon-phone:before {
+    content: "\e916";
+}
+.icon-plus:before {
+    content: "\e917";
+}
+.icon-poker:before {
+    content: "\e918";
+}
+.icon-poker-1:before {
+    content: "\e919";
+}
+.icon-poker-2:before {
+    content: "\e91a";
+}
+.icon-poker-3:before {
+    content: "\e91b";
+}
+.icon-poker-4:before {
+    content: "\e91c";
+}
+.icon-poker-5:before {
+    content: "\e91d";
+}
+.icon-poker-6:before {
+    content: "\e91e";
+}
+.icon-power:before {
+    content: "\e91f";
+}
+.icon-prevArrow:before {
+    content: "\e920";
+}
+.icon-promo_poker:before {
+    content: "\e921";
+}
+.icon-promo_slots:before {
+    content: "\e922";
+}
+.icon-promo-chips:before {
+    content: "\e923";
+}
+.icon-promo-soccer:before {
+    content: "\e924";
+}
+.icon-promo-spades:before {
+    content: "\e925";
+}
+.icon-setting:before {
+    content: "\e926";
+}
+.icon-speaker-old:before {
+    content: "\e927";
+}
+.icon-speaker:before {
+    content: "\e928";
+}
+.icon-sport:before {
+    content: "\e929";
+}
+.icon-star:before {
+    content: "\e92a";
+}
+.icon-synchro:before {
+    content: "\e92b";
+}
+.icon-transfer:before {
+    content: "\e92c";
+}
+.icon-upArrow:before {
+    content: "\e92d";
+}
+.icon-withdrawal:before {
+    content: "\e92e";
+}
+.icon-mobile:before {
+    content: "\e987";
+}
+

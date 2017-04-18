@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html ng-app="index">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/ngApp.js"></script>
+    <script type="text/javascript" src="js/tourist.js"></script>
+    <link rel="stylesheet" href="css/screen.css"/>
+    <!--[if IE]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <title></title>
+</head>
+<body class="page_index">
+<div class="wrapper">
+    <div class="container1">
+        <!--index_header start-->
+        <div ng-controller="indexheaderCtrl" ng-include="header.url"></div>
+        <!--index_header end-->
+        <div class="contBox">
+            <div class="mainCont">
+                <div class="indexCont">
+                    <div class="questionList">
+                        <ul>
+                            <li>
+                                <span class="qtitle">1.每年平均出國旅遊的次數為何？</span>
+                                <p>
+                                    <input type="radio" value="" name="a1" id="q1a1"/><label for="q1a1">0次</label>
+                                    <input type="radio" value="" name="a1" id="q1a2"/><label for="q1a2">1次</label>
+                                    <input type="radio" value="" name="a1" id="q1a3"/><label for="q1a3">2-3次</label>
+                                    <input type="radio" value="" name="a1" id="q1a4"/><label for="q1a4">超過4次</label>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="qtitle">2.今年預計出國旅遊的單趟天數，最多可能是？</span>
+                                <p>
+                                    <input type="radio" value="" name="a2" id="q2a1"/><label for="q2a1">2-3天</label>
+                                    <input type="radio" value="" name="a2" id="q2a2"/><label for="q2a2">4-6天</label>
+                                    <input type="radio" value="" name="a2" id="q2a3"/><label for="q2a3">7-14天</label>
+                                    <input type="radio" value="" name="a2" id="q2a4"/><label for="q2a4">超過1個月</label>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="qtitle">3.在國外旅遊花費含交通、食、宿、購物等，總經費約略是？</span>
+                                <p>
+                                    <input type="radio" value="" name="a3" id="q3a1"/><label for="q3a1">1萬以內</label>
+                                    <input type="radio" value="" name="a3" id="q3a2"/><label for="q3a2">2-3萬</label>
+                                    <input type="radio" value="" name="a3" id="q3a3"/><label for="q3a3">5-8萬</label>
+                                    <input type="radio" value="" name="a3" id="q3a4"/><label for="q3a4">超過10萬</label>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="qtitle">4.以「存錢」來籌備旅遊資金的話，平均每月願意存多少？</span>
+                                <p>
+                                    <input type="radio" value="" name="a4" id="q4a1"/><label for="q4a1">2,000元以下</label>
+                                    <input type="radio" value="" name="a4" id="q4a2"/><label for="q4a2">2,000-5,000元</label>
+                                    <input type="radio" value="" name="a4" id="q4a3"/><label for="q4a3">5,001-10,000元</label>
+                                    <input type="radio" value="" name="a4" id="q4a4"/><label for="q4a4">超過10,000元</label>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="qtitle">5.您會對下列哪些以「興趣」設計的主題旅遊行程有興趣？</span>
+                                <p>
+                                    <input type="checkbox" value="" name="" id="q5a1"/><label for="q5a1">攝影旅遊</label>
+                                    <input type="checkbox" value="" name="" id="q5a2"/><label for="q5a2">當代建築之旅</label>
+                                    <input type="checkbox" value="" name="" id="q5a3"/><label for="q5a3">當地特殊人文體驗</label>
+                                    <input type="checkbox" value="" name="" id="q5a4"/><label for="q5a4">美食烹飪旅遊</label>
+                                    <input type="checkbox" value="" name="" id="q5a5"/><label for="q5a5">追星哈劇旅遊</label>
+                                    <input type="checkbox" value="" name="" id="q5a6"/><label for="q5a6">運動旅遊</label>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="qtitle">6.下列何種因素會驅使你選擇旅行社的團體旅遊？</span>
+                                <p>
+                                    <input type="checkbox" value="" name="" id="q6a1"/><label for="q6a1">旅行社的安排較有保障</label>
+                                    <input type="checkbox" value="" name="" id="q6a2"/><label for="q6a2">行程具有優惠價格</label>
+                                    <input type="checkbox" value="" name="" id="q6a3"/><label for="q6a3">不想花腦筋規劃行程</label>
+                                    <input type="checkbox" value="" name="" id="q6a4"/><label for="q6a4">帶著家人選擇跟團較安心</label><br>
+                                    <input type="checkbox" value="" name="" id="q6a5"/><label for="q6a5">行程安排特殊人文體驗</label>
+                                    <input type="checkbox" value="" name="" id="q6a6"/><label for="q6a6">部落客/達人帶路去旅行</label>
+                                </p>
+                            </li>
+                            <li class="q7">
+                                <span class="qtitle">7.在旅遊預算有限情況下，請排序以下選項的考量順序</span>
+                                <p>
+                                    <label>機票：</label><input type="text"/>
+                                    <label>住宿：</label><input type="text"/>
+                                    <label>購物：</label><input type="text"/>
+                                    <label>美食：</label><input type="text"/>
+                                </p>
+                            </li>
+                            <li class="q8">
+                                <span class="qtitle">8.在你心裡最嚮往能去到的國家／城市是？</span>
+                                <p>
+                                    <input type="text"/><span>(例如:冰島)</span>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="qtitle">9.通常前往一個國家／城市旅遊的「決定性因素」是？</span>
+                                <p>
+                                    <input type="radio" value="" name="a9" id="q9a1"/><label for="q9a1">網路/平面媒體推薦</label>
+                                    <input type="radio" value="" name="a9" id="q9a2"/><label for="q9a2">親友所推薦的景點/行程</label>
+                                    <input type="radio" value="" name="a9" id="q9a3"/><label for="q9a3">因價格優惠衝動購買</label>
+                                    <input type="radio" value="" name="a9" id="q9a4"/><label for="q9a4">預算決定出國計畫</label>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="qtitle">10.您的年齡</span>
+                                <p>
+                                    <input type="radio" value="" name="a10" id="q10a1"/><label for="q10a1">20-35歲</label>
+                                    <input type="radio" value="" name="a10" id="q10a2"/><label for="q10a2">36-45歲</label>
+                                    <input type="radio" value="" name="a10" id="q10a3"/><label for="q10a3">46-55歲</label>
+                                    <input type="radio" value="" name="a10" id="q10a4"/><label for="q10a4">56歲以上</label>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="qtitle">11.您的職業</span>
+                                <p>
+                                    <input type="radio" value="" name="a11" id="q11a1"/><label for="q11a1">學生</label>
+                                    <input type="radio" value="" name="a11" id="q11a2"/><label for="q11a2">上班族</label>
+                                    <input type="radio" value="" name="a11" id="q11a3"/><label for="q11a3">企業主(老闆)</label>
+                                    <input type="radio" value="" name="a11" id="q11a4"/><label for="q11a4">自由業及其他行業</label>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="qtitle">12.您的性別</span>
+                                <p>
+                                    <input type="radio" value="" name="a12" id="q12a1"/><label for="q12a1">男</label>
+                                    <input type="radio" value="" name="a12" id="q12a2"/><label for="q12a2">女</label>
+                                </p>
+                            </li>
+                        </ul>
+                        <a href="">送出問卷</a>
+                        <span class="shortLine"></span>
+                    </div>
+                    <div class="botLink">
+                        <p class="mTitle">旅行的意義。2015國外旅遊地指標</p>
+                        <span class="mText">你曾想過，為什麼要去旅行嗎？讓自己變得更有冒險精神；感受似於熟悉的家鄉溫暖；前往世界最夢幻地為煞羨所有朋友；或者，旅行根本不用任何方式來說服你，只要拎起背包就直接前往，我們精選四個旅行意義，完美呈現2015國外旅遊地指標！</span>
+                        <div class="aBox">
+                            <a href="">
+                                <span class="mImg">
+                                    <p>讓人<i>衝動</i>之地</p>
+                                </span>
+                            </a>
+                            <a href="">
+                                <span class="mImg">
+                                    <p>讓人<i>勇敢</i>之地</p>
+                                </span>
+                            </a>
+                            <a href="">
+                                <span class="mImg">
+                                    <p>讓人<i>溫暖</i>之地</p>
+                                </span>
+                            </a>
+                            <a href="">
+                                <span class="mImg">
+                                    <p>讓人<i>羨慕</i>之地</p>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer start-->
+        <div ng-controller="footerCtrl" ng-include="footer.url"></div>
+        <!--footer end-->
+    </div>
+</div>
+</body>
+</html>

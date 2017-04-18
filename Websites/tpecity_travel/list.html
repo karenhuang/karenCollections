@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html ng-app="list">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/ngApp.js"></script>
+    <script type="text/javascript" src="js/2015tpecity_travel.js"></script>
+    <link rel="stylesheet" href="css/screen.css"/>
+    <!--[if IE]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <title></title>
+</head>
+<body class="page_list">
+<div class="wrapper">
+    <div class="container1">
+        <!--index_header start-->
+        <div ng-controller="headerCtrl" ng-include="header.url"></div>
+        <!--index_header end-->
+        <div class="contBox">
+            <div class="mainCont">
+                <div class="listCont">
+                    <p class="mTitle">作品集錦<i>※「投稿」活動結束後，將由達人評選出「前10名入圍作品」</i></p>
+                    <div class="mSearch">
+                        <span>投稿者/遊程名稱</span>
+                        <input class="enterText" type="text" />
+                        <input class="btn" type="submit" value="搜尋"/>
+                    </div>
+                    <div class="listTb">
+                        <table>
+                            <tr>
+                                <th>投稿編號</th>
+                                <th>投搞者姓名</th>
+                                <th>創意遊程名稱</th>
+                                <th>投搞日期</th>
+                            </tr>
+                            <tr>
+                                <td>Tpe0001</td>
+                                <td>黃小明</td>
+                                <td>桂香私宅 - 低調奢華的餐酒晚宴</td>
+                                <td>2015/2/20</td>
+                            </tr>
+                            <tr>
+                                <td>Tpe0002</td>
+                                <td>李大偉</td>
+                                <td>一日裁縫師：自己做襯衫，帥氣不撞衫！</td>
+                                <td>2015/2/20</td>
+                            </tr>
+                            <tr>
+                                <td>Tpe0003</td>
+                                <td>黃小明</td>
+                                <td>桂香私宅 - 低調奢華的餐酒晚宴</td>
+                                <td>2015/2/20</td>
+                            </tr>
+                            <tr>
+                                <td>Tpe0004</td>
+                                <td>李大偉</td>
+                                <td>一日裁縫師：自己做襯衫，帥氣不撞衫！</td>
+                                <td>2015/2/20</td>
+                            </tr>
+                            <tr>
+                                <td>Tpe0005</td>
+                                <td>李大偉</td>
+                                <td>一日裁縫師：自己做襯衫，帥氣不撞衫！</td>
+                                <td>2015/2/20</td>
+                            </tr>
+                            <tr>
+                                <td>Tpe0006</td>
+                                <td>李大偉</td>
+                                <td>一日裁縫師：自己做襯衫，帥氣不撞衫！</td>
+                                <td>2015/2/20</td>
+                            </tr>
+                            <tr>
+                                <td>Tpe0007</td>
+                                <td>李大偉</td>
+                                <td>一日裁縫師：自己做襯衫，帥氣不撞衫！</td>
+                                <td>2015/2/20</td>
+                            </tr>
+                            <tr>
+                                <td>Tpe0008</td>
+                                <td>李大偉</td>
+                                <td>一日裁縫師：自己做襯衫，帥氣不撞衫！</td>
+                                <td>2015/2/20</td>
+                            </tr>
+                            <tr>
+                                <td>Tpe0009</td>
+                                <td>李大偉</td>
+                                <td>一日裁縫師：自己做襯衫，帥氣不撞衫！</td>
+                                <td>2015/2/20</td>
+                            </tr>
+                            <tr>
+                                <td>Tpe0010</td>
+                                <td>李大偉</td>
+                                <td>一日裁縫師：自己做襯衫，帥氣不撞衫！</td>
+                                <td>2015/2/20</td>
+                            </tr>
+                            <tr>
+                                <td>Tpe0011</td>
+                                <td>李大偉</td>
+                                <td>一日裁縫師：自己做襯衫，帥氣不撞衫！</td>
+                                <td>2015/2/20</td>
+                            </tr>
+                            <tr>
+                                <td>Tpe0012</td>
+                                <td>李大偉</td>
+                                <td>一日裁縫師：自己做襯衫，帥氣不撞衫！</td>
+                                <td>2015/2/20</td>
+                            </tr>
+                            <tr>
+                                <td>Tpe0013</td>
+                                <td>李大偉</td>
+                                <td>一日裁縫師：自己做襯衫，帥氣不撞衫！</td>
+                                <td>2015/2/20</td>
+                            </tr>
+                            <tr>
+                                <td>Tpe0014</td>
+                                <td>李大偉</td>
+                                <td>一日裁縫師：自己做襯衫，帥氣不撞衫！</td>
+                                <td>2015/2/20</td>
+                            </tr>
+                            <tr>
+                                <td>Tpe0015</td>
+                                <td>李大偉</td>
+                                <td>一日裁縫師：自己做襯衫，帥氣不撞衫！</td>
+                                <td>2015/2/20</td>
+                            </tr>
+                        </table>
+                        <div class="pageLink" align="center">
+                            <ul>
+                                <li class="fd"><a href="">第一頁</a></li>
+                                <li class="fd"><a href=""><</a></li>
+                                <li class="liOn"><a href="">1</a></li>
+                                <li><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                                <li><a href="">4</a></li>
+                                <li><a href="">5</a></li>
+                                <li><a href="">6</a></li>
+                                <li><a href="">7</a></li>
+                                <li><a href="">8</a></li>
+                                <li><a href="">9</a></li>
+                                <li><a href="">10</a></li>
+                                <li class="bk"><a href="">></a></li>
+                                <li class="bk"><a href="">最後一頁</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomBg"></div>
+        </div>
+        <!--footer start-->
+        <div ng-controller="footerCtrl" ng-include="footer.url"></div>
+        <!--footer end-->
+    </div>
+</div>
+</body>
+</html>

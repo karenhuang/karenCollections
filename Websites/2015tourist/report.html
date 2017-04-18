@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html ng-app="report">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/ngApp.js"></script>
+    <link rel="stylesheet" href="css/screen.css"/>
+    <!--[if IE]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <title></title>
+</head>
+<body class="page_report">
+<div class="wrapper">
+    <div class="container1">
+        <!--index_header start-->
+        <div ng-controller="headerCtrl" ng-include="header.url"></div>
+        <!--index_header end-->
+        <div class="contBox">
+            <div class="mainCont">
+                <div class="reportCont">
+                    <div class="mTitle">
+                        <span>目前投票結果</span>
+                        <p>你也快來參加旅遊計畫大調查，四步驟大獎輕鬆捧回家！</p>
+                    </div>
+                    <div class="mCont">
+                        <span class="borderBox q1">
+                            <p class="title">1.每年平均出國旅遊的次數為何？</p>
+                            <ul>
+                                <li>
+                                    <span class="ansText">0次</span>
+                                    <span class="barBg"><i style="width:80%"></i></span>
+                                    <span class="countNum">100000票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">1次</span>
+                                    <span class="barBg"><i style="width:60%"></i></span>
+                                    <span class="countNum">1000票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">2-3次</span>
+                                    <span class="barBg"><i style="width:40%"></i></span>
+                                    <span class="countNum">100票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">超過4次</span>
+                                    <span class="barBg"><i style="width:20%"></i></span>
+                                    <span class="countNum">10票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                            </ul>
+                        </span>
+                        <span class="borderBox q2">
+                            <p class="title">2.今年預計出國旅遊的單趟天數，最多可能是？</p>
+                            <ul>
+                                <li>
+                                    <span class="ansText">2-3天</span>
+                                    <span class="barBg"><i style="width:80%"></i></span>
+                                    <span class="countNum">100000票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">4-6天</span>
+                                    <span class="barBg"><i style="width:60%"></i></span>
+                                    <span class="countNum">1000票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">7-14天</span>
+                                    <span class="barBg"><i style="width:40%"></i></span>
+                                    <span class="countNum">100票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">超過1個月</span>
+                                    <span class="barBg"><i style="width:20%"></i></span>
+                                    <span class="countNum">10票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                            </ul>
+                        </span>
+                        <span class="borderBox q3">
+                            <p class="title">3.在國外旅遊花費含交通、食、宿、購物等，總經費約略是？</p>
+                            <ul>
+                                <li>
+                                    <span class="ansText">1萬以內</span>
+                                    <span class="barBg"><i style="width:80%"></i></span>
+                                    <span class="countNum">100000票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">2-3萬</span>
+                                    <span class="barBg"><i style="width:60%"></i></span>
+                                    <span class="countNum">1000票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">5-8萬</span>
+                                    <span class="barBg"><i style="width:40%"></i></span>
+                                    <span class="countNum">100票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">超過10萬</span>
+                                    <span class="barBg"><i style="width:20%"></i></span>
+                                    <span class="countNum">10票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                            </ul>
+                        </span>
+                        <span class="borderBox q4">
+                            <p class="title">4.以「存錢」來籌備旅遊資金的話，平均每月願意存多少？</p>
+                            <ul>
+                                <li>
+                                    <span class="ansText">2,000元以下</span>
+                                    <span class="barBg"><i style="width:80%"></i></span>
+                                    <span class="countNum">100000票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">2,000-5,000元</span>
+                                    <span class="barBg"><i style="width:60%"></i></span>
+                                    <span class="countNum">1000票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">5,001-10,000元</span>
+                                    <span class="barBg"><i style="width:40%"></i></span>
+                                    <span class="countNum">100票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">超過10,000元</span>
+                                    <span class="barBg"><i style="width:20%"></i></span>
+                                    <span class="countNum">10票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                            </ul>
+                        </span>
+                        <span class="borderBox q5">
+                            <p class="title">5.您會對下列哪些以「興趣」設計的主題旅遊行程有興趣？</p>
+                            <ul>
+                                <li>
+                                    <span class="ansText">攝影旅遊</span>
+                                    <span class="barBg"><i style="width:80%"></i></span>
+                                    <span class="countNum">100000票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">當代建築之旅</span>
+                                    <span class="barBg"><i style="width:60%"></i></span>
+                                    <span class="countNum">1000票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">當地特殊人文體驗</span>
+                                    <span class="barBg"><i style="width:40%"></i></span>
+                                    <span class="countNum">100票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">美食烹飪旅遊</span>
+                                    <span class="barBg"><i style="width:20%"></i></span>
+                                    <span class="countNum">10票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">追星哈劇旅遊</span>
+                                    <span class="barBg"><i style="width:20%"></i></span>
+                                    <span class="countNum">10票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">運動旅遊</span>
+                                    <span class="barBg"><i style="width:20%"></i></span>
+                                    <span class="countNum">10票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                            </ul>
+                        </span>
+                        <span class="borderBox q6">
+                            <p class="title">6.下列何種因素會驅使你選擇旅行社的團體旅遊？</p>
+                            <ul>
+                                <li>
+                                    <span class="ansText">旅行社的安排較有保障</span>
+                                    <span class="barBg"><i style="width:80%"></i></span>
+                                    <span class="countNum">100000票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">行程具有優惠價格</span>
+                                    <span class="barBg"><i style="width:60%"></i></span>
+                                    <span class="countNum">1000票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">不想花腦筋規劃行程</span>
+                                    <span class="barBg"><i style="width:40%"></i></span>
+                                    <span class="countNum">100票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">帶著家人選擇跟團較安心</span>
+                                    <span class="barBg"><i style="width:20%"></i></span>
+                                    <span class="countNum">10票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">行程安排特殊人文體驗</span>
+                                    <span class="barBg"><i style="width:20%"></i></span>
+                                    <span class="countNum">10票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">部落客/達人帶路去旅行</span>
+                                    <span class="barBg"><i style="width:20%"></i></span>
+                                    <span class="countNum">10票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                            </ul>
+                        </span>
+                        <span class="borderBox q9">
+                            <p class="title">9.通常前往一個國家／城市旅遊的「決定性因素」是？</p>
+                            <ul>
+                                <li>
+                                    <span class="ansText">網路/平面媒體推薦</span>
+                                    <span class="barBg"><i style="width:80%"></i></span>
+                                    <span class="countNum">100000票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">親友所推薦的景點/行程</span>
+                                    <span class="barBg"><i style="width:60%"></i></span>
+                                    <span class="countNum">1000票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">因價格優惠衝動購買</span>
+                                    <span class="barBg"><i style="width:40%"></i></span>
+                                    <span class="countNum">100票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">預算決定出國計畫</span>
+                                    <span class="barBg"><i style="width:20%"></i></span>
+                                    <span class="countNum">10票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                            </ul>
+                        </span>
+                        <span class="borderBox q10">
+                            <p class="title">10.您的年齡</p>
+                            <ul>
+                                <li>
+                                    <span class="ansText">20-35歲</span>
+                                    <span class="barBg"><i style="width:80%"></i></span>
+                                    <span class="countNum">100000票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">36-45歲</span>
+                                    <span class="barBg"><i style="width:60%"></i></span>
+                                    <span class="countNum">1000票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">46-55歲</span>
+                                    <span class="barBg"><i style="width:40%"></i></span>
+                                    <span class="countNum">100票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">56歲以上</span>
+                                    <span class="barBg"><i style="width:20%"></i></span>
+                                    <span class="countNum">10票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                            </ul>
+                        </span>
+                        <span class="borderBox q11">
+                            <p class="title">11.您的職業</p>
+                            <ul>
+                                <li>
+                                    <span class="ansText">學生</span>
+                                    <span class="barBg"><i style="width:80%"></i></span>
+                                    <span class="countNum">100000票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">上班族</span>
+                                    <span class="barBg"><i style="width:60%"></i></span>
+                                    <span class="countNum">1000票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">企業主(老闆)</span>
+                                    <span class="barBg"><i style="width:40%"></i></span>
+                                    <span class="countNum">100票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">自由業及其他行業</span>
+                                    <span class="barBg"><i style="width:20%"></i></span>
+                                    <span class="countNum">10票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                            </ul>
+                        </span>
+                        <span class="borderBox q12">
+                            <p class="title">12.您的性別</p>
+                            <ul>
+                                <li>
+                                    <span class="ansText">男</span>
+                                    <span class="barBg"><i style="width:80%"></i></span>
+                                    <span class="countNum">100000票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                                <li>
+                                    <span class="ansText">女</span>
+                                    <span class="barBg"><i style="width:60%"></i></span>
+                                    <span class="countNum">1000票</span>
+                                    <span class="yellowText">(100%)</span>
+                                </li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer start-->
+        <div ng-controller="footerCtrl" ng-include="footer.url"></div>
+        <!--footer end-->
+    </div>
+</div>
+</body>
+</html>

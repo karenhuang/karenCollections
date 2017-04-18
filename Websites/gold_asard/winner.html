@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html ng-app="winner">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/ngApp.js"></script>
+    <script type="text/javascript" src="js/gold_asard.js"></script>
+    <link rel="stylesheet" href="css/screen.css"/>
+    <!--[if IE]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <title></title>
+</head>
+<body class="page_winner">
+<div class="wrapper">
+    <div class="wrapper_position">
+        <div class="container">
+            <!--header start-->
+            <div ng-controller="headerCtrl" ng-include="header.url"></div>
+            <!--header end-->
+            <div class="containerBox">
+                <div class="Cont">
+                    <div class="commonCont winnerCont">
+                        <div class="titleImg"></div>
+                        <div class="mBox">
+                            <div class="boxTop">
+                                <p class="btnTo2"></p>
+                                <p class="btnTo1"></p>
+                            </div>
+                            <div class="boxMiddle">
+                                <div class="superwoman"></div>
+                                <div class="tabBox">
+                                    <ul>
+                                        <!--得獎公告 start-->
+                                        <li class="winner1">
+                                            <p class="mTitle act1Tt">金牌尋寶</p>
+                                            <p class="mDate act1Dt">2015/4/15(三)~2015/5/31(日)</p>
+                                            <table class="win1tb">
+                                                <tr>
+                                                    <th>獎項</th>
+                                                    <th>名額</th>
+                                                    <th>得獎人</th>
+                                                    <th>email</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>時尚旅行箱</td>
+                                                    <td>1</td>
+                                                    <!--<td></td>-->
+                                                    <td colspan="2" rowspan="4">6/3公佈</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>威秀電影票</td>
+                                                    <td>6</td>
+                                                    <!--<td></td>-->
+                                                    <!--<td></td>-->
+                                                </tr>
+                                            </table>
+
+                                            <p class="mTitle act2Tt">好康加碼</p>
+                                            <p class="mDate act1Dt">2015/5/5(二)~2015/5/31(日)</p>
+                                            <table class="win2tb">
+                                                <tr>
+                                                    <th>獎項</th>
+                                                    <th>名額</th>
+                                                    <th>得獎人</th>
+                                                    <th>email</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>威秀電影票</td>
+                                                    <td>4</td>
+                                                    <!--<td></td>-->
+                                                    <td colspan="2">6/3公佈</td>
+                                                </tr>
+                                            </table>
+                                        </li>
+                                        <!--得獎公告 end-->
+                                        <!--領獎須知 start-->
+                                        <li class="winner2">
+                                            <p>1.得獎者將於得獎公告後3天內寄電子郵件通知，若獲獎人因資格不符或願意放棄中獎資格者，不另行網路公告。</p>
+                                            <p>2.因得獎人未能提供正確資訊，造成無法通知、逾期及資料缺漏者、不接受開立(免)扣繳憑單者均視同放棄得獎資格。</p>
+                                            <p>3.『1,000元以上獎品』得獎者自得獎名單公佈後至2015/6/10止，回傳『中獎者領獎確認書』，並黏貼完成「得獎者身分證影本」。以【傳真】或【掛號郵寄】等方式致專案負責。若未於期限前收到「中獎者領獎確認書及身分證正反面影本」，則視為放棄領獎資格。</p>
+                                            <p>專案負責：葉禮維 (02)8793-9177</p>
+                                            <p>傳真電話：(02)6606-1680 </p>
+                                            <p>掛號郵寄：11494台北市內湖區瑞湖街111號5樓 『傑森全球整合行銷 葉禮維 收』</p>
+                                            <p>得獎者須依本單位領獎作業程序回覆相關資料，本單位收到資料後，將安排於2015年6月10日統一寄出贈品至得獎者指定之配送地址。贈品以實物為準，中獎者不得要求更換或折換現金，若遇不可抗拒之因素，本單位保留更換其他等值商品之權利</p>
+                                            <p>所得稅：依稅法規定，中獎贈品或獎金都算所得，全年所中獎的獎品價值超過市價1,000元，年度報稅時必須計入個人所得，故中獎人於領獎後，所得稅徵收後於隔年時會收到本公司所發出的扣繳憑單。</p>
+                                        </li>
+                                        <!--領獎須知 end-->
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="boxBottom"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--footer start-->
+            <div ng-controller="footerCtrl" ng-include="footer.url"></div>
+            <!--footer end-->
+        </div>
+    </div>
+</div>
+</body>
+</html>

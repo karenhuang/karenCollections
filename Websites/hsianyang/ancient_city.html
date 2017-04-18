@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ng-app="ancient_city">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/ngApp.js"></script>
+    <link rel="stylesheet" href="css/screen.css"/>
+    <!--[if IE]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <title></title>
+</head>
+<body class="page_ancient_city">
+    <div class="wrapper">
+        <div class="containerBox">
+            <div class="container">
+                <!--header start-->
+                <div ng-controller="headerCtrl" ng-include="header.url"></div>
+                <!--header end-->
+                <div class="contBg"></div>
+                <div class="contBox">
+                    <div class="cont">
+                        <div class="BOX ancient_cityBox">
+                            <div class="BoxCont ancient_cityboxCont">
+                                <p class="mTitle"><span></span>襄陽X登古城遊漢江</p>
+                                <div class="mText">
+                                    <div class="leftCont">
+                                        <div class="aSet threepic">
+                                            <p class="title">登襄陽古城<span>得半部歷史</span></p>
+                                            <p class="text">
+                                                襄陽城，位於漢水中游南岸，三面環水，一面靠山，易守難攻，城池始建於漢，周長7公里，至今已有2,800年歷史。文韜武略在這裡激盪，巾幗鬚眉在此爭勝。幾多英雄豪氣，幾多智慧詩章。一座襄陽城，半部中國史。
+                                            </p>
+                                            <p class="img">
+                                                <span>
+                                                    <img src="img/ancientCity_01.png" alt=""/><i>北街</i>
+                                                    <span>商周時期開始發展，唐宋時期甚為繁華，重建後為古城內最繁華商業街道。</span>
+                                                </span>
+                                                <span>
+                                                    <img src="img/ancientCity_02.png" alt=""/><i>臨漢門</i>
+                                                    <span>整個建築沒有用一個釘子，裝飾精美完整，顯現出當年荊楚建築的特色。</span>
+                                                </span>
+                                                <span>
+                                                    <img src="img/ancientCity_03.png" alt=""/><i>護城河</i>
+                                                    <span>為亞洲最寬護城河，得益於此，襄陽城被譽為「華夏第一城池」。</span>
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <div class="aSet twopic">
+                                            <p class="title">覽秀麗漢江<span>韻千古華夏</span></p>
+                                            <p class="text">
+                                                長江最大支流，流經襄陽195公里，正是這江水，把襄陽變得靈秀和與眾不同。一江碧水穿城過，十里青山半入城，漢江就像母親一樣懷抱著襄陽古城，也為襄陽贏得十里風光。
+                                            </p>
+                                            <p class="img">
+                                                <span><img src="img/ancientCity_04.png" alt=""/><i>漢水夕照</i></span>
+                                                <span><img src="img/ancientCity_05.png" alt=""/><i>漢江古城</i></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="rightCont">
+                                        <p class="title"><img src="img/rightTitle.png" alt=""/></p>
+                                        <ul>
+                                            <li><a href="http://solomo.xinmedia.com/china/16202-Xiangyang" target="_blank"><span>【許傑_ 旅行圖中】</span><span>中國湖北、襄陽市｜小北門碼頭．搭船艇夜遊浪漫漢江 </span></a></li>
+                                            <li><a href="" target="_blank"><span>【許傑_ 旅行圖中】</span><span>中國湖北、襄陽市｜襄陽古城走一回</span></a></li>
+                                            <li><a href="" target="_blank"><span>【許傑_ 旅行圖中】</span><span>中國湖北、襄陽市｜襄陽城牆．締造鐵打的襄陽</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="whitebg"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--footer start-->
+                <div ng-controller="footerCtrl" ng-include="footer.url"></div>
+                <!--footer end-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

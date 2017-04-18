@@ -1,0 +1,617 @@
+.main-accountInfo{
+	.gp-thCont{
+		max-width: 1000px;
+		margin:7% auto 0;
+		h2{
+			font-size: 1.5rem;
+			font-weight: bold;
+			color:#575757;
+			text-align: center;
+		}
+	}
+}
+
+
+.th-accountInfo{
+	width: 100%;
+	border:1px solid #dbdbdb;
+	background-color: $lightColor;
+	margin: 7% auto 0;
+	.gp-mduser{
+		width: 80%;
+		margin:3% auto ;
+	}
+	.md-user{
+		max-width: 580px;
+		width: 100%;
+		margin:0 auto;
+		@extend %clear;
+		.pt-img{
+			width: 150px;
+			height: 150px;
+			@include border-radius(50%);
+			position: relative;
+			overflow: hidden;
+			float: left;
+			margin-right: 60px;
+			figure{
+				position: relative;
+				z-index: 0;
+				height: 100%;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+			.uploadBtn{
+				width: 100%;
+				height: 35px;
+				position: absolute;
+				z-index: 5;
+				bottom:0;
+				left:0;
+				&:before{
+					content: "";
+					display: block;
+					width: 100%;
+					height: 100%;	
+					position: absolute;
+					z-index: -1;
+					@include opacity(0.6) ;
+					filter: alpha(opacity=60);
+					background-color: $darkColor;
+				}
+				p{
+					width: 100%;
+					position: absolute;
+					z-index: 0;
+					color:$lightColor;
+					text-align: center;
+					padding-top: 3px;
+					@include box-sizing(border-box);
+				}
+				input{
+					position: absolute;
+					z-index: 5;
+					@include opacity(0) ;
+					filter: alpha(opacity=0);
+					width: 150px;
+					height: 45px;
+					cursor: pointer;
+				}
+				i{
+					display: inline-block;
+					vertical-align: middle;
+					color:$lightColor;
+					font-size: 1.2rem;
+			    opacity: 0.9;
+			    cursor: pointer;
+				}
+				span{
+					display: inline-block;
+					vertical-align: middle;
+					font-weight: bold;
+					font-size: 0.8125rem;
+					cursor: pointer;
+				}
+				button{
+					@include opacity(0) ;
+					filter: alpha(opacity=0);
+				}
+			}
+		}
+		.pt-username{
+			width: 50%;
+			float: left;
+			margin-top: 9%;
+			p{
+				font-size: 1.5rem;
+				margin-bottom: 10px;
+			}
+			.modifyBtn{
+				display: block;
+				width: 150px;
+				height: 30px;
+				padding-top: 8px;
+				@include box-sizing(border-box);
+				color:$lightColor;
+				text-decoration: none;
+				text-align: center;
+				font-size: 0.8125rem;
+				font-weight: bold;
+				background-color: #d81255;
+				@include border-radius(5px);
+				position: relative;
+				overflow: hidden;
+				&:before{
+					content: "";
+					display: block;
+					width: 180px;
+					height: 100%;
+					position: absolute;
+					top:0;
+					left: calc(-100% - 45px);
+					z-index: 0;
+					background-color: $lightColor;
+					@include opacity(0.2) ;
+					filter: alpha(opacity=20);
+					@include transform(skewX(-45deg));
+					@include transition(left,0.2s);
+				}
+				&:hover{
+					@include box-shadow(0 1px 5px rgba(0,0,0,0.3));
+					&:before{
+						left:-15px;
+						@include transition(left,0.2s);
+					}
+				}
+			}
+		}
+	}
+	.md-userinfo{
+		max-width: 580px;
+		width: 100%;
+		margin:20px auto;
+		ul{
+			width: 100%;
+			li{
+				min-height: 30px;
+				font-weight: bold;
+				font-size: 1rem;
+				margin-bottom: 15px;
+				line-height: 1.5;	
+				span{
+					display: inline-block;
+					vertical-align: top;
+					margin:0 -2px;
+					width: 17%;
+				}
+				.unable{
+					color:#b1b1b1;
+				}
+				p{
+					width: 82%;
+					display: inline-block;
+					vertical-align: top;
+					margin:0 -2px;
+				}
+			}
+		}
+	}
+	.md-bottomLink{
+		@extend %commonBottonlink;
+	}
+}
+
+.th-commonMember{
+	width: 100%;
+	max-width: 1060px;
+	margin:7% auto 0;
+	h2{
+		font-size: 1.5rem;
+		font-weight: bold;
+		color:#575757;
+		text-align: center;
+	}
+	.gp-mdCont{
+		width: 100%;
+		max-width: 1000px;
+		border:1px solid #dbdbdb;
+		background-color: $lightColor;
+		margin:7% auto 0;
+		@extend %clear;
+		padding: 3% 3% 5% 0;
+		@include box-sizing(border-box);
+	}
+	.md-memberMenu{
+		@include span(6 nest);
+		a{
+			display: block;
+			height: 50px;
+			line-height: 50px;
+			@include box-sizing(border-box);
+			margin-left: -1px;
+			text-decoration: none;
+			color:#262626;
+			font-size: 1rem;
+			font-weight: bold;
+			padding-left: 17%;
+			@include box-sizing(border-box);
+			@include transition(all,0.3s);
+			&:hover{
+				color:#dedede;
+				@include transition(all,0.3s);
+			}
+		}
+		.on{
+			border-left:2px solid #333333;
+		}
+	}
+	.md-memberCont{
+		@include span(18);
+		border-left:1px solid #dbdbdb;
+		@include box-sizing(border-box);
+		ul{
+			@include span(16 of 18);
+			li{
+				@include span(16 of 16 nest);
+				margin-bottom: 20px;
+				font-size: 1rem;
+				font-weight: bold;
+				figure{
+					display: inline-block;
+					width: 50px;
+					height: 50px;
+					@include border-radius(50%);
+					overflow:hidden;
+					border:1px solid #dbdbdb;
+					img{
+						width: 100%;
+						height: 100%;
+					}
+				}
+				span{
+					@include span(5 of 16);
+					text-align: right;
+					padding-top: 7px;
+					@include box-sizing(border-box);
+				}
+				div{
+					@include span(11 of 16);
+					text-align: left;
+				}
+				input{
+					width: 100%;
+					height: 30px;
+					padding-left: 10px;
+					@include box-sizing(border-box);
+					color:$darkColor;
+					border:1px solid #dbdbdb;
+					background-color: transparent;
+				}
+				textarea{
+					width: 98%;
+					resize:none;
+					color:$darkColor;
+					border:1px solid #dbdbdb;
+				}
+				select{
+					width: 50%;
+					height: 30px;
+					padding-left: 10px;
+					@include box-sizing(border-box);
+					color:$darkColor;
+					border:1px solid #dbdbdb;
+				}
+				.title{
+					font-size:1.5rem;
+					padding-top: 5%;
+				}
+				.unable{
+					color:#b1b1b1;
+				}
+			}
+		}
+		.pt-submit{
+			@include span(16 of 18);
+			margin-right: auto;
+			.cont{
+				@include span(11 of 16 at 6 isolate);
+				margin-right: auto;
+				margin-top: 30px;
+			}
+			.submitBtn{
+				display: block;
+				width: 150px;
+				height: 30px;
+				padding-top: 8px;
+				@include box-sizing(border-box);
+				color:$lightColor;
+				text-decoration: none;
+				text-align: center;
+				font-size: 0.8125rem;
+				font-weight: bold;
+				background-color: #d81255;
+				@include border-radius(5px);
+				position: relative;
+				overflow: hidden;
+				margin-bottom: 20px;
+				&:before{
+					content: "";
+					display: block;
+					width: 180px;
+					height: 100%;
+					position: absolute;
+					top:0;
+					left: calc(-100% - 45px);
+					z-index: 0;
+					background-color: $lightColor;
+					@include opacity(0.2) ;
+					filter: alpha(opacity=20);
+					@include transform(skewX(-45deg));
+					@include transition(left,0.2s);
+				}
+				&:hover{
+					@include box-shadow(0 1px 5px rgba(0,0,0,0.3));
+					&:before{
+						left:-15px;
+						@include transition(left,0.2s);
+					}
+				}
+			}
+			p{
+				color:#d91256;
+				font-size: 0.8125rem;
+				i{
+					display: inline-block;
+					vertical-align: middle;
+					font-size: 1.2rem;
+					margin-right: 5px;
+				}
+				span{
+					display: inline-block;
+					vertical-align: middle;
+					font-weight: bold;
+				}
+			}		
+		}		
+	}
+}
+
+.th-resetpassword{
+	width: 100%;
+	max-width: 1000px;
+	border:1px solid #dbdbdb;
+	background-color: $lightColor;
+	margin:7% auto 0;
+	padding:3%;
+	@include box-sizing(border-box);
+	.gp-mdCont{
+		width: 100%;
+		max-width: 800px;
+		margin:8% auto 15%;
+	}
+	.md-password{
+		@extend %clear;
+		ul{
+			@include span(24);
+			li{
+				@include span(24);
+				margin-bottom: 20px;
+				span{
+					@include span(11);
+					text-align: right;
+					color: #262626;
+					font-size: 1rem;
+					font-weight: bold;
+					line-height: 30px;
+				}
+				div{
+					@include span(13);
+					input{
+						width: 100%;
+						height: 30px;
+						line-height: 30px;
+						padding-left: 5px;
+						@include box-sizing(border-box);
+					}
+				}
+			}
+		}
+		.pt-submitBtn{
+			@include span(24);
+			.btn{
+				@include span(13 at 12 isolate);
+				margin-right: auto;
+				padding-top: 20px;
+			}
+			a{
+				display: block;
+				width: 150px;
+				height: 30px;
+				padding-top: 8px;
+				@include box-sizing(border-box);
+				color:$lightColor;
+				text-decoration: none;
+				text-align: center;
+				font-size: 0.8125rem;
+				font-weight: bold;
+				background-color: #d81255;
+				@include border-radius(5px);
+				position: relative;
+				overflow: hidden;
+				&:before{
+					content: "";
+					display: block;
+					width: 180px;
+					height: 100%;
+					position: absolute;
+					top:0;
+					left: calc(-100% - 45px);
+					z-index: 0;
+					background-color: $lightColor;
+					@include opacity(0.2) ;
+					filter: alpha(opacity=20);
+					@include transform(skewX(-45deg));
+					@include transition(left,0.2s);
+				}
+				&:hover{
+					@include box-shadow(0 1px 5px rgba(0,0,0,0.3));
+					&:before{
+						left:-15px;
+						@include transition(left,0.2s);
+					}
+				}				
+			}
+		}
+	}
+	.md-bottomLink{
+		@extend %commonBottonlink;
+	}
+}
+
+@include breakpoint(max-width 980px) {
+	.th-accountInfo{
+		width: 90%;
+	}
+	.th-commonMember{
+		.gp-mdCont{
+			width: 90%;
+		}
+		.md-memberCont{
+			ul{
+				li{
+					font-size: 0.875rem;
+				}
+			}
+		}
+	}
+	.th-resetpassword{
+		width: 90%;
+		margin-top: 10%;
+	}
+}
+
+@include breakpoint(max-width 640px) {
+	.th-accountInfo{
+		.gp-mduser{
+			width: 87%;
+		}
+		.md-user{
+			.pt-img{
+				margin-right: 5%;
+			}
+		}
+		.md-userinfo{
+			ul{
+				li{
+					margin-bottom: 10px;
+					&+li{
+						border-top: 1px dashed #f0f0f0;
+						padding-top: 10px;
+					}
+					span{
+						width: 100%;
+					}
+					p{
+						width: 100%;
+						font-weight: normal;
+					}
+				}
+			}
+		}
+	}
+
+	.th-commonMember{
+		.gp-mdCont{
+			padding:2% 3% 5% 3%;
+		}
+		.md-memberMenu{
+			@include span(24);
+			margin-bottom: 30px;
+			a{
+				display: inline-block;
+				padding:8px 20px;
+				height: auto;
+				line-height: 1.8;
+			}
+			.on{
+				border-left:none;
+				border-bottom:2px solid $darkColor;
+			}
+		}
+		.md-memberCont{
+			@include span(24);
+			border-left:none;
+			ul{
+				@include span(24);
+			}
+		}
+	}
+	.th-resetpassword{
+		margin-top: 15%;
+		.md-password{
+			ul{
+				li{
+					span{
+						font-size:0.875rem; 
+					}
+				}
+			}
+			.pt-submitBtn{
+				.btn{
+					width: 100%;
+					margin:0;
+					text-align: center;
+					a{
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include breakpoint(max-width 460px) {
+	.th-accountInfo{
+		.md-user{
+			.pt-img{
+				width: 110px;
+				height: 110px;
+				.uploadBtn{
+					height: 31px;
+					p{
+						padding-top: 1px;
+					}
+					span{
+						font-size: 0.75rem;
+					}
+					input{
+						width: 110px;
+						height: 40px;
+					}
+				}
+			}
+			.pt-username{
+				p{
+					font-size: 1rem
+				}
+				.modifyBtn{
+					width: 120px;
+					&:before{
+						width: 150px;
+					}
+				}
+			}
+		}
+	}
+	.th-commonMember{
+		h2{
+			font-size: 1.3rem;
+		}
+		.md-memberMenu{
+			a{
+				padding:1% 4%;
+				font-size: 0.875rem;
+			}
+		}
+		.md-memberCont{
+			ul{
+				li{
+					font-size: 0.875rem;
+					.title{
+						font-size: 1.2rem;
+						padding-top: 8%;
+					}
+					.title-long{
+						padding:1px 0 0 10px ;
+						@include box-sizing(border-box);
+					}
+				}
+			}
+		}
+	}
+	.th-resetpassword{
+		margin-top: 20%;
+	}
+}

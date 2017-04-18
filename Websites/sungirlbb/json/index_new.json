@@ -1,0 +1,109 @@
+{
+    "c": 200,
+    "m": "OK",
+    "records": [{
+        "id": "1",
+        "title": "10月比基尼宝贝写真",
+        "category": "photo",
+        "banner_name": "index_album01.jpg",
+        "home_state": "0",
+        "video_url": null,
+        "ready_time": "2016-08-29 11:05:09",
+        "create_time": "2016-08-28 11:05:18",
+        "photo": [{
+            "id": "1",
+            "sungirlbb_id": "1",
+            "photo_name": "album01.jpg",
+            "width":"2403",
+            "height":"3600"
+        },{
+            "id": "2",
+            "sungirlbb_id": "1",
+            "photo_name": "album02.jpg",
+            "width":"2403",
+            "height":"3600"
+        },{
+            "id": "3",
+            "sungirlbb_id": "1",
+            "photo_name": "album03.jpg",
+            "width":"3600",
+            "height":"2403"
+        },{
+            "id": "4",
+            "sungirlbb_id": "1",
+            "photo_name": "album04.jpg",
+            "width":"2403",
+            "height":"3600"
+        },{
+            "id": "5",
+            "sungirlbb_id": "1",
+            "photo_name": "album01.jpg",
+            "width":"2403",
+            "height":"3600"
+        }]
+    }, {
+        "id": "2",
+        "title": "2016 Sungirl 休閒美少女(小葵)",
+        "category": "video",
+        "banner_name": "index_video01.jpg",
+        "home_state": "0",
+        "video_url": "https://www.youtube.com/embed/09BMuHEKLgQ",
+        "ready_time": "2016-08-28 11:25:38",
+        "create_time": "2016-08-27 11:25:46",
+        "photo": null
+    }, {
+        "id": "3",
+        "title": "8月比基尼宝贝写真",
+        "category": "photo",
+        "banner_name": "index_album01.jpg",
+        "home_state": "0",
+        "video_url": null,
+        "ready_time": "2016-08-27 11:05:09",
+        "create_time": "2016-08-26 11:05:18",
+        "photo": [{
+            "id": "10",
+            "sungirlbb_id": "3",
+            "photo_name": "album01.jpg",
+            "width":"2403",
+            "height":"3600"
+        },{
+            "id": "11",
+            "sungirlbb_id": "3",
+            "photo_name": "album02.jpg",
+            "width":"2403",
+            "height":"3600"
+        },{
+            "id": "12",
+            "sungirlbb_id": "3",
+            "photo_name": "album03.jpg",
+            "width":"3600",
+            "height":"2403"
+        },{
+            "id": "13",
+            "sungirlbb_id": "3",
+            "photo_name": "album04.jpg",
+            "width":"2403",
+            "height":"3600"
+        },{
+            "id": "14",
+            "sungirlbb_id": "3",
+            "photo_name": "album01.jpg",
+            "width":"2403",
+            "height":"3600"
+        }]
+    }, {
+        "id": "4",
+        "title": "2016 Sungirl 夏日比基尼(pillow fights)",
+        "category": "video",
+        "banner_name": "index_video01.jpg",
+        "home_state": "0",
+        "video_url": "https://www.youtube.com/embed/htpaXHfBYoI",
+        "ready_time": "2016-08-25 11:25:38",
+        "create_time": "2016-08-24 11:25:46",
+        "photo": null
+    }],
+    "pageNo": "1",
+    "pageSize": "12",
+    "totalPage": 2,
+    "recordCount": 13
+}

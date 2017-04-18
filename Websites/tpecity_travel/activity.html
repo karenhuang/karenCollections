@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html ng-app="activity">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/ngApp.js"></script>
+    <script type="text/javascript" src="js/2015tpecity_travel.js"></script>
+    <link rel="stylesheet" href="css/screen.css"/>
+    <!--[if IE]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <title></title>
+</head>
+<body class="page_activity">
+<div class="wrapper">
+    <div class="container1">
+        <!--index_header start-->
+        <div ng-controller="headerCtrl" ng-include="header.url"></div>
+        <!--index_header end-->
+        <div class="contBox">
+            <div class="mainCont">
+                <div class="activityCont">
+                    <div class="navText">
+                        <ul class="nav">
+                            <li>活動一 城市新玩法</li>
+                            <li>活動二 『十大城巿新玩法』投票活動</li>
+                            <li>注意事項</li>
+                        </ul>
+                        <p>改變創新即將到來，真正創造嶄新耀眼的臺北城，你我都要一同參與！<br>
+                            特舉辦『城巿新玩法』投稿活動及『十大城市新玩法』投票活動。<br>
+                            活動區分2個波段。嶄新耀眼代表臺北城新玩法的誕生，就由我開始！</p>
+                    </div>
+                    <div class="act T1">
+                        <p class="mTitle">城市新玩法 投稿活動</p>
+                        <ul>
+                            <li>
+                                <span class="title">活動說明</span>
+                                <span>規劃專屬於你的城市新玩法旅遊計畫，並投稿至本活動網頁，增加你對臺北城更多美好的回憶！</span>
+                            </li>
+                            <li>
+                                <span class="title">活動時間</span>
+                                <span>2015.02.12(四) 09:00 ~ 2015.03.08(日) 23:59 止</span>
+                            </li>
+                            <li>
+                                <span class="title">投稿方式</span>
+                                <span class="list01">
+                                    <ul>
+                                        <li>線上投稿</li>
+                                        <li>電子郵件投稿：請下載「城市新玩法」投稿報名表及利用個資告知暨同意書，填寫城市新玩法後，E-mail至janelin@jwimarketing.com，即完成報名</li>
+                                        <li>郵寄投稿：請下載「城市新玩法」投稿報名表及利用個資告知暨同意書，填寫城市新玩法後，郵寄至臺北市內湖區瑞湖街111號6樓，「城市新玩法 投稿活動小組 收」即完成報名。</li>
+                                    </ul>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="title">投稿流程</span>
+                                <span class="act_step">
+                                    <p>設計出最特別的臺北創意遊程(景點均需位於臺北市內)，於活動期間上傳至活動網頁，完成投稿即可。每位參賽者最多可上傳3個創意遊程，投稿作品不得重覆投稿！</p>
+                                    <span class="pink"><i class="s1"></i>撰寫你的創意新玩法文字1000字內不得少於500字，上傳照片1~6張，最少須上傳1張</span><i></i>
+                                    <span class="pink"><i class="s2"></i>投稿活動結束，由知名達人進行評選，選出10名優秀作品。</span><i></i>
+                                    <span class="pink"><i class="s3"></i>10名優秀作品將獲參與第二階『十大城市新玩法』投票活動資格。</span>
+                                    <span class="blue"><i class="s4"></i>『十大城市新玩法』投票活動開跑網友票選心目中的創意行程。</span><i></i>
+                                    <span class="blue"><i class="s5"></i>『十大城市新玩法』投票活動結束進行活動抽獎及得獎公告。</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="title">評選方式</span>
+                                <span class="list02">
+                                    <ul>
+                                        <li>依據活動一投稿活動，由主辦單位聘請城巿旅遊達人組成評審小組。</li>
+                                        <li>依「行程創意性30%」、「行程合理性25%」、「行程豐富性25%」三大項目進行評選。</li>
+                                        <li>達人評選分數佔比：80% (另20%將由活動二網友人氣票選產出)</li>
+                                    </ul>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="title">活動獎項</span>
+                                <span>
+                                    <p>投稿得獎作品獎項將於2015.03.26(四)公告！</p>
+                                    <img src="img/act1_award.png" alt=""/>
+                                    <p>※3/28還可與柯市長一同參與城市小旅行。</p>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="act T2">
+                        <p class="mTitle">『十大城巿新玩法』投票活動</p>
+                        <ul>
+                            <li>
+                                <span class="title">活動說明</span>
+                                <span>快來投下你喜歡的遊程一票，每一票都決定了嶄新耀眼代表臺北新玩法的誕生，改變創新即將到來，你我都要一同參與！</span>
+                            </li>
+                            <li>
+                                <span class="title">活動期間</span>
+                                <span>2015.02.12(四) 09:00 ~ 2015.03.08(日) 23:59 止</span>
+                            </li>
+                            <li>
+                                <span class="title">投票流程</span>
+                                <span class="act_step">
+                                    <span class="blue"><i class="s1"></i>在「我要投票」頁面上，選出自己最喜愛的創意遊程作品。</span><i></i>
+                                    <span class="blue"><i class="s2"></i>每人每天限投1票，投票就有機會抽中精美好禮！。</span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="title">活動獎項</span>
+                                <span>
+                                    <p>本活動將於法務人員見證下，透過電腦系統自動抽獎，隨機抽出參與投票者30名，贈送活動贈品，
+                                        將於2015.03.26(四)公告。</p>
+                                    <img src="img/act2_award.png" alt=""/>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="act T3">
+                        <p class="mTitle">注意事項</p>
+                        <p class="note1">投稿注意事項</p>
+                        <ul>
+                            <li>
+                                所有投件作品須同意提供臺北市政府於本次活動相關宣傳使用；並且得獎作品同意用於臺北市政府相關出版品宣導使用，不另支付稿費；另外，得獎作品及原稿原始檔之著作財產權歸「臺北市政府觀光傳播局」所有，主辦單位依著作權法有重製、公開展示及不限時間、次數、方式使用之權利。
+                            </li>
+                            <li>本活動因故無法進行時，主辦單位保有隨時修正、暫停或終止本活動之權利。</li>
+                            <li>如有參賽者利用不當行為，投稿次數超過3次或1個遊程重覆投稿，將取消其參賽資格。</li>
+                            <li>所有投稿作品之著作人格權屬創作者，惟創作者同意對主（承）辦單位不行使著作人格權。</li>
+                            <li>若參賽者有使用他人所有之圖案等並涉及相關智慧財產權時，須自行取得智慧財產權授權同意等證明文件。</li>
+                            <li>
+                                參賽作品必須為參賽者自行創作，禁止繳交使用侵權之圖檔或文字，禁止抄襲或複製他人作品，禁止涉及色情、暴力、毀謗、人身攻擊、宗教議題、政治議題或不雅圖片等，禁止侵害他人隱私權或妨礙社會正當風俗及公共秩序作品或違反中華民國相關法令規定等情事。如經評審決議認定，或遭相關權利人檢舉並經主（承）辦單位查證屬實，主（承）辦機關得逕予取消得獎資格，若造成主（承）辦單位損害，參賽者應負損害賠償責任。
+                            </li>
+                            <li>
+                                著作財產權授權契約(範例)：http://www.tipo.gov.tw/ct.asp?xItem=203026&ctNode=6993&mp=1<br>創用CC(解說)：http://creativecommons.tw/explore
+                            </li>
+                            <li>參賽者對於主（承）辦單位之評審結果，完全同意並尊重，絕不提出任何異議或申訴。</li>
+                            <li>凡參賽者均視為同意並遵循上述各項規定。</li>
+                            <li>主辦單位臺北市政府觀光傳播局與承辦單位所屬員工，不得參加投稿。</li>
+                        </ul>
+                        <p class="note2">投票注意事項</p>
+                        <ul>
+                            <li>本活動因故無法進行時，主辦單位保有隨時修正、暫停或終止本活動之權利。</li>
+                            <li>如有參與投票者利用不當行為，於1日內重複投票者，將取消其得獎資格。 </li>
+                            <li>參賽者對於主（承）辦單位之票選與抽獎結果，完全同意並尊重，絕不提出任何異議或申訴。</li>
+                            <li>凡參加投票者均視為同意並遵循上述各項規定。</li>
+                            <li>主辦單位臺北市政府觀光傳播局與承辦單位所屬員工，不得參加投稿。</li>
+                        </ul>
+                        <p class="note3">活動聯繫</p>
+                        <span>如針對本活動有任何疑問，請冾詢承辦單位連絡電話：(02)8793-9275 林小姐(週一~週五 09:00~18:00)或E-mail至 janelin@jwimarketing.com</span>
+                    </div>
+                    <div class="goTop"></div>
+                </div>
+            </div>
+            <div class="bottomBg"></div>
+        </div>
+        <!--footer start-->
+        <div ng-controller="footerCtrl" ng-include="footer.url"></div>
+        <!--footer end-->
+    </div>
+</div>
+</body>
+</html>

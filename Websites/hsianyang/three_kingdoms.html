@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html ng-app="threeKingdoms">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/ngApp.js"></script>
+    <link rel="stylesheet" href="css/screen.css"/>
+    <!--[if IE]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <title></title>
+</head>
+<body class="page_threeKingdoms">
+    <div class="wrapper">
+        <div class="containerBox">
+            <div class="container">
+                <!--header start-->
+                <div ng-controller="headerCtrl" ng-include="header.url"></div>
+                <!--header end-->
+                <div class="contBg"></div>
+                <div class="contBox">
+                    <div class="cont">
+                        <div class="BOX threeKingdomsBox">
+                            <div class="BoxCont threeKingdomsboxCont">
+                                <p class="mTitle"><span></span>襄陽X發現三國起源</p>
+                                <div class="mText">
+                                    <div class="leftCont">
+                                        <div class="aSet twopic">
+                                            <p class="title">古隆中<span>三顧茅廬</span></p>
+                                            <p class="text">
+                                                三國時代傑出的政治家、軍事家、思想家諸葛亮青年時代躬耕隱居之地。歷史上著名的劉備「三顧茅廬」和興漢藍圖「隆中對策」的史實就發生於此地。周遭景點還有紀念諸葛亮的三顧堂、武侯祠、抱膝亭及諸葛夫人的故里─黃家灣。
+                                            </p>
+                                            <p class="img">
+                                                <img src="img/kingdoms_01.png" alt=""/><img src="img/kingdoms_02.png" alt=""/>
+                                            </p>
+                                        </div>
+                                        <div class="aSet twopic">
+                                            <p class="title">水鏡庄<span>三國起源</span></p>
+                                            <p class="text">
+                                                是諸葛亮老師─司馬徽隱居地，被譽為「三國源頭」。司馬徽就是在這裡向劉備推薦了諸葛亮，由此引出了「三顧茅廬」、「隆中對」等故事。周遭景點還有傳說中關羽夜讀《春秋》的春秋寨、諸葛亮好友─徐庶的故里。
+                                            </p>
+                                            <p class="img">
+                                                <img src="img/kingdoms_03.png" alt=""/><img src="img/kingdoms_04.png" alt=""/>
+                                            </p>
+                                        </div>
+                                        <div class="aSet twopic">
+                                            <p class="title">春秋寨<span>關公夜讀</span></p>
+                                            <p class="text">
+                                                因關羽在此寨讀《春秋》而得名。山寨地形獨特，三面臨水，山水交融，視野開闊，有“一夫當關，萬夫莫敵之地利”，堪稱「中國的馬丘比丘」，華夏「中長城」，為中國「百大新發現」之一。
+                                            </p>
+                                            <p class="img">
+                                                <img src="img/kingdoms_05.png" alt=""/><img src="img/kingdoms_06.png" alt=""/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="rightCont">
+                                        <p class="title"><img src="img/rightTitle.png" alt=""/></p>
+                                        <ul>
+                                            <li><a href="" target="_blank"><span>【小虎的中國旅行】</span><span>【湖北-襄陽】古隆中</span></a></li>
+                                            <li><a href="" target="_blank"><span>【小虎的中國旅行】</span><span>【湖北-襄陽】南漳-水鏡莊</span></a></li>
+                                            <li><a href="http://solomo.xinmedia.com/china/16136-Xiangyang" target="_blank"><span>【小虎的中國旅行】</span><span>【湖北省】南樟-春秋寨</span></a></li>
+                                            <li><a href="" target="_blank"><span>【許傑_ 旅行圖中】</span><span>中國湖北、南漳縣｜春秋寨纜車．懸吊天空上的震撼景緻 </span></a></li>
+                                            <li><a href="http://solomo.xinmedia.com/china/16232-Xiangyang" target="_blank"><span>【小不點看世界】</span><span>[湖北]襄陽‧春秋寨~千年古山寨</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="whitebg"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--footer start-->
+                <div ng-controller="footerCtrl" ng-include="footer.url"></div>
+                <!--footer end-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

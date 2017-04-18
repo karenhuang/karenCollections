@@ -1,0 +1,43 @@
+.footerBox{
+  width: 100%;
+  min-width: 960px;
+  position: relative;
+  top:0;
+  z-index: 10;
+  background-image: url("../img/bg.jpg");
+  .footer{
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    padding:20px 0 25px 0;
+    span{
+      display: inline-block;
+      width: 150px;
+      height: 35px;
+      font-weight: bold;
+      font-size: 16px;
+      vertical-align: top;
+      margin:0 8px 15px 0;
+      a{
+        color:#000;
+        text-decoration: none;
+        img{width: 100%; display: block;}
+      }
+      img{width: 100%; display: block;}
+    }
+    span+span{
+      width:130px;
+      margin:0 8px 15px 8px;
+    }
+    span+span+span{
+      width:100px;
+      padding-top: 8px;
+      @include box-sizing(border-box);
+      margin-right: 0;
+    }
+    p{
+      font-size: 12px;
+      font-family: "新細明體";
+    }
+  }
+}

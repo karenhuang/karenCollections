@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if (lt IE 9) & (!IEMobile)]>
+        <script src="js/html5shiv.min.js" type="text/javascript"></script>
+        <script src="js/respond.js" type="text/javascript"></script>
+    <!--<![endif]-->
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="main">
+            第一個
+            <div class="tagsinput">
+                <span class="tagsBox"></span>
+                <input type="text" class='tagsinput-text' maxlength="50">
+                <input type="hidden" class='tagsinput-value' value="">
+            </div>
+            第二個
+            <div class="tagsinput">
+                <span class="tagsBox"></span>
+                <input type="text" class='tagsinput-text' maxlength="50">
+                <input type="hidden" class='tagsinput-value' value="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script>
+(function($) {
+    function TagInputCreator(theElement) {
+        var element = theElement;
+        var me = this;
+
+        var _val = {};
+        me.tagsinputText = element.find(".tagsinput-text");
+        me.tagsinputValue = element.find(".tagsinput-value");
+        me.tagsBox = element.find(".tagsBox");
+        
+        //alex寫的初始化-----start----
+        function _init(){
+            var val = $(this).val();
+            delete _val
+            _val = {}
+            $(this).siblings(".tagsBox").find(".tagLabel").remove();
+            if(val != ""){
+                var ary = val.split(",");
+                for(var i=0;i<ary.length;i++){
+                    _val[ary[i]] = ary[i];
+                    $(this).siblings(".tagsBox").append(createLabel(ary[i]));
+                }
+            }
+        }
+        me.tagsinputValue.change(_init).change();
+        //alex寫的初始化-----end------
+
+        function _setVal(val) {
+            //如果已經存在則return false
+            if (_val.hasOwnProperty(val)) return false;
+            else if ( val !="" && val !=",") {
+                _val[val] = val;
+                updateHidden();
+                return true;
+            }
+        }
+
+        function _delVal(val) {
+            delete _val[val];
+            updateHidden();
+        }
+
+        function updateHidden() {
+            var result = [];
+            for (var pk in _val) {
+                result.push(pk);
+            }
+            me.tagsinputValue.val(result.join());
+        }
+
+        function createLabel(text) {
+            var result = $("<span class='tagLabel'></span>");
+            result.text(text);
+            var remove = $("<span class='remove'></span>").click(function() {
+                var rm = $(this).parent("span");
+                var val = rm.data("value");
+                _delVal(val);
+                rm.remove();
+            });
+            result.data('value', text);
+            result.append(remove);
+            return result;
+        }
+
+        function focus() {
+            setTimeout(function() {
+                me.tagsinputText.focus();
+            }, 100);
+        }
+
+        function makeLabel() {
+            var val = $.trim(me.tagsinputText.val());
+
+            if (!_setVal(val)) {
+                //如果已經存在就清掉畫面上input的文字
+                me.tagsinputText.val("");
+                return;
+            }
+
+            if (me.tagsinputText.val() != "" && val) {
+                me.tagsBox.append(createLabel(val));
+                me.tagsinputText.val("");
+            }
+        }
+
+        function blur() {
+            makeLabel();
+
+        }
+
+        function keydown(e) {
+            switch (e.which) {
+                case 188:
+                case 13:
+                    makeLabel();
+                    focus();
+                    return false;
+                    break;
+                default:
+            }
+        }
+
+        me.tagsinputText
+            .blur(blur)
+            .on('keydown', keydown);
+
+
+
+    };
+
+    $.fn.TagInput = function() {
+        var $element = $(this);
+
+        $element.each(function(idx, item) {
+            new TagInputCreator($(item));
+        });
+        return $element;
+    };
+}($));
+
+
+$(function() {
+    $(".tagsinput").TagInput();
+});
+</script>

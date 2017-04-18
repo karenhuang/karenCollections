@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app="activity">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/ngApp.js"></script>
+    <link rel="stylesheet" href="css/screen.css"/>
+    <!--[if IE]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <title></title>
+</head>
+<body class="page_activity">
+<div class="wrapper">
+    <div class="container1">
+        <!--index_header start-->
+        <div ng-controller="headerCtrl" ng-include="header.url"></div>
+        <!--index_header end-->
+        <div class="contBox">
+            <div class="mainCont">
+                <div class="activityCont">
+                    <div class="mCont">
+                        <p class="mTitle">活動辦法</p>
+                        <ul class="announceCont">
+                            <li><i>活動時間</i>2015/4/1~2015/5/31</li>
+                            <li><i>得獎公告</i>2015/6/5</li>
+                            <li><i>活動辦法</i>即日起至2015年5月31日，登入你的Facebook帳號參加線上問卷大調查，就有機會得到日本超輕量行李箱！</li>
+                            <li class="awardItems"><i>活動獎品</i></li>
+                            <li>
+                                <i>注意事項</i>
+                                <p>1.所有獎品不得兌換等值商品或現金，亦不得轉讓予他人。</p>
+                                <p>2.本活動須透過facebook登入參與活動(每FB帳號限填寫一次)。</p>
+                                <p>3.本活動僅限台澎金馬居民參加，活動贈品無法寄送海外，敬請見諒。</p>
+                                <p>4.參加本活動者應確實填寫個人資料，如因中獎人資料填寫不完整或不正確導致無法通知中獎時，視同自願放棄領獎資格，獎項不另行補發。在送出個人資料前，請務必確認您的資料正確無誤。 敬請見諒。</p>
+                                <p>5.主辦單位因本活動蒐集、處理、利用參加人之個人資料，僅作為聯繫本活動得獎人並作為主辦單位傳遞本活動相關訊息之用。參加人依法得向主辦單位請求查詢、複製、補充更正、停止蒐集處理利用或刪除其個人資料。參加人得選擇不提供個人資料，但可能將因其提供資料不完整，即視為放棄參加或得獎資格。</p>
+                                <p>6.主辦單位就活動參加資格保有審查之權利；若經審查如資格不符者，主辦單位有權取消得獎資格。</p>
+                                <p>7.機會中獎稅：依稅法規定獎項價值超過20,000元以上，須負擔10%機會中獎稅；非中華民國國境內居住之國人(即在中華民國境內居住未達183天之本國人及外國人)不論得獎人所得之金額，須就中獎所得扣繳20%機會中獎稅。扣繳稅款未超過2,000元，免扣繳(外籍人士不適用)。</p>
+                                <p>8.所得稅：依稅法規定，中獎贈品或獎金都算所得，全年所中獎的獎品價值超過市價1,000元，年度報稅時必須計入個人所得，故中獎人於領獎後，所得稅徵收前會收到本公司所發出的扣繳憑單。</p>
+                                <p>9.本活動保有對活動規則、獎項、抽獎時間及得獎公佈的修改權利，修改後不再另行通知。</p>
+                                <p>10.若有其他未盡事宜，則以主辦單位最終公告之說明為準。</p>
+                                <p>11.「活動注意事項」載明在本活動網頁中，參與本活動者於寄出資料參加本活動之同時，即同意接受上述各項規範；如有違反本「活動注意事項」，主辦單位有權取消其得獎資格，並對於任何破壞本活動之行為保留法律追訴權。</p>
+                            </li>
+                        </ul>
+                        <span class="shortLine"></span>
+                        <p class="mTitle">得獎公告</p>
+                        <table class="win1tb">
+                            <tr>
+                                <th>名次</th>
+                                <th>獎項</th>
+                                <th>名額</th>
+                                <th>得獎人</th>
+                            </tr>
+                            <tr>
+                                <td>頭獎</td>
+                                <td>LEGEND WALKER25吋超輕量行李箱(粉紅柚)</td>
+                                <td>1</td>
+                                <td rowspan="3">敬請期待</td>
+                            </tr>
+                            <tr>
+                                <td>貳獎</td>
+                                <td>LEGEND WALKER19吋超輕量行李箱(香檳金)</td>
+                                <td>1</td>
+                                <!--<td></td>-->
+                            </tr>
+                            <tr>
+                                <td>參<br>加<br>獎</td>
+                                <td>精美禮品(隨機發送)</td>
+                                <td>48</td>
+                                <!--<td></td>-->
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer start-->
+        <div ng-controller="footerCtrl" ng-include="footer.url"></div>
+        <!--footer end-->
+    </div>
+</div>
+</body>
+</html>

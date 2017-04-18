@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html ng-app="recommend">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/ngApp.js"></script>
+    <link rel="stylesheet" href="css/screen.css"/>
+    <!--[if IE]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <title></title>
+</head>
+<body class="page_recommend">
+<div class="wrapper">
+    <div class="container1">
+        <!--index_header start-->
+        <div ng-controller="headerCtrl" ng-include="header.url"></div>
+        <!--index_header end-->
+        <div class="contBox">
+            <div class="mainCont">
+                <div class="recommendCont">
+                    <p class="mTitle">旅行指標地</p>
+                    <div class="mCont">
+                        <div class="recInfo r1">
+                            <p class="title">讓人<i>衝動</i>之地 <span>無須任何理由，只要拎起背包就出發的心</span></p>
+                            <a href="http://goo.gl/Vn3gol" target="_blank">
+                                <p>泰國象島</p>
+                                <span>前往泰國最後的世外桃源無須任何藉口，請預留半天的時間前往美麗小島。</span>
+                            </a>
+                            <a href="http://goo.gl/rFiP1A" target="_blank">
+                                <p>芭達雅</p>
+                                <span>帶著行囊就可立刻前往的熱情小島，喜愛自行規劃的你需準備3萬元的旅遊預算。</span>
+                            </a>
+                            <a href="http://goo.gl/MURdzT" target="_blank">
+                                <p>西薩摩亞</p>
+                                <span>太平洋中最經濟實惠的島嶼，從紐西蘭出發前往是最聰明的選擇。</span>
+                            </a>
+                        </div>
+                        <div class="recInfo r2">
+                            <p class="title">讓人<i>勇敢</i>之地 <span>擁有著冒險精神的你，決定了就勇敢前往</span></p>
+                            <a href="http://goo.gl/ursld6" target="_blank">
+                                <p>墨西哥</p>
+                                <span>擁有壯觀世界遺產，深厚風土民情與悠久的文化底子，為眾多旅人最想探險之地。</span>
+                            </a>
+                            <a href="http://goo.gl/Bvkrhu" target="_blank">
+                                <p>澳洲北領地</p>
+                                <span>被稱為冒險原點的北領地，擁有著豐富野生動物生態，讓不少旅人前往探險。</span>
+                            </a>
+                            <a href="http://goo.gl/X7U4pP" target="_blank">
+                                <p>土耳其</p>
+                                <span>當地人稱此地為勇敢人的國家。擁有冒險精神的你就該前往！</span>
+                            </a>
+                        </div>
+                        <div class="recInfo r3">
+                            <p class="title">讓人<i>溫暖</i>之地 <span>體會著來自家鄉熟悉的親切感受，這就是幸福</span></p>
+                            <a href="http://goo.gl/GnByfd" target="_blank">
+                                <p>越南</p>
+                                <span>擁有著迷人故事的越南，友善的當地人民讓不少旅人感到熟悉的家鄉浪漫感。</span>
+                            </a>
+                            <a href="http://goo.gl/rFiP1A" target="_blank">
+                                <p>曼谷</p>
+                                <span>全球Top20旅遊地，多元化人文風氣使得該地成為旅遊熱門景點。</span>
+                            </a>
+                            <a href="http://goo.gl/Cv2gQL" target="_blank">
+                                <p>雲南</p>
+                                <span>以其美麗、豐饒、神奇而著稱於世/ 四季皆宜的旅遊勝地。</span>
+                            </a>
+                        </div>
+                        <div class="recInfo r4">
+                            <p class="title">讓人<i>羨慕</i>之地 <span>無須忌妒旁人，你可以實踐自己的願望，前往夢幻之地</span></p>
+                            <a href="http://goo.gl/SjRlfo" target="_blank">
+                                <p>冰島格陵蘭</p>
+                                <span>全球超現實夢幻旅行地之最，同時也為2015年全球最安全國家。</span>
+                            </a>
+                            <a href="http://goo.gl/ekKFoT" target="_blank">
+                                <p>阿根廷</p>
+                                <span>這一次，就該去欣賞世界遺產與奇觀的經典國度。</span>
+                            </a>
+                            <a href="http://goo.gl/2Q6MB5" target="_blank">
+                                <p>摩纳哥</p>
+                                <span>全球富豪密集城市排行第一的城市，單身的你今年就到這裡遇見真愛！</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer start-->
+        <div ng-controller="footerCtrl" ng-include="footer.url"></div>
+        <!--footer end-->
+    </div>
+</div>
+</body>
+</html>

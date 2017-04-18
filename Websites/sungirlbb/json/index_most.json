@@ -1,0 +1,97 @@
+{
+    "c": 200,
+    "m": "OK",
+    "records": [{
+        "id": "1",
+        "title": "8月比基尼宝贝写真",
+        "category": "video",
+        "banner_name": "index_video01.jpg",
+        "home_state": "0",
+        "video_url": "https://www.youtube.com/embed/09BMuHEKLgQ",
+        "ready_time": "2016-08-29 11:25:38",
+        "create_time": "2016-08-29 11:25:46",
+        "photo": null
+    }, {
+        "id": "2",
+        "title": "7月比基尼宝贝写真",
+        "category": "photo",
+        "banner_name": "index_album01.jpg",
+        "home_state": "0",
+        "video_url": null,
+        "ready_time": "2016-08-24 11:05:09",
+        "create_time": "2016-08-23 11:05:18",
+        "photo": [{
+            "id": "6",
+            "sungirlbb_id": "2",
+            "photo_name": "album04.jpg",
+            "width":"2403",
+            "height":"3600"  
+        },{
+            "id": "7",
+            "sungirlbb_id": "2",
+            "photo_name": "album05.jpg",
+            "width":"3600",
+            "height":"2403"
+        },{
+            "id": "8",
+            "sungirlbb_id": "2",
+            "photo_name": "album06.jpg",
+            "width":"3600",
+            "height":"2403"
+        },{
+            "id": "9",
+            "sungirlbb_id": "2",
+            "photo_name": "album07.jpg",
+            "width":"2403",
+            "height":"3600"
+        }]
+    }, {
+        "id": "3",
+        "title": "5月比基尼宝贝写真",
+        "category": "video",
+        "banner_name": "index_video01.jpg",
+        "home_state": "0",
+        "video_url": "https://www.youtube.com/embed/htpaXHfBYoI",
+        "ready_time": "2016-08-29 11:25:38",
+        "create_time": "2016-08-29 11:25:46",
+        "photo": null
+    }, {
+        "id": "4",
+        "title": "6月比基尼宝贝写真",
+        "category": "photo",
+        "banner_name": "index_album01.jpg",
+        "home_state": "0",
+        "video_url": null,
+        "ready_time": "2016-08-24 11:05:09",
+        "create_time": "2016-08-23 11:05:18",
+        "photo": [{
+            "id": "15",
+            "sungirlbb_id": "4",
+            "photo_name": "album04.jpg",
+            "width":"2403",
+            "height":"3600"  
+        },{
+            "id": "16",
+            "sungirlbb_id": "4",
+            "photo_name": "album05.jpg",
+            "width":"3600",
+            "height":"2403"
+        },{
+            "id": "17",
+            "sungirlbb_id": "4",
+            "photo_name": "album06.jpg",
+            "width":"3600",
+            "height":"2403"
+        },{
+            "id": "18",
+            "sungirlbb_id": "4",
+            "photo_name": "album07.jpg",
+            "width":"2403",
+            "height":"3600"
+        }]
+    }],
+    "pageNo": "1",
+    "pageSize": "12",
+    "totalPage": 2,
+    "recordCount": 13
+}

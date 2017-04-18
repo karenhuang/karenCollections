@@ -1,0 +1,86 @@
+.page_shopping{
+  .containerBox{
+    .Cont{
+      position: relative;
+      top: 0;
+      height: 2000px;
+      background-color: #fff;
+      .kimCont{
+        width: 960px;
+        height: 2000px;
+        position: absolute;
+        top:0;
+        left:50%;
+        margin: -12px 0 0 -480px;
+        .kim{
+          width: 912px;
+          margin: 0 auto;
+          background-repeat: no-repeat;
+          background-position: 50% 0;
+        }
+        .k01{
+          height: 860px;
+          background-image: url("../img/expert/in-Kim_01.png");
+          position: relative;
+          top: 0;
+          .blogLink{
+            display: block;
+            width: 242px;
+            height: 46px;
+            position: absolute;
+            top: 312px;
+            right: 13px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+            font-family: "微軟正黑體";
+            color:#010101;
+            padding-top: 3px;
+            @include box-sizing(border-box);
+            &:hover{  background-color: #ffde00;  }
+            p{ text-align: center; line-height: 1.2}
+          }
+        }
+        .k02{
+          height: 215px;
+          background-image: url("../img/expert/in-Kim_02.png");
+        }
+        .k03{
+          height: 676px;
+          background-image: url("../img/expert/in-Kim_03.png");
+        }
+        .k04{
+          height: 226px;
+          background-image: url("../img/expert/in-Kim_04.png");
+          position: relative;
+          top:0;
+          a{
+            display: block;
+            width: 186px;
+            height: 51px;
+            position: absolute;
+            &.a1{
+              right: 20px;
+              top: 82px;
+              background-image: url("../img/expert/in-btn1.png");
+            }
+            &.a2{
+              right:20px;
+              top:145px;
+              background-image: url("../img/expert/in-btn2.png");
+            }
+            &.a4{
+              right:20px;
+              top:20px;
+              background-image: url("../img/expert/in-btn4.png");
+            }
+            &:hover{
+              margin-top: 1px;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

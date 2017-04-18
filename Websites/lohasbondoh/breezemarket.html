@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html ng-app="breezemarket">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/ngApp.js"></script>
+    <script type="text/javascript" src="js/lohasbondoh.js"></script>
+    <link rel="stylesheet" href="css/screen.css"/>
+    <!--[if IE]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <title></title>
+</head>
+<body class="page_breezemarket">
+    <div class="wrapper">
+        <div class="containerBox">
+            <div class="container">
+                <!--header start-->
+                <div ng-controller="headerCtrl" ng-include="header.url"></div>
+                <!--header end-->
+                <div class="contBox">
+                    <div class="cont">
+                        <div class="breezemarketBox">
+                            <div class="breezemarketboxCont">
+                                <div class="mImg">
+                                    <img src="img/market_logo.png" alt=""/>
+                                    <img src="img/breezemarket_letf_img01.png" alt=""/>
+                                    <img src="img/breezemarket_letf_img02.png" alt=""/>
+                                    <img src="img/breezemarket_letf_img03.png" alt=""/>
+                                </div>
+                                <div class="mCont">
+                                    <p class="mTitle"><img src="img/breezemarket_Title.png" alt=""/></p>
+
+                                    <p class="title">市集目的
+                                        <span>邀請認同微風市集理念之生產者設攤，創造生產者與消費者直接面對面的空間</span>
+                                    </p>
+
+                                    <p class="title">市集架構</p>
+                                <span class="text">
+                                    <i>
+                                        1.綠色市集—產地直銷的綠色蔬果及社區手工料理，記得帶環保袋及環保杯具，順手選購新鮮無毒的產品，生產者直接與你面對面，分享蕃茄玉米的栽種故事及好料理的製作過程。
+                                    </i>
+                                    <i>
+                                        2.綠色活力廚房—綠色對談～安排農民分享有機耕作心路歷程或個人專長話題；活力養生—安排養生專家講授飲食養生保健觀念；健康廚房—以市集食材示範蔬食烹飪教學。
+                                    </i>
+                                    <i>
+                                        3.汗生學堂—取汗滴田間、萬物生息之意，將農民定位為「農事指導師」，微風市集做為鄉村學院與都市學員的平台，採分季辦理帶領消費者親近土地，實際認識產地及農場。
+                                    </i>
+                                </span>
+
+                                    <p class="title">綠色市集內容</p>
+                                <span class="text">
+                                    <i>1.綠色農產品-耕種全程不使用農藥化肥及除草劑</i>
+                                    <i>2.社區美食-在地食材/手工製作/利潤回饋社區</i>
+                                    <i>3.社福團體手工藝-少量生產/利潤回饋弱勢照顧 </i>
+                                </span>
+
+                                    <p class="title">市集時間&地點</p>
+                                    <ul class="time_location">
+                                        <li>
+                                            <span>(六) 0800-1200 </span>
+                                            <span>鳳山婦幼館(鳳山區光復路二段120號)<br/>婦幼青少年館前庭廣場（高雄市鳳山區光復路二段120號）</span>
+                                        </li>
+                                        <li>
+                                            <span>(六) 0800-1200 </span><span>新客家文化園區(三民區同盟二路217號)</span>
+                                        </li>
+                                        <li>
+                                            <span>(日) 0800-1200 </span><span>高雄物產館蓮潭旗艦店廣場(左營區翠華路1435號)</span>
+                                        </li>
+                                        <li>
+                                            <span>(日) 0830-1130</span><span>大統百貨和平店（苓雅區和平一路218號）</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="bottomMenu" align="center">
+                                <a href="http://blog.breezemarket.com.tw/" target="_blank"><span>前往</span><span>「微風市集」<br/>官網</span></a>
+                                <a href="https://www.facebook.com/breezemarket" target="_blank"><span>加入</span><span>「微風市集」<br/>粉絲團</span></a>
+                                <a href="http://blog.breezemarket.com.tw/?page_id=5973" target="_blank"><span>参加</span><span>「微風樂活‧小農辦桌」<br/>活動</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--footer start-->
+                <div ng-controller="footerCtrl" ng-include="footer.url"></div>
+                <!--footer end-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

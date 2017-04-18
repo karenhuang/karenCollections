@@ -1,0 +1,227 @@
+.search-nonelimit{
+  @include container();
+  padding:2% 4%;
+  @include box-sizing(border-box);
+  @extend %clear;
+  .th-searchTool{
+    max-width: 1060px;
+    margin:0 auto 20px;
+    width: 100%; 
+    height: 40px;
+    @include border-radius(5px);
+    background-color: #e6e6e6;
+    padding:10px;
+    @include box-sizing(border-box);
+    @extend %clear; 
+    a{
+      float: left;
+      text-align: center;
+      width: 60px;
+      height: 40px;
+      margin:-10px 5px -10px 0;
+      @extend %vertical-outer;
+      text-align: center;
+      text-decoration: none;
+      color:#333333;
+      i{
+        @extend %vertical-inner;
+        font-weight: bold;
+        font-size: 1.4rem;        
+      }
+      &:hover{
+        color:#999;
+      }
+    }
+    input{
+      float: left;
+      width: calc(100% - 155px);
+      height: 22px;
+      margin-top: -2px;
+      background-color: transparent;
+      border:none;
+      color:#333333;
+    }
+    span{
+      float: right;
+      width: 75px;
+      color:#aaaaaa;
+      font-size: 0.8125rem;
+      padding-top: 3px;
+    }
+  }
+  .th-tagResult{
+    width: 93%;
+    margin: 10px auto 20px; 
+    @extend %clear;
+    .md-tag{
+      width:50%;
+      float: left;
+      padding-top: 10px;
+      box-sizing:border-box;
+      i{
+        vertical-align: middle;
+        font-size: 1.3rem;
+      }
+      span{
+        display: block;
+        vertical-align: middle;
+        font-size: 0.875rem;
+        text-indent: -21px;
+        margin-left: 10px;
+        word-wrap: break-word; 
+        word-break: normal;
+      }
+    }
+    .md-search{
+      float: right;
+      display: inline-block;
+      vertical-align: top;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      text-align: center;
+      padding-top: 10px;
+      @include box-sizing(border-box);
+      input{
+        width: 0;
+        position: absolute;
+        right: 100%;
+        top:5px;
+        height: 30px;
+        border-color:transparent;
+        background-color: transparent;
+        @include transition(all,0.4s);
+        @include box-sizing(border-box);
+        border-right:1px solid #dbdbdb;
+      }
+      .pt-search{
+        display: inline-block;
+        text-decoration: none;
+        font-size: 1.3rem;
+        color:$darkColor;
+        .icon-search{
+          font-weight: bold;
+        }
+      }
+      &:hover{
+        input{
+          width: 250px;
+          border:1px solid #dbdbdb;
+          @include transition(all,0.4s);
+          background-color: $lightColor;
+        }
+      }
+    }
+  }
+  .th-searchGallery{
+    position: relative;
+  }
+  .th-loading{
+    @include span(24); 
+  }
+  .md-loadimg{
+    margin:50px auto;
+  }
+
+}
+
+
+@include breakpoint(max-width 1200px) {
+  .search-nonelimit{
+    padding-top: 15px;
+    .th-searchTool{
+      width: 93%;
+    }
+    .th-tagResult{
+      width: 88%;
+      margin:50px auto 0;
+      .md-tag{
+        padding-top: 0;
+      }      
+      .md-search{
+        width:50%;
+        input{
+          width: calc(100% - 60px);
+          position: relative;
+          right:5px;
+          top:-5px;
+          border:1px solid #dbdbdb;
+          background-color: $lightColor;
+          @include transition(all,0s);
+        }
+        &:hover{
+          input{
+            width: calc(100% - 60px);
+            @include transition(all,0s);
+          }
+        }        
+      }
+    }    
+  }
+}
+
+@include breakpoint(max-width 980px) {
+  .search-nonelimit{
+    .th-searchTool{
+      width: 88%;
+    }
+
+  }
+}
+
+
+@include breakpoint(max-width 720px) {
+  .search-nonelimit{
+    .th-searchTool{
+      width: 77%;
+    }
+    .th-tagResult{
+      width: 85%;
+      position: relative;
+      .md-search{
+        width: 85%;
+        position: absolute;
+        top:-50px;
+        right:0;
+      }
+      .md-tag{
+        width: 100%;
+        padding-top: 15px;
+        margin-bottom: -15px;
+      }
+    }
+  }
+}
+
+@include breakpoint(max-width 460px) {
+  .search-nonelimit{
+    position: relative;
+    .th-tagResult{
+      width: 80%;
+      .md-search{
+        input{
+          width: calc(100% - 40px);
+        }
+        &:hover{
+          input{
+            width: calc(100% - 40px);
+            @include transition(all,0s);
+          }
+        }
+      }
+    }
+    .th-searchTool{
+      width: 72%;
+      position: absolute;
+      top: 15px;
+      left: 65px;
+      padding:10px 5px;
+      a{
+        width: 40px;
+      }
+      input{
+        width: calc(100% - 135px);
+      }
+    }
+  }
+}

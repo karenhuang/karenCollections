@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html ng-app="write">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/ngApp.js"></script>
+    <script type="text/javascript" src="js/2015tpecity_travel.js"></script>
+    <link rel="stylesheet" href="css/screen.css"/>
+    <!--[if IE]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <title></title>
+</head>
+<body class="page_write">
+<div class="wrapper">
+    <div class="container1">
+        <!--index_header start-->
+        <div ng-controller="headerCtrl" ng-include="header.url"></div>
+        <!--index_header end-->
+        <div class="contBox">
+            <div class="mainCont">
+                <div class="writeCont">
+                    <div class="leftSide">
+                        <p class="mTitle">我要投稿</p>
+                        <div class="actStep">
+                            <p class="title">活動步驟</p>
+                            <p class="step">Step1</p>
+                            <span>撰寫你的創意新玩法  文字1000字內不得少於500字，上傳照片1~6張，最少須上傳1張。</span>
+                            <p class="step">Step2</p>
+                            <span>投稿活動結束，由知名達人進行評選，選出10名優秀作品。</span>
+                            <p class="step">Step3</p>
+                            <span>10名優秀作品將獲參與第二階『十大城市新玩法』投票活動資格。</span>
+                            <p class="step">Step4</p>
+                            <span>『十大城市新玩法』投票活動開跑網友票選心目中的創意行程。</span>
+                            <p class="step">Step5</p>
+                            <span>『十大城市新玩法』投票活動結束進行活動抽獎及得獎公告。</span>
+                        </div>
+                        <div class="actAward">
+                            <p class="title">活動獎項</p>
+                            <img src="img/award.png" alt=""/>
+                        </div>
+                    </div>
+                    <div class="rightSide">
+                        <p class="info">請正確填寫您的個人資料，以便得獎後方便與您連繫！<i>*</i>為必填欄位<br>
+                            您也可以選擇email投稿。<a href="" target="_blank"><i></i>下載報名表及相關資料</a>
+                        </p>
+                        <div class="tbBox">
+                            <ul class="info01">
+                                <li class="name">
+                                    <span><i>*</i>投稿者姓名</span><input type="text"/>
+                                </li>
+                                <li class="sexual">
+                                    <span><i>*</i>性別</span>
+                                    <span id="rbl_sex">
+                                    <input type="radio" id="s1" name="sexual"/><label for="s1">男</label>
+                                    <input type="radio" id="s2" name="sexual"/><label for="s2">女</label>
+                                    </span>
+                                </li>
+                                <li class="birthday">
+                                    <span><i>*</i>出生日期</span>
+                                    <input type="text"/>年
+                                    <input type="text"/>月
+                                    <input type="text"/>日
+                                    <b>ex.1990/11/1</b>
+                                </li>
+                                <li>
+                                    <span><i>*</i>E-MAIL</span><input type="text"/>
+                                </li>
+                                <li>
+                                    <span><i>*</i>聯絡手機</span><input name="txt_phone" type="text"/><b>ex.0918000222</b>
+                                </li>
+                                <li class="address">
+                                    <span><i>*</i>通訊地址</span><input type="text"/>
+                                </li>
+                                <li class="title">
+                                    <span><i>*</i>投稿名稱</span><input type="text" placeholder="(30字內)"/><!--placeholder可刪除-->
+                                </li>
+                                <li class="text">
+                                    <span><i>*</i>作品說明</span>
+                                    <textarea name="" id="" placeholder="(150字內)"></textarea><!--placeholder可刪除-->
+                                    <p>字數: <span>XXXX</span></p>
+                                </li>
+                                <li class="newWay">
+                                    <i>*</i>
+                                    <span>
+                                        <i>撰</i><i>寫</i>我的臺北城市新玩法
+                                    </span>
+                                    <textarea name="" id="" placeholder="(1000字以內，最少不得低於500字)" ></textarea><!--placeholder可刪除-->
+                                    <p>字數: <span>XXXX</span></p>
+                                </li>
+                                <li class="uploadTitle">
+                                    <span class="text">上傳照片</span>
+                                    <span>照片尺寸建議大於: 1024X768。<br>最多可上傳6張照片，最少上傳一張。<br><i></i>檔案大小須於1~5M內，JPG格式</span>
+                                </li>
+                                <li class="uploadInfo column01">
+                                    <span>*</span>
+                                    <i>1</i>
+                                    <input type="file"/>
+                                    <p class="text"></p>
+                                </li>
+                                <li class="uploadInfo column02">
+                                    <i>2</i>
+                                    <input type="file"/>
+                                    <p class="text"></p>
+                                </li>
+                                <li class="uploadInfo column03">
+                                    <i>3</i>
+                                    <input type="file"/>
+                                    <p class="text"></p>
+                                </li>
+                                <li class="uploadInfo column04">
+                                    <i>4</i>
+                                    <input type="file"/>
+                                    <p class="text"></p>
+                                </li>
+                                <li class="uploadInfo column05">
+                                    <i>5</i>
+                                    <input type="file"/>
+                                    <p class="text"></p>
+                                </li>
+                                <li class="uploadInfo column06">
+                                    <i>6</i>
+                                    <input type="file"/>
+                                    <p class="text"></p>
+                                </li>
+                            </ul>
+                            <p class="note">*請檢查 送出後即不能修改</p>
+                            <p class="checkText">
+                                <input name="" type="checkbox" id="" value=""><a href="" target="_blank">我同意活動聲明辦法</a>　|　
+                                <input name="" type="checkbox" id="" value=""><a href="" target="_blank">個人資料告知暨同意書 </a>
+                            </p>
+                            <input type="submit" class="uploadBtn" value="確認上傳"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomBg"></div>
+        </div>
+        <!--footer start-->
+        <div ng-controller="footerCtrl" ng-include="footer.url"></div>
+        <!--footer end-->
+    </div>
+</div>
+</body>
+</html>

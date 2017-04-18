@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html ng-app="airtickets">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/ngApp.js"></script>
+    <script type="text/javascript" src="js/seoulmaster.js"></script>
+    <link rel="stylesheet" href="css/screen.css"/>
+    <!--[if IE]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <title></title>
+</head>
+<body class="page_airtickets">
+    <div class="wrapper">
+        <div class="wrapper_position">
+            <div class="container">
+                <!--header start-->
+                <div ng-controller="headerCtrl" ng-include="header.url"></div>
+                <!--header end-->
+                <div class="containerBox">
+                    <div class="Cont">
+                        <div class="airticketsCont">
+                            <p class="mText">
+                                活動已於2/23結束，恭喜以下12名得獎者獲得「首爾來回機票」！
+                                得獎通知信已於3/3前寄出，請確認facebook私訊或是帳號登錄信箱，並於3/10前回覆。
+                                經活動小組確認無誤後，將陸續將機票寄出，逾期未回覆或資料不齊全者將視同放棄，不再另行補發。
+                                若未收到獎品通知信或活動相關問題，請來信至 <a href="mailto:christinacheng@jwimarketing.com">christinacheng@jwimarketing.com</a>
+                            </p>
+                            <div class="winnerBox">
+                                <p class="mTitle">得獎名單</p>
+                                <div class="mLine">
+                                    <table class="tb1">
+                                        <tr>
+                                            <th colspan="2"><i></i><span>欣旅遊抽出5名</span></th>
+                                        </tr>
+                                        <tr class="title">
+                                            <td>fb名稱</td>
+                                            <td>fb email</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Chi-FXXg Chang</td>
+                                            <td>cherry52185XXXX@hotmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>林X宏</td>
+                                            <td>10000391960XXXX@facebook.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>鄭X花</td>
+                                            <td>floridXXXX@facebook.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>孫X姣</td>
+                                            <td>jiannXXXX@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>FlXXa Kim</td>
+                                            <td>10000354487XXXX@facebook.com</td>
+                                        </tr>
+                                    </table>
+                                    <hr/>
+                                    <table class="tb2">
+                                        <tr>
+                                            <th colspan="2"><i></i><span>欣攝影抽出3名</span></th>
+                                        </tr>
+                                        <tr class="title">
+                                            <td>fb名稱</td>
+                                            <td>fb email</td>
+                                        </tr>
+                                        <tr>
+                                            <td>AbiXXil Su</td>
+                                            <td>AbiXXil.Su1222@facebook.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>李X</td>
+                                            <td>10000663334XXXX@facebook.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>陳X萱</td>
+                                            <td>shiny7XXXX@facebook.com</td>
+                                        </tr>
+                                    </table>
+                                    <hr/>
+                                    <table class="tb3">
+                                        <tr>
+                                            <th colspan="2"><i></i><span>欣音樂抽出2名</span></th>
+                                        </tr>
+                                        <tr class="title">
+                                            <td>fb名稱</td>
+                                            <td>fb email</td>
+                                        </tr>
+                                        <tr>
+                                            <td>蔡X凌</td>
+                                            <td>10000126031XXXX@facebook.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Yi-TXXg Kuo</td>
+                                            <td>usaXXXX.kuo@facebook.com</td>
+                                        </tr>
+                                    </table>
+                                    <hr/>
+                                    <table class="tb4">
+                                        <tr>
+                                            <th colspan="2"><i></i><span>韓國情報特搜抽出2名</span></th>
+                                        </tr>
+                                        <tr class="title">
+                                            <td>fb名稱</td>
+                                            <td>fb email</td>
+                                        </tr>
+                                        <tr>
+                                            <td>丁X乾</td>
+                                            <td>babychuXXXX@facebook.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td>劉X明</td>
+                                            <td>10000016480XXXX@faccebook.com</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--footer start-->
+                <div ng-controller="footerCtrl" ng-include="footer.url"></div>
+                <!--footer end-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

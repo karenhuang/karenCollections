@@ -1,0 +1,5 @@
+﻿User-agent: *
+Disallow:
+
+
+Sitemap: http://www.sungirlbb.com/sitemap.xml

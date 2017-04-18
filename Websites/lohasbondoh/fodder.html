@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html ng-app="fodder">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/ngApp.js"></script>
+    <script type="text/javascript" src="js/lohasbondoh.js"></script>
+    <link rel="stylesheet" href="css/screen.css"/>
+    <!--[if IE]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <title></title>
+</head>
+<body class="page_fodder">
+    <div class="wrapper">
+        <div class="containerBox">
+            <div class="container">
+                <!--header start-->
+                <div ng-controller="headerCtrl" ng-include="header.url"></div>
+                <!--header end-->
+                <div class="contBox">
+                    <div class="cont">
+                        <div class="fodderBox">
+                            <div class="fodderboxCont">
+                                <div class="foodmap"></div>
+                                <div class="foodinfo">
+                                    <div class="foodText wholeyear">
+                                        <p class="mTitle"><img src="img/fodderTitle01.png" alt=""/></p>
+                                        <ul>
+                                            <li>
+                                                <span class="mText">
+                                                    <p class="title"><img src="img/icon/f01.png" alt=""/>野蓮 <i>產區</i> <span>美濃</span></p>
+                                                    <p class="text">
+                                                        野蓮，學名稱為龍骨瓣莕菜的植物，雖然四季皆產，由於生長於水面下的特性，所以在颱風來時，價錢不會如葉菜般受到影響。而且野蓮的口感脆爽開胃，非常適合天天上桌。
+                                                    </p>
+                                                </span>
+                                                <span class="bgblock"></span>
+                                            </li>
+                                            <li>
+                                                <span class="mText">
+                                                    <p class="title"><img src="img/icon/f02.png" alt=""/>鳳梨 <i>產區</i> <span>大樹、鳥松、內門、大寮</span></p>
+                                                    <p class="text">
+                                                        高雄地區的鳳梨利用品種及產期調節技術可全年供果。選購時以果實結實飽滿，有重量感，果皮清潔亮麗，無裂縫、擦傷，果目明顯突起，果實新鮮、鳳梨味十足為上選。
+                                                    </p>
+                                                </span>
+                                                <span class="bgblock"></span>
+                                            </li>
+                                            <li>
+                                                <span class="mText">
+                                                    <p class="title"><img src="img/icon/f03.png" alt=""/>香蕉 <i>產區</i> <span>旗山、美濃、杉林、內門、大寮</span></p>
+                                                    <p class="text">
+                                                        黃澄澄的香蕉就如金礦，外銷的數字讓台灣被稱為香蕉王國，旗山特別適合種植蕉類，讓香蕉產量特多，型體壯碩，其中又以溪洲河谷平原產的香蕉品質最佳。
+                                                    </p>
+                                                </span>
+                                                <span class="bgblock"></span>
+                                            </li>
+                                            <li>
+                                                <span class="mText">
+                                                    <p class="title"><img src="img/icon/f04.png" alt=""/>木瓜 <i>產區</i> <span>美濃、杉林、旗山、六龜</span></p>
+                                                    <p class="text">
+                                                        走進木瓜園，已被矮化的幹珠上，結著纍纍果實。摘一顆木瓜，捧著捧著，有些沉重，在果肉間的鼓脹甜汁，將瓜皮撐出優美的流線圓滑。那一抹色澤，黃褐中帶著淺綠，宛如畫作已久的調色盤，靜謚高雅。
+                                                    </p>
+                                                </span>
+                                                <span class="bgblock"></span>
+                                            </li>
+                                            <li>
+                                                <span class="mText">
+                                                    <p class="title"><img src="img/icon/f05.png" alt=""/>芭樂 <i>產區</i> <span>燕巢、大社、阿蓮、內門、岡山</span></p>
+                                                    <p class="text">
+                                                        燕巢區是全台栽種芭樂面積最高的區域，同時也是國人愛不釋口的珍珠芭樂發源地。芭樂有著國民水果的親民特性，透過農民不斷精進修剪技術進行產期調節，才能成為全年供應水果之一。
+                                                    </p>
+                                                </span>
+                                                <span class="bgblock"></span>
+                                            </li>
+                                            <li>
+                                                <span class="mText">
+                                                    <p class="title"><img src="img/icon/f06.png" alt=""/>蜂蜜 <i>產區</i> <span>岡山、阿蓮、田寮、橋頭、大樹、內門</span></p>
+                                                    <p class="text">
+                                                        田寮區大崗山一帶，有著自然野生大片的龍眼樹林，每到龍眼開花的季節，大崗山就成了蜜蜂的天堂。大崗山的龍眼蜜向來以濃純著稱，消費者不必擔心蜂蜜來源是否有農藥殘留的問題，讓大崗山的蜂蜜有更高的健康保障！
+                                                    </p>
+                                                </span>
+                                                <span class="bgblock"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="foodText spring">
+                                        <p class="mTitle"><img src="img/fodderTitle02.png" alt=""/></p>
+                                        <ul>
+                                            <li>
+                                                <span class="mText">
+                                                    <p class="title"><img src="img/icon/f07.png" alt=""/>紅肉李 <i>產區</i> <span>桃源、那瑪夏</span></p>
+                                                    <p class="text">
+                                                        高雄市紅肉李主要集中於桃源區，汁多、味甜，令人流口水，每年端午節前後，就是紅肉李的盛產期，選購及食用上，紅肉李以果粒大、皮黑、果面有白色果粉為上等品。
+                                                    </p>
+                                                </span>
+                                                <span class="bgblock"></span>
+                                            </li>
+                                            <li>
+                                                <span class="mText">
+                                                    <p class="title"><img src="img/icon/f08.png" alt=""/>梅子 <i>產區</i> <span>桃源、六龜、那瑪夏、甲仙</span></p>
+                                                    <p class="text">
+                                                        如果要醃漬脆梅，必須在清明之前，此時梅子翠綠，果實爽脆。清明過後，梅果漸漸軟黃，只能醃漬Q梅或紫蘇梅，直到五月梅果盡落，在連綿不斷的梅雨中收場。高屏溪流域的那瑪夏區、桃源區及六龜區，就是南台灣最著名的梅子產區。
+                                                    </p>
+                                                </span>
+                                                <span class="bgblock"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="foodText summer">
+                                        <p class="mTitle"><img src="img/fodderTitle03.png" alt=""/></p>
+                                        <ul>
+                                            <li>
+                                                <span class="mText">
+                                                    <p class="title"><img src="img/icon/f09.png" alt=""/>龍眼 <i>產區</i> <span>內門、杉林、田寮、旗山</span></p>
+                                                    <p class="text">
+                                                        龍眼它堅韌的適應性和生長勢，為山丘坡地集中、帶有青灰岩地質的內門、田寮乃至旗山，在特殊土質與少量水源的風土條件下，雖生長緩慢卻也孕育高甜度。再以溫徐炭火烘焙著粒粒果實，細火慢焙足足六天，燻蒸成醇厚甘甜的龍眼乾果。
+                                                    </p>
+                                                </span>
+                                                <span class="bgblock"></span>
+                                            </li>
+                                            <li>
+                                                <span class="mText">
+                                                    <p class="title"><img src="img/icon/f10.png" alt=""/>玉荷包荔枝 <i>產區</i> <span>大樹、旗山、杉林、內門</span></p>
+                                                    <p class="text">
+                                                        玉荷包的主要產地大樹區，佔了全國產地六分之一，也佔大高雄區的八成，被稱為荔枝的故鄉。起伏的丘陵地貌，正是玉荷包紮根在此的重要關鍵。到了冬季，坡度略高的氣溫和濕度，正好提供開花的必備條件，夏季又保有豔陽遍照的優勢，果實自然成熟快、甜度高。
+                                                    </p>
+                                                </span>
+                                                <span class="bgblock"></span>
+                                            </li>
+                                            <li>
+                                                <span class="mText">
+                                                    <p class="title"><img src="img/icon/f11.png" alt=""/>金煌芒果 <i>產區</i> <span>六龜、杉林、阿蓮、田寮、桃源</span></p>
+                                                    <p class="text">
+                                                        高雄六龜區最負盛名的，不外是金煌芒果，風味和口感，也透露著六龜特殊的風土性格。金煌芒果外觀無論顏色或形狀，乍看下都有幾分神似木瓜。六龜因為土壤富含沙質，排水佳，因此特別適合金煌芒果生長。
+                                                    </p>
+                                                </span>
+                                                <span class="bgblock"></span>
+                                            </li>
+                                            <li>
+                                                <span class="mText">
+                                                    <p class="title"><img src="img/icon/f12.png" alt=""/>紅龍果 <i>產區</i> <span>橋頭、梓官、六龜、旗山</span></p>
+                                                    <p class="text">
+                                                        帶刺的綠色三角莖，沿著水泥柱或棚架攀爬，如仙人掌的向陽姿態，在內門和旗山區的廣裘農地，結出一望無際的紅龍果園。剖開果實，漾著水分的紅肉，密布黑籽，清香高甜度的果味，最適合冰鎮後大口享用。
+                                                    </p>
+                                                </span>
+                                                <span class="bgblock"></span>
+                                            </li>
+                                            <li>
+                                                <span class="mText">
+                                                    <p class="title"><img src="img/icon/f13.png" alt=""/>稻米 <i>產區</i> <span>美濃、大寮</span></p>
+                                                    <p class="text">
+                                                        高屏溪流域的稻米，中下游各有好米自居，一是中游美濃，另一為下游大寮。美濃位於屏東沖積扇平原之源頭，此地三面環山，內有美濃溪與楠梓溪環抱，形成有機質肥沃土壤，使美濃有高雄米倉的美譽， 而下游的大寮，高屏溪將上游山區的肥沃土壤帶到大寮，過了鳳山丘陵後慢慢沈積，讓這區非常適合稻作。
+                                                    </p>
+                                                </span>
+                                                <span class="bgblock"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="foodText fall">
+                                        <p class="mTitle"><img src="img/fodderTitle04.png" alt=""/></p>
+                                        <ul>
+                                            <li>
+                                                <span class="mText">
+                                                    <p class="title"><img src="img/icon/f14.png" alt=""/>愛玉 <i>產區</i> <span>桃源、那瑪夏</span></p>
+                                                    <p class="text">
+                                                        愛玉的產期，在每年的秋末冬初，種植愛玉唯一的難處在於培養協助愛玉授粉的薜荔榕小蜂。沒有小蜂受粉，愛玉便落果，然而這款小蜂對於農藥非常敏感，導致種植愛玉的園區必須很「天然」，間接地讓愛玉成為另類的環境指標。桃源區、那瑪夏區是荖濃溪的上游，溪水清澈乾淨，洗出來的愛玉子清香味美。
+                                                    </p>
+                                                </span>
+                                                <span class="bgblock"></span>
+                                            </li>
+                                            <li>
+                                                <span class="mText">
+                                                    <p class="title"><img src="img/icon/f15.png" alt=""/>芋頭 <i>產區</i> <span>甲仙</span></p>
+                                                    <p class="text">
+                                                        甲仙區近海拔250公尺的丘陵地形，還有楠梓仙溪帶來的溫差調節，讓芋頭生長得格外良好。表示芋頭的品種眾多，比如紅梗芋、赤芽芋、狗蹄芋、麵芋等，但怎麼吃，還是檳榔心芋美味。 芋頭對於甲仙，不只是特色農產，還有很深的歷史意味。
+                                                    </p>
+                                                </span>
+                                                <span class="bgblock"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="foodText winter">
+                                        <p class="mTitle"><img src="img/fodderTitle05.png" alt=""/></p>
+                                        <ul>
+                                            <li>
+                                                <span class="mText">
+                                                    <p class="title"><img src="img/icon/f16.png" alt=""/>白玉蘿蔔 <i>產區</i> <span>美濃</span></p>
+                                                    <p class="text">
+                                                        白玉蘿蔔是美濃的特有種，季節跟土壤，讓美濃的蘿蔔長的個頭份外嬌小，皮薄細肉嫩脆，生長期只需40~45天就成熟，反倒與他地碩大粗壯的蘿蔔有了區隔，成了美濃冬季裡作最是紅火的明星農產。
+                                                    </p>
+                                                </span>
+                                                <span class="bgblock"></span>
+                                            </li>
+                                            <li>
+                                                <span class="mText">
+                                                    <p class="title"><img src="img/icon/f17.png" alt=""/>蓮霧 <i>產區</i> <span>六龜</span></p>
+                                                    <p class="text">
+                                                        六龜區的黑鑽石蓮霧遠近馳名，咬一口，果肉細緻多汁、清脆有聲，完美無暇，引發果農以鑽石命名的靈感，而這個名字也蘊涵著六龜農民的驕傲，極品蓮霧在六龜。
+                                                    </p>
+                                                </span>
+                                                <span class="bgblock"></span>
+                                            </li>
+                                            <li>
+                                                <span class="mText">
+                                                    <p class="title"><img src="img/icon/f18.png" alt=""/>蜜棗 <i>產區</i> <span>燕巢、阿蓮、六龜、大社、田寮、岡山</span></p>
+                                                    <p class="text">
+                                                        棗子除了燕巢之外，高雄的大社、阿蓮、岡山、田寮，也都是優質蜜棗的產地，原因是，這些地區都鄰近有名的惡地「月世界」，因此土壤高鹽、高鹼，富含鉀、鎂等礦物質和微量元素，使得種植在此地的水果，風味特別濃烈。
+                                                    </p>
+                                                </span>
+                                                <span class="bgblock"></span>
+                                            </li>
+                                            <li>
+                                                <span class="mText">
+                                                    <p class="title"><img src="img/icon/f19.png" alt=""/>洋蔥  <i>產區</i> <span>林園</span></p>
+                                                    <p class="text">
+                                                        連葉帶起的蔥球，經過葉片萎凋的等待，將球莖以葉片覆蓋、放在田土上曬日光浴，烤成迷人紅棕色的外表皮膜，讓蔥球含水量低，耐貯運，最後才將葉和根部剪除方便包裝，連續三至四天的採收期，全程仰賴乾燥晴朗的陽光，碰不得一點雨。吸飽日光的蔥球閃著明亮色澤，這就是林園區盛產的洋蔥。
+                                                    </p>
+                                                </span>
+                                                <span class="bgblock"></span>
+                                            </li>
+                                            <li>
+                                                <span class="mText">
+                                                    <p class="title"><img src="img/icon/f20.png" alt=""/>橙蜜香番茄 <i>產區</i> <span>美濃、杉林</span></p>
+                                                    <p class="text">
+                                                        在南台灣種植橙蜜香小果番茄，首先要有耐心，得等氣溫來到適合種植的攝氏20度以下，這個溫度較不利銀葉粉蝨的生長，較能降低毒素病的發生率。土壤健康、根系健康，搭配適度灌溉、防蟲防病作業和營養補給，持續關心約莫兩個月，番茄開始結果，從綠轉橙，完熟時，呈現橙紅色。
+                                                    </p>
+                                                </span>
+                                                <span class="bgblock"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goTop"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--footer start-->
+                <div ng-controller="footerCtrl" ng-include="footer.url"></div>
+                <!--footer end-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>

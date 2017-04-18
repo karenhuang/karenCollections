@@ -1,0 +1,641 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../scss/_mhd.scss */
+.headerBox {
+  width: 100%;
+  background-color: #fee41e;
+  position: relative;
+  top: 0;
+}
+/* line 6, ../scss/_mhd.scss */
+.headerBox .header {
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+}
+/* line 12, ../scss/_mhd.scss */
+.headerBox .header .hdFb {
+  display: block;
+  width: 21%;
+  position: absolute;
+  top: 40%;
+  left: 2%;
+}
+/* line 18, ../scss/_mhd.scss */
+.headerBox .header .hdFb img {
+  width: 100%;
+}
+/* line 20, ../scss/_mhd.scss */
+.headerBox .header .imgLogo {
+  width: 19%;
+  margin: 0 auto;
+  padding-top: 3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 25, ../scss/_mhd.scss */
+.headerBox .header .imgLogo img {
+  width: 100%;
+}
+/* line 27, ../scss/_mhd.scss */
+.headerBox .header .menuBtn {
+  width: 6.5%;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 4%;
+}
+/* line 34, ../scss/_mhd.scss */
+.headerBox .header .menuBtn img {
+  width: 100%;
+}
+/* line 37, ../scss/_mhd.scss */
+.headerBox .menuList {
+  display: block;
+  width: 100%;
+  position: absolute;
+}
+/* line 42, ../scss/_mhd.scss */
+.headerBox .menuList ul li {
+  background-color: #f82e2e;
+  text-align: center;
+  color: #fff;
+  font-size: 125%;
+  cursor: pointer;
+  border-bottom: 1px solid #a62727;
+  padding: 10px 0;
+}
+/* line 50, ../scss/_mhd.scss */
+.headerBox .menuList ul li:hover {
+  background-color: #a62727;
+}
+
+/* line 8, ../scss/_mft.scss */
+.footerBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+/* line 13, ../scss/_mft.scss */
+.footerBox .mfooter {
+  background-color: #fee41e;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 18, ../scss/_mft.scss */
+.footerBox .mfooter p {
+  font-weight: bold;
+  font-size: 187%;
+  color: #fa3e26;
+  text-align: center;
+  line-height: 1.2;
+  padding-top: 8px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 26, ../scss/_mft.scss */
+.footerBox .mfooter p i {
+  display: inline-block;
+  margin: 0 10px;
+  border-left: 13px solid transparent;
+  border-bottom: 22px solid #fa3e26;
+  border-right: 13px solid transparent;
+  display: inline-block;
+}
+
+/* line 1, ../scss/_mlayout.scss */
+html, body {
+  /* 設定body高度為100% 拉到視窗可視的大小 */
+  height: 100%;
+}
+
+/* line 6, ../scss/_mlayout.scss */
+.wrapper {
+  width: 100%;
+  font-size: 100%;
+  font-family: "微軟正黑體";
+  /* 設定高度最小為100%, 如果內容區塊很多, 可以長大 */
+  min-height: 100%;
+  /* 位置設為relative, 作為footer區塊位置的參考 */
+  position: relative;
+  background-image: url("../images/mPic/m_bg.png");
+  background-repeat: repeat-x;
+  background-color: #fefcef;
+}
+/* line 17, ../scss/_mlayout.scss */
+.wrapper .containerBox {
+  width: 100%;
+}
+/* line 19, ../scss/_mlayout.scss */
+.wrapper .containerBox .container {
+  width: 100%;
+}
+/* line 21, ../scss/_mlayout.scss */
+.wrapper .containerBox .container .contBox {
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 640px) {
+  /* line 33, ../scss/_mlayout.scss */
+  .headerBox .menuList > ul > li {
+    font-size: 100%;
+  }
+
+  /* line 39, ../scss/_mlayout.scss */
+  .contBox {
+    width: 100%;
+  }
+  /* line 41, ../scss/_mlayout.scss */
+  .contBox .mBlock3 .mTitle, .contBox .mBlock4 .mTitle, .contBox .mBlock5 .mTitle {
+    font-size: 180%;
+    color: #fa3e26;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0 15px;
+  }
+  /* line 48, ../scss/_mlayout.scss */
+  .contBox .mBlock1 {
+    margin-bottom: 80px;
+  }
+  /* line 50, ../scss/_mlayout.scss */
+  .contBox .mBlock1 .mLogo {
+    width: 92%;
+    margin: 5% auto;
+  }
+  /* line 53, ../scss/_mlayout.scss */
+  .contBox .mBlock1 .mLogo img {
+    width: 100%;
+  }
+  /* line 55, ../scss/_mlayout.scss */
+  .contBox .mBlock1 .textBox {
+    position: relative;
+    top: 0;
+  }
+  /* line 58, ../scss/_mlayout.scss */
+  .contBox .mBlock1 .textBox .text {
+    display: inline-block;
+    width: 51%;
+    vertical-align: top;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  /* line 65, ../scss/_mlayout.scss */
+  .contBox .mBlock1 .textBox .text p {
+    padding: 6%;
+    line-height: 1.6;
+    font-size: 75%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    behavior: url("../lib/PIE.htc");
+    background-color: #fff;
+    border: 1px solid #b7b5ac;
+    margin: 12% 0 0 2%;
+    position: relative;
+    top: 0;
+    z-index: 1;
+  }
+  /* line 77, ../scss/_mlayout.scss */
+  .contBox .mBlock1 .textBox .text p i {
+    display: block;
+    width: 22%;
+    position: absolute;
+    top: 16%;
+    left: 99.5%;
+  }
+  /* line 83, ../scss/_mlayout.scss */
+  .contBox .mBlock1 .textBox .text p i img {
+    width: 100%;
+  }
+  /* line 87, ../scss/_mlayout.scss */
+  .contBox .mBlock1 .textBox .super {
+    display: inline-block;
+    width: 47%;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  /* line 93, ../scss/_mlayout.scss */
+  .contBox .mBlock1 .textBox .super img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  /* line 101, ../scss/_mlayout.scss */
+  .contBox .mBlock2 {
+    width: 96%;
+    margin: 0 auto;
+  }
+  /* line 104, ../scss/_mlayout.scss */
+  .contBox .mBlock2 .redTitle {
+    width: 105%;
+    margin-left: -3%;
+    color: #bf3220;
+    font-size: 93%;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+  }
+  /* line 113, ../scss/_mlayout.scss */
+  .contBox .mBlock2 .stepTitle {
+    display: block;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    behavior: url("../lib/PIE.htc");
+    position: relative;
+    top: 0;
+    z-index: 1;
+    border: 1px solid #999890;
+    padding: 8px 15px;
+    color: #ffffff;
+    background-color: #fa3e26;
+    text-align: center;
+    margin: 40px auto 20px;
+    font-size: 115%;
+  }
+  /* line 128, ../scss/_mlayout.scss */
+  .contBox .mBlock2 .stepCont {
+    text-align: center;
+  }
+  /* line 130, ../scss/_mlayout.scss */
+  .contBox .mBlock2 .stepCont > p {
+    font-size: 106%;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 20px;
+  }
+  /* line 135, ../scss/_mlayout.scss */
+  .contBox .mBlock2 .stepCont > p > i {
+    display: inline-block;
+    width: 27px;
+    height: 26px;
+    background-image: url("../images/mPic/fb.png");
+    margin: 0 0 -6px 7px;
+  }
+  /* line 143, ../scss/_mlayout.scss */
+  .contBox .mBlock2 .stepCont > img {
+    width: 100%;
+  }
+  /* line 147, ../scss/_mlayout.scss */
+  .contBox .mBlock2 .stepPS {
+    background-color: #fa3e26;
+    color: #fff;
+    font-size: 90%;
+    margin: 15px 0 20px;
+    border: 1px solid #999890;
+    text-align: center;
+    padding: 20px 0;
+  }
+  /* line 155, ../scss/_mlayout.scss */
+  .contBox .mBlock2 .stepPS > span {
+    display: block;
+    line-height: 1.6;
+  }
+  /* line 161, ../scss/_mlayout.scss */
+  .contBox .mBlock3, .contBox .mBlock4 {
+    text-align: center;
+    width: 96%;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-weight: bold;
+  }
+  /* line 168, ../scss/_mlayout.scss */
+  .contBox .mBlock3 > img, .contBox .mBlock4 > img {
+    width: 100%;
+  }
+  /* line 169, ../scss/_mlayout.scss */
+  .contBox .mBlock3 .announce, .contBox .mBlock4 .announce {
+    background-color: #fa3e26;
+    color: #fff;
+    font-size: 98%;
+    margin: 15px 0 20px;
+    border: 1px solid #999890;
+    text-align: center;
+    padding: 20px 0;
+  }
+  /* line 177, ../scss/_mlayout.scss */
+  .contBox .mBlock3 .announce > span, .contBox .mBlock4 .announce > span {
+    display: block;
+    line-height: 1.6;
+  }
+  /* line 183, ../scss/_mlayout.scss */
+  .contBox .mBlock5 {
+    width: 96%;
+    margin: 40px auto;
+  }
+  /* line 187, ../scss/_mlayout.scss */
+  .contBox .mBlock5 ul {
+    width: 94%;
+    margin: 0 auto;
+    padding-left: 23px;
+  }
+  /* line 191, ../scss/_mlayout.scss */
+  .contBox .mBlock5 ul li {
+    list-style: decimal;
+    line-height: 1.4;
+    margin: 0 6px 15px 0;
+    font-size: 98%;
+  }
+
+  /* line 200, ../scss/_mlayout.scss */
+  .footerBox {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  /* line 206, ../scss/_mlayout.scss */
+  .footerBox .footer p {
+    font-size: 137%;
+    padding-top: 3%;
+  }
+  /* line 209, ../scss/_mlayout.scss */
+  .footerBox .footer p i {
+    display: inline-block;
+    margin: 0 10px;
+    border-left: 10px solid transparent;
+    border-bottom: 18px solid #fa3e26;
+    border-right: 10px solid transparent;
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 641px) {
+  /* line 219, ../scss/_mlayout.scss */
+  .contBox {
+    width: 640px;
+    margin: 0 auto;
+  }
+  /* line 222, ../scss/_mlayout.scss */
+  .contBox .mBlock3 .mTitle, .contBox .mBlock4 .mTitle, .contBox .mBlock5 .mTitle {
+    font-size: 225%;
+    color: #fa3e26;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0 30px;
+  }
+  /* line 229, ../scss/_mlayout.scss */
+  .contBox .mBlock1 {
+    margin-bottom: 150px;
+  }
+  /* line 231, ../scss/_mlayout.scss */
+  .contBox .mBlock1 .mLogo {
+    width: 92%;
+    margin: 5% auto;
+  }
+  /* line 234, ../scss/_mlayout.scss */
+  .contBox .mBlock1 .mLogo img {
+    width: 100%;
+  }
+  /* line 236, ../scss/_mlayout.scss */
+  .contBox .mBlock1 .textBox {
+    position: relative;
+    top: 0;
+  }
+  /* line 239, ../scss/_mlayout.scss */
+  .contBox .mBlock1 .textBox .text {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  /* line 246, ../scss/_mlayout.scss */
+  .contBox .mBlock1 .textBox .text p {
+    padding: 4%;
+    line-height: 2;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    behavior: url("../lib/PIE.htc");
+    background-color: #fff;
+    border: 1px solid #b7b5ac;
+    margin: 12% 0 0 2%;
+    position: relative;
+    top: 0;
+    z-index: 1;
+  }
+  /* line 257, ../scss/_mlayout.scss */
+  .contBox .mBlock1 .textBox .text p i {
+    display: block;
+    width: 22%;
+    position: absolute;
+    top: 20%;
+    right: -55px;
+  }
+  /* line 263, ../scss/_mlayout.scss */
+  .contBox .mBlock1 .textBox .text p i img {
+    width: 100%;
+  }
+  /* line 267, ../scss/_mlayout.scss */
+  .contBox .mBlock1 .textBox .super {
+    display: inline-block;
+    width: 47%;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  /* line 273, ../scss/_mlayout.scss */
+  .contBox .mBlock1 .textBox .super img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  /* line 281, ../scss/_mlayout.scss */
+  .contBox .mBlock2 {
+    text-align: center;
+  }
+  /* line 283, ../scss/_mlayout.scss */
+  .contBox .mBlock2 .redTitle {
+    width: 80%;
+    margin: 2% auto;
+    color: #bf3220;
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+  }
+  /* line 292, ../scss/_mlayout.scss */
+  .contBox .mBlock2 .stepTitle {
+    display: inline-block;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    behavior: url("../lib/PIE.htc");
+    position: relative;
+    top: 0;
+    z-index: 1;
+    border: 1px solid #999890;
+    padding: 8px 15px;
+    color: #ffffff;
+    background-color: #fa3e26;
+    min-width: 100px;
+    margin: 50px 0 20px;
+    font-size: 150%;
+  }
+  /* line 307, ../scss/_mlayout.scss */
+  .contBox .mBlock2 .stepCont {
+    text-align: center;
+  }
+  /* line 309, ../scss/_mlayout.scss */
+  .contBox .mBlock2 .stepCont > p {
+    font-size: 125%;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 20px;
+  }
+  /* line 314, ../scss/_mlayout.scss */
+  .contBox .mBlock2 .stepCont > p > i {
+    display: inline-block;
+    width: 27px;
+    height: 26px;
+    background-image: url("../images/mPic/fb.png");
+    margin: 0 0 -6px 7px;
+  }
+  /* line 322, ../scss/_mlayout.scss */
+  .contBox .mBlock2 .stepCont > img {
+    width: 100%;
+  }
+  /* line 326, ../scss/_mlayout.scss */
+  .contBox .mBlock2 .stepPS {
+    background-color: #fa3e26;
+    color: #fff;
+    font-size: 125%;
+    margin: 15px 0 20px;
+    border: 1px solid #999890;
+    text-align: center;
+    padding: 20px 0;
+  }
+  /* line 334, ../scss/_mlayout.scss */
+  .contBox .mBlock2 .stepPS > span {
+    display: block;
+    line-height: 1.6;
+  }
+  /* line 340, ../scss/_mlayout.scss */
+  .contBox .mBlock3, .contBox .mBlock4 {
+    text-align: center;
+    margin: 40px 0;
+    padding-top: 30px;
+  }
+  /* line 345, ../scss/_mlayout.scss */
+  .contBox .mBlock3 > img, .contBox .mBlock4 > img {
+    width: 100%;
+  }
+  /* line 346, ../scss/_mlayout.scss */
+  .contBox .mBlock3 .announce, .contBox .mBlock4 .announce {
+    background-color: #fa3e26;
+    color: #fff;
+    font-size: 150%;
+    margin: 15px 0 20px;
+    border: 1px solid #999890;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+  }
+  /* line 355, ../scss/_mlayout.scss */
+  .contBox .mBlock3 .announce > span, .contBox .mBlock4 .announce > span {
+    display: block;
+    line-height: 1.6;
+  }
+  /* line 361, ../scss/_mlayout.scss */
+  .contBox .mBlock5 {
+    margin: 40px 0;
+  }
+  /* line 364, ../scss/_mlayout.scss */
+  .contBox .mBlock5 ul {
+    width: 95%;
+    margin: 0 auto;
+    padding-left: 30px;
+  }
+  /* line 368, ../scss/_mlayout.scss */
+  .contBox .mBlock5 ul li {
+    list-style: decimal;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    font-size: 112.5%;
+  }
+}

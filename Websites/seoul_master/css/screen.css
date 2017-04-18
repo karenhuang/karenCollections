@@ -1,0 +1,884 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../scss/_layout.scss */
+html, body {
+  height: 100%;
+  background-color: #ffde00;
+  background-image: url("../img/dottedBg.png");
+  background-repeat: repeat;
+}
+
+/* line 7, ../scss/_layout.scss */
+.wrapper {
+  width: 100%;
+  /* 設定高度最小為100%, 如果內容區塊很多, 可以長大 */
+  min-height: 100%;
+  /* 位置設為relative, 作為footer區塊位置的參考 */
+  position: relative;
+  top: 0;
+}
+/* line 15, ../scss/_layout.scss */
+.wrapper .wrapper_position .container {
+  width: 100%;
+}
+/* line 17, ../scss/_layout.scss */
+.wrapper .wrapper_position .container .containerBox {
+  width: 100%;
+  padding-bottom: 90px;
+}
+/* line 20, ../scss/_layout.scss */
+.wrapper .wrapper_position .container .containerBox .Cont {
+  width: 960px;
+  margin: 0 auto;
+}
+/* line 24, ../scss/_layout.scss */
+.wrapper .wrapper_position .container .containerBox .Cont .goTop {
+  position: fixed;
+  display: none;
+  top: 200px;
+  left: 50%;
+  margin-left: 480px;
+  width: 24px;
+  height: 26px;
+  background-image: url("../img/goTop.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* line 1, ../scss/_hd.scss */
+.headerBox {
+  width: 100%;
+  min-width: 960px;
+}
+/* line 4, ../scss/_hd.scss */
+.headerBox .header {
+  min-width: 960px;
+  margin: 0 auto;
+}
+/* line 7, ../scss/_hd.scss */
+.headerBox .header .hdTop {
+  width: 100%;
+  height: 37px;
+  background-image: url("../img/menubg.jpg");
+  background-repeat: repeat;
+  border-bottom: 4px solid #fff;
+  position: relative;
+  top: 0;
+  z-index: 20;
+}
+/* line 16, ../scss/_hd.scss */
+.headerBox .header .hdTop .menu {
+  width: 895px;
+  margin: 0 auto;
+}
+/* line 19, ../scss/_hd.scss */
+.headerBox .header .hdTop .menu a {
+  display: inline-block;
+  height: 46px;
+  margin: 0 13px;
+  width: 165px;
+}
+/* line 24, ../scss/_hd.scss */
+.headerBox .header .hdTop .menu a span {
+  display: block;
+  height: 40px;
+  background-image: url("../img/menu/01.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* line 32, ../scss/_hd.scss */
+.headerBox .header .hdTop .menu a:hover {
+  background-color: #000;
+}
+/* line 35, ../scss/_hd.scss */
+.headerBox .header .hdTop .menu a.a2 span {
+  background-image: url("../img/menu/02.png");
+}
+/* line 36, ../scss/_hd.scss */
+.headerBox .header .hdTop .menu a.a3 span {
+  background-image: url("../img/menu/03.png");
+}
+/* line 37, ../scss/_hd.scss */
+.headerBox .header .hdTop .menu a.a4 {
+  width: 120px;
+}
+/* line 37, ../scss/_hd.scss */
+.headerBox .header .hdTop .menu a.a4 span {
+  background-image: url("../img/menu/04.png");
+}
+/* line 38, ../scss/_hd.scss */
+.headerBox .header .hdTop .menu a.a5 {
+  width: 120px;
+}
+/* line 38, ../scss/_hd.scss */
+.headerBox .header .hdTop .menu a.a5 span {
+  background-image: url("../img/menu/05.png");
+}
+/* line 43, ../scss/_hd.scss */
+.headerBox .header .hdBottom {
+  border-top: 2px solid #000;
+  height: 155px;
+  position: relative;
+  top: 0;
+  z-index: 10;
+}
+/* line 49, ../scss/_hd.scss */
+.headerBox .header .hdBottom .hdbotCont {
+  width: 960px;
+  margin: 0 auto;
+  height: 155px;
+  position: relative;
+  top: 0;
+}
+/* line 55, ../scss/_hd.scss */
+.headerBox .header .hdBottom .hdbotCont .logo {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  width: 384px;
+  height: 89px;
+}
+/* line 61, ../scss/_hd.scss */
+.headerBox .header .hdBottom .hdbotCont .logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+}
+/* line 69, ../scss/_hd.scss */
+.headerBox .header .hdBottom .hdbotCont .letGo {
+  width: 282px;
+  height: 85px;
+  background-image: url("../img/letgo.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 48px;
+  left: 425px;
+  padding: 20px 0 0 118px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 79, ../scss/_hd.scss */
+.headerBox .header .hdBottom .hdbotCont .letGo a {
+  display: block;
+  width: 108px;
+  height: 65px;
+  background-image: url("../img/go.png");
+}
+/* line 84, ../scss/_hd.scss */
+.headerBox .header .hdBottom .hdbotCont .letGo a:hover {
+  background-image: url("../img/go_hover.png");
+}
+/* line 89, ../scss/_hd.scss */
+.headerBox .header .hdBottom .hdbotCont .icon {
+  height: 25px;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+}
+/* line 94, ../scss/_hd.scss */
+.headerBox .header .hdBottom .hdbotCont .icon a {
+  display: inline-block;
+  width: 24px;
+  height: 23px;
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
+  margin-right: 3px;
+  vertical-align: top;
+}
+/* line 102, ../scss/_hd.scss */
+.headerBox .header .hdBottom .hdbotCont .icon a.i1 {
+  background-position: 0 0;
+}
+/* line 104, ../scss/_hd.scss */
+.headerBox .header .hdBottom .hdbotCont .icon a.i1:hover {
+  margin-top: 1px;
+}
+/* line 106, ../scss/_hd.scss */
+.headerBox .header .hdBottom .hdbotCont .icon a.i2 {
+  background-position: -27px 0;
+}
+/* line 108, ../scss/_hd.scss */
+.headerBox .header .hdBottom .hdbotCont .icon a.i2:hover {
+  margin-top: 1px;
+}
+/* line 110, ../scss/_hd.scss */
+.headerBox .header .hdBottom .hdbotCont .icon a.i3 {
+  background-position: -54px 0;
+}
+/* line 112, ../scss/_hd.scss */
+.headerBox .header .hdBottom .hdbotCont .icon a.i3:hover {
+  margin-top: 1px;
+}
+/* line 114, ../scss/_hd.scss */
+.headerBox .header .hdBottom .hdbotCont .icon a.i4 {
+  background-position: -81px 0;
+}
+/* line 116, ../scss/_hd.scss */
+.headerBox .header .hdBottom .hdbotCont .icon a.i4:hover {
+  margin-top: 1px;
+}
+/* line 121, ../scss/_hd.scss */
+.headerBox .header .hdBottom .hdbotCont .seoullogo {
+  position: absolute;
+  right: 0;
+  bottom: 19px;
+  width: 265px;
+  height: 89px;
+}
+/* line 127, ../scss/_hd.scss */
+.headerBox .header .hdBottom .hdbotCont .seoullogo a {
+  display: block;
+  width: 265px;
+  height: 89px;
+  background-image: url("../img/seoullogo.jpg");
+  background-repeat: no-repeat;
+}
+
+/* line 148, ../scss/_hd.scss */
+.page_shopping .headerBox .header .hdTop .menu .a1 {
+  background-color: #000;
+}
+
+/* line 152, ../scss/_hd.scss */
+.page_kpop .headerBox .header .hdTop .menu .a2 {
+  background-color: #000;
+}
+
+/* line 156, ../scss/_hd.scss */
+.page_wedding .headerBox .header .hdTop .menu .a3 {
+  background-color: #000;
+}
+
+/* line 1, ../scss/_ft.scss */
+.footerBox {
+  width: 100%;
+  min-width: 960px;
+  height: 90px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #010101;
+  padding: 30px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 11, ../scss/_ft.scss */
+.footerBox .footer {
+  width: 960px;
+  margin: 0 auto;
+}
+/* line 14, ../scss/_ft.scss */
+.footerBox .footer p {
+  text-align: center;
+}
+/* line 16, ../scss/_ft.scss */
+.footerBox .footer p span {
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* line 2, ../scss/_index.scss */
+.page_index .headerBox {
+  position: relative;
+  top: 0;
+  z-index: 20;
+}
+/* line 7, ../scss/_index.scss */
+.page_index .headerBox .header .hdBottom {
+  height: 155px;
+}
+/* line 9, ../scss/_index.scss */
+.page_index .headerBox .header .hdBottom .hdbotCont {
+  width: 960px;
+  margin: 0 auto;
+  height: 155px;
+  position: relative;
+  top: 0;
+}
+/* line 15, ../scss/_index.scss */
+.page_index .headerBox .header .hdBottom .hdbotCont .logo {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  margin-left: -192px;
+  width: 384px;
+  height: 89px;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+}
+/* line 24, ../scss/_index.scss */
+.page_index .headerBox .header .hdBottom .hdbotCont .logo a {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+/* line 30, ../scss/_index.scss */
+.page_index .headerBox .header .hdBottom .hdbotCont .letGo {
+  width: 640px;
+  height: 85px;
+  background-image: url("../img/letgo_index.png");
+  background-position: 31% 62%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 117px;
+  left: 50%;
+  margin-left: -300px;
+  padding: 0 0 0 500px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 42, ../scss/_index.scss */
+.page_index .headerBox .header .hdBottom .hdbotCont .letGo a {
+  display: block;
+  width: 139px;
+  height: 84px;
+  background-image: url("../img/index_go.png");
+}
+/* line 47, ../scss/_index.scss */
+.page_index .headerBox .header .hdBottom .hdbotCont .letGo a:hover {
+  background-image: url("../img/index_go_hover.png");
+}
+/* line 52, ../scss/_index.scss */
+.page_index .headerBox .header .hdBottom .hdbotCont .seoullogo {
+  display: none;
+}
+/* line 59, ../scss/_index.scss */
+.page_index .containerBox {
+  position: relative;
+  top: 0;
+  margin-top: -20px;
+  margin-left: -40px;
+}
+/* line 64, ../scss/_index.scss */
+.page_index .containerBox .Cont {
+  width: 960px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+/* line 68, ../scss/_index.scss */
+.page_index .containerBox .Cont .carousel {
+  width: 100%;
+  margin-bottom: 20px;
+}
+/* line 71, ../scss/_index.scss */
+.page_index .containerBox .Cont .carousel .carousel_content {
+  width: 926px;
+  height: 530px;
+  overflow: hidden;
+  background-image: url("../img/indexbg.png");
+  background-position: 0 0;
+}
+/* line 77, ../scss/_index.scss */
+.page_index .containerBox .Cont .carousel .carousel_content a {
+  display: none;
+  width: 926px;
+  height: 530px;
+}
+/* line 81, ../scss/_index.scss */
+.page_index .containerBox .Cont .carousel .carousel_content a.linkOn {
+  display: block;
+}
+
+/* line 3, ../scss/_shopping.scss */
+.page_shopping .containerBox .Cont {
+  position: relative;
+  top: 0;
+  height: 2000px;
+  background-color: #fff;
+}
+/* line 8, ../scss/_shopping.scss */
+.page_shopping .containerBox .Cont .kimCont {
+  width: 960px;
+  height: 2000px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: -12px 0 0 -480px;
+}
+/* line 15, ../scss/_shopping.scss */
+.page_shopping .containerBox .Cont .kimCont .kim {
+  width: 912px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+/* line 21, ../scss/_shopping.scss */
+.page_shopping .containerBox .Cont .kimCont .k01 {
+  height: 860px;
+  background-image: url("../img/expert/in-Kim_01.png");
+  position: relative;
+  top: 0;
+}
+/* line 26, ../scss/_shopping.scss */
+.page_shopping .containerBox .Cont .kimCont .k01 .blogLink {
+  display: block;
+  width: 242px;
+  height: 46px;
+  position: absolute;
+  top: 312px;
+  right: 13px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "微軟正黑體";
+  color: #010101;
+  padding-top: 3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 40, ../scss/_shopping.scss */
+.page_shopping .containerBox .Cont .kimCont .k01 .blogLink:hover {
+  background-color: #ffde00;
+}
+/* line 41, ../scss/_shopping.scss */
+.page_shopping .containerBox .Cont .kimCont .k01 .blogLink p {
+  text-align: center;
+  line-height: 1.2;
+}
+/* line 44, ../scss/_shopping.scss */
+.page_shopping .containerBox .Cont .kimCont .k02 {
+  height: 215px;
+  background-image: url("../img/expert/in-Kim_02.png");
+}
+/* line 48, ../scss/_shopping.scss */
+.page_shopping .containerBox .Cont .kimCont .k03 {
+  height: 676px;
+  background-image: url("../img/expert/in-Kim_03.png");
+}
+/* line 52, ../scss/_shopping.scss */
+.page_shopping .containerBox .Cont .kimCont .k04 {
+  height: 226px;
+  background-image: url("../img/expert/in-Kim_04.png");
+  position: relative;
+  top: 0;
+}
+/* line 57, ../scss/_shopping.scss */
+.page_shopping .containerBox .Cont .kimCont .k04 a {
+  display: block;
+  width: 186px;
+  height: 51px;
+  position: absolute;
+}
+/* line 62, ../scss/_shopping.scss */
+.page_shopping .containerBox .Cont .kimCont .k04 a.a1 {
+  right: 20px;
+  top: 82px;
+  background-image: url("../img/expert/in-btn1.png");
+}
+/* line 67, ../scss/_shopping.scss */
+.page_shopping .containerBox .Cont .kimCont .k04 a.a2 {
+  right: 20px;
+  top: 145px;
+  background-image: url("../img/expert/in-btn2.png");
+}
+/* line 72, ../scss/_shopping.scss */
+.page_shopping .containerBox .Cont .kimCont .k04 a.a4 {
+  right: 20px;
+  top: 20px;
+  background-image: url("../img/expert/in-btn4.png");
+}
+/* line 77, ../scss/_shopping.scss */
+.page_shopping .containerBox .Cont .kimCont .k04 a:hover {
+  margin-top: 1px;
+}
+
+/* line 3, ../scss/_kpop.scss */
+.page_kpop .containerBox .Cont {
+  position: relative;
+  top: 0;
+  height: 2000px;
+  background-color: #fff;
+}
+/* line 8, ../scss/_kpop.scss */
+.page_kpop .containerBox .Cont .kpopCont {
+  width: 960px;
+  height: 2000px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: -12px 0 0 -480px;
+}
+/* line 15, ../scss/_kpop.scss */
+.page_kpop .containerBox .Cont .kpopCont .kpop {
+  width: 904px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+/* line 21, ../scss/_kpop.scss */
+.page_kpop .containerBox .Cont .kpopCont .k01 {
+  height: 925px;
+  background-image: url("../img/expert/in-DJ_01.png");
+  position: relative;
+  top: 0;
+}
+/* line 26, ../scss/_kpop.scss */
+.page_kpop .containerBox .Cont .kpopCont .k01 .blogLink {
+  display: block;
+  width: 242px;
+  height: 77px;
+  position: absolute;
+  top: 312px;
+  right: 7px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "微軟正黑體";
+  color: #010101;
+  padding-top: 6px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 40, ../scss/_kpop.scss */
+.page_kpop .containerBox .Cont .kpopCont .k01 .blogLink:hover {
+  background-color: #ffde00;
+}
+/* line 41, ../scss/_kpop.scss */
+.page_kpop .containerBox .Cont .kpopCont .k01 .blogLink p {
+  text-align: center;
+  line-height: 1.2;
+}
+/* line 43, ../scss/_kpop.scss */
+.page_kpop .containerBox .Cont .kpopCont .k01 .blogLink p:last-child {
+  margin-top: 6px;
+}
+/* line 47, ../scss/_kpop.scss */
+.page_kpop .containerBox .Cont .kpopCont .k02 {
+  height: 445px;
+  background-image: url("../img/expert/in-DJ_02.png");
+}
+/* line 51, ../scss/_kpop.scss */
+.page_kpop .containerBox .Cont .kpopCont .k03 {
+  height: 275px;
+  background-image: url("../img/expert/in-DJ_03.png");
+}
+/* line 55, ../scss/_kpop.scss */
+.page_kpop .containerBox .Cont .kpopCont .k04 {
+  height: 336px;
+  background-image: url("../img/expert/in-DJ_04.png");
+  position: relative;
+  top: 0;
+}
+/* line 60, ../scss/_kpop.scss */
+.page_kpop .containerBox .Cont .kpopCont .k04 a {
+  display: block;
+  width: 186px;
+  height: 51px;
+  position: absolute;
+}
+/* line 65, ../scss/_kpop.scss */
+.page_kpop .containerBox .Cont .kpopCont .k04 a.a1 {
+  right: 223px;
+  top: 285px;
+  background-image: url("../img/expert/in-btn1.png");
+}
+/* line 70, ../scss/_kpop.scss */
+.page_kpop .containerBox .Cont .kpopCont .k04 a.a2 {
+  right: 17px;
+  top: 285px;
+  background-image: url("../img/expert/in-btn2.png");
+}
+/* line 75, ../scss/_kpop.scss */
+.page_kpop .containerBox .Cont .kpopCont .k04 a.a4 {
+  right: 130px;
+  top: 225px;
+  background-image: url("../img/expert/in-btn4.png");
+}
+/* line 80, ../scss/_kpop.scss */
+.page_kpop .containerBox .Cont .kpopCont .k04 a:hover {
+  margin-top: 1px;
+}
+
+/* line 3, ../scss/_wedding.scss */
+.page_wedding .containerBox .Cont {
+  position: relative;
+  top: 0;
+  height: 1900px;
+  background-color: #fff;
+}
+/* line 8, ../scss/_wedding.scss */
+.page_wedding .containerBox .Cont .weddingCont {
+  width: 960px;
+  height: 1900px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: -12px 0 0 -480px;
+}
+/* line 15, ../scss/_wedding.scss */
+.page_wedding .containerBox .Cont .weddingCont .kim {
+  width: 930px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+/* line 21, ../scss/_wedding.scss */
+.page_wedding .containerBox .Cont .weddingCont .k01 {
+  height: 1100px;
+  background-image: url("../img/expert/in-Natalie_01.png");
+  position: relative;
+  top: 0;
+}
+/* line 26, ../scss/_wedding.scss */
+.page_wedding .containerBox .Cont .weddingCont .k01 .blogLink {
+  display: block;
+  width: 242px;
+  height: 46px;
+  position: absolute;
+  top: 312px;
+  right: 15px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "微軟正黑體";
+  color: #010101;
+  padding-top: 3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 40, ../scss/_wedding.scss */
+.page_wedding .containerBox .Cont .weddingCont .k01 .blogLink:hover {
+  background-color: #ffde00;
+}
+/* line 41, ../scss/_wedding.scss */
+.page_wedding .containerBox .Cont .weddingCont .k01 .blogLink p {
+  text-align: center;
+  line-height: 1.2;
+}
+/* line 44, ../scss/_wedding.scss */
+.page_wedding .containerBox .Cont .weddingCont .k02 {
+  height: 284px;
+  background-image: url("../img/expert/in-Natalie_02.png");
+}
+/* line 48, ../scss/_wedding.scss */
+.page_wedding .containerBox .Cont .weddingCont .k03 {
+  height: 516px;
+  background-image: url("../img/expert/in-Natalie_03.png");
+  position: relative;
+  top: 0;
+}
+/* line 53, ../scss/_wedding.scss */
+.page_wedding .containerBox .Cont .weddingCont .k03 a {
+  display: block;
+  width: 186px;
+  height: 51px;
+  position: absolute;
+}
+/* line 58, ../scss/_wedding.scss */
+.page_wedding .containerBox .Cont .weddingCont .k03 a.a3 {
+  top: 340px;
+  right: 13px;
+  background-image: url("../img/expert/in-btn3.png");
+}
+/* line 63, ../scss/_wedding.scss */
+.page_wedding .containerBox .Cont .weddingCont .k03 a.a1 {
+  right: 13px;
+  top: 400px;
+  background-image: url("../img/expert/in-btn1.png");
+}
+/* line 68, ../scss/_wedding.scss */
+.page_wedding .containerBox .Cont .weddingCont .k03 a.a2 {
+  right: 13px;
+  top: 460px;
+  background-image: url("../img/expert/in-btn2.png");
+}
+/* line 73, ../scss/_wedding.scss */
+.page_wedding .containerBox .Cont .weddingCont .k03 a.a4 {
+  top: 460px;
+  right: 222px;
+  background-image: url("../img/expert/in-btn4.png");
+}
+/* line 78, ../scss/_wedding.scss */
+.page_wedding .containerBox .Cont .weddingCont .k03 a:hover {
+  margin-top: 1px;
+}
+
+/* line 3, ../scss/_airtickets.scss */
+.page_airtickets .containerBox .Cont {
+  position: relative;
+  top: 0;
+  background-color: #fff;
+}
+/* line 7, ../scss/_airtickets.scss */
+.page_airtickets .containerBox .Cont .airticketsCont {
+  width: 960px;
+  margin: 0 auto;
+  padding: 145px 30px 80px 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: url("../img/airticketsTitle.png");
+  background-repeat: no-repeat;
+  background-position: 50% 10px;
+  font-family: "微軟正黑體";
+}
+/* line 16, ../scss/_airtickets.scss */
+.page_airtickets .containerBox .Cont .airticketsCont .mText {
+  width: 870px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 16px;
+  line-height: 2;
+  color: #ef070e;
+  font-weight: bold;
+}
+/* line 24, ../scss/_airtickets.scss */
+.page_airtickets .containerBox .Cont .airticketsCont .mText a {
+  color: #001b89;
+  text-decoration: none;
+}
+/* line 31, ../scss/_airtickets.scss */
+.page_airtickets .containerBox .Cont .airticketsCont .winnerBox .mTitle {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin: 50px 0 20px 0;
+}
+/* line 37, ../scss/_airtickets.scss */
+.page_airtickets .containerBox .Cont .airticketsCont .winnerBox .mLine {
+  border: 5px solid #000;
+  width: 870px;
+  margin: 0 auto;
+}
+/* line 41, ../scss/_airtickets.scss */
+.page_airtickets .containerBox .Cont .airticketsCont .winnerBox .mLine hr {
+  width: 94%;
+  margin: 0 auto;
+  border: none;
+  border-bottom: 1px dashed gray;
+}
+/* line 47, ../scss/_airtickets.scss */
+.page_airtickets .containerBox .Cont .airticketsCont .winnerBox .mLine table {
+  width: 70%;
+  margin: 30px auto;
+}
+/* line 50, ../scss/_airtickets.scss */
+.page_airtickets .containerBox .Cont .airticketsCont .winnerBox .mLine table tr {
+  width: 100%;
+}
+/* line 52, ../scss/_airtickets.scss */
+.page_airtickets .containerBox .Cont .airticketsCont .winnerBox .mLine table tr th {
+  padding-bottom: 10px;
+}
+/* line 54, ../scss/_airtickets.scss */
+.page_airtickets .containerBox .Cont .airticketsCont .winnerBox .mLine table tr th i {
+  display: inline-block;
+  width: 152px;
+  height: 91px;
+  max-height: 136px;
+  background-repeat: no-repeat;
+  vertical-align: top;
+}
+/* line 62, ../scss/_airtickets.scss */
+.page_airtickets .containerBox .Cont .airticketsCont .winnerBox .mLine table tr th span {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  vertical-align: top;
+  margin: 30px 0 0 10px;
+}
+/* line 70, ../scss/_airtickets.scss */
+.page_airtickets .containerBox .Cont .airticketsCont .winnerBox .mLine table tr td {
+  padding: 10px 0;
+  font-weight: bold;
+  width: 50%;
+}
+/* line 75, ../scss/_airtickets.scss */
+.page_airtickets .containerBox .Cont .airticketsCont .winnerBox .mLine table tr.title td {
+  font-size: 20px;
+}
+/* line 78, ../scss/_airtickets.scss */
+.page_airtickets .containerBox .Cont .airticketsCont .winnerBox .mLine .tb1 tr th i {
+  background-image: url("../img/airticketsLink1.png");
+}
+/* line 79, ../scss/_airtickets.scss */
+.page_airtickets .containerBox .Cont .airticketsCont .winnerBox .mLine .tb2 tr th i {
+  background-image: url("../img/airticketsLink3.png");
+}
+/* line 80, ../scss/_airtickets.scss */
+.page_airtickets .containerBox .Cont .airticketsCont .winnerBox .mLine .tb3 tr th i {
+  background-image: url("../img/airticketsLink4.png");
+}
+/* line 81, ../scss/_airtickets.scss */
+.page_airtickets .containerBox .Cont .airticketsCont .winnerBox .mLine .tb4 tr th i {
+  width: 102px;
+  background-image: url("../img/airticketsLink5.png");
+}

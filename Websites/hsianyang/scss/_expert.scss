@@ -1,0 +1,129 @@
+.page_expert{
+  .contBg{
+    background-image: url("../img/bk4.jpg");
+  }
+  .contBox{
+    .cont{
+      .expertBox{
+        .expertboxCont{
+          .mTitle{
+            span{
+              background-image: url("../img/titlebg.png");
+              background-position: -165px 0;
+            }
+          }
+          .mText{
+            .expertInfo{
+              background-image: url("../img/line.png");
+              background-repeat: no-repeat;
+              background-position: 50% 100%;
+              padding-bottom: 40px;
+              margin-bottom: 40px;
+              &>span{
+                display: inline-block;
+                margin-right: -4px;
+                vertical-align: top;
+              }
+              .mPic{
+                width: 234px;
+                img{
+                  display: block;
+                  margin-bottom: 1px;
+                }
+                .text{
+                  display: block;
+                  width: 100%;
+                  background-color: #b45235;
+                  padding: 5px 6px;
+                  @include box-sizing(border-box);
+                  position: relative;
+                  top: 0;
+                  color:#fff;
+                  font-size: 18px;
+                  line-height: 1.8;
+                  a{
+                    display: block;
+                    width:17px;
+                    height: 24px;
+                    position: absolute;
+                    bottom: 8px;
+                    right: 6px;
+                    background-image: url("../img/location.png");
+                    background-repeat: no-repeat;
+                  }
+                }
+              }
+              .mInfo{
+                width: 545px;
+                position: relative;
+                top:0;
+                padding-left: 20px;
+                @include box-sizing(border-box);
+                .mName{
+                  font-size: 25px;
+                  font-weight: bold;
+                  color:#b45235;
+                  line-height: 1.6;
+                  img{
+                    margin-bottom: -3px;
+                  }
+                }
+                .bFont{
+                  font-size: 18px;
+                  font-weight: bold;
+                  color:#222222;
+                  margin:13px 0 12px 0;
+                }
+                .text{
+                  font-size: 14px;
+                  color:#222222;
+                  line-height: 1.5;
+                  letter-spacing: 1px;
+                  margin-bottom: 15px;
+                }
+                .expertLink{
+                  position: absolute;
+                  top:15px;
+                  right:10px;
+                  color:#ac750c;
+                  font-size: 16px;
+                  font-weight: bold;
+                  span{
+                    display: inline-block;
+                    width: 11px;
+                    height: 12px;
+                    background-image: url("../img/linkPoint.png");
+                    margin-right: 5px;
+                  }
+                }
+                ul{
+                  li{
+                    line-height: 2;
+                    a{
+                      color:#98741e;
+                      font-size: 14px;
+                      border-left:5px solid #aa9c31;
+                      padding-left:6px;
+                      text-decoration: none;
+                      i{
+                        font-weight: bold;
+                      }
+                      span{
+                        border-bottom: 1px solid #98741e;
+                        padding-bottom: 1px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .lastExpert{
+              background-image: none;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

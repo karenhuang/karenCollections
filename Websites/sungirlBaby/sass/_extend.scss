@@ -1,0 +1,88 @@
+%indent {
+  display: block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+%decoration {
+  display: block;
+  text-decoration: none;
+}
+%block {
+  @include container();
+  max-width: $mainWidth;
+}
+%vertical-outer {
+  &:before {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0px;
+    height: 100%;
+    content: "";
+    visibility: hidden;
+    margin-right: -4px;
+  }
+}
+%vertical-inner {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+%inline-outer {
+  letter-spacing: -4px; //可能需要微調
+  // word-spacing: -4px;
+  font-size: 0;
+}
+%inline-inner {
+  letter-spacing: normal; //可能需要微調
+  // word-spacing: normal;
+  display:inline-block;
+  *display: inline;
+  zoom:1;
+}
+// 省略...
+%da {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+//清掉float
+%clear {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+//漸層色
+%gradient{
+  @include background-image(linear-gradient(0deg, rgba(149,32,31,1), rgba(198,54,57,1)));
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1392b', endColorstr='#95201f',GradientType=0 );
+  //0水平  1垂直
+}
+
+//三角形
+%triangle {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  // 朝上
+  // border-width: 0 20px 20px 20px;
+  // border-color: transparent transparent gray transparent;
+  
+  // 朝下
+  // border-width: 20px 20px 0 20px; 
+  // border-color: gray transparent transparent transparent;
+
+  // 朝右
+  // border-width: 20px 0 20px 20px;
+  // border-color: transparent transparent transparent gray;
+
+  // 朝左
+  // border-width: 20px 20px 20px 0;
+  // border-color: transparent gray transparent transparent;
+}

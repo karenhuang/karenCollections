@@ -1,0 +1,14 @@
+$font-list: 14px 16px 24px;
+$base-font-size: nth($font-list, 1);
+$base-line-height: 10px;
+$rhythm-unit: 'px';
+
+$mainWidth:960px;
+$darkColor:#000;
+$lightColor:#FFF;
+
+
+// $susy: ( columns:24, math:fluid, gutters:1/3, gutter-position:split);
+// $gutter: 10px;
+$susy: ( columns:24, math:fluid, gutters:1, gutter-position:split);
+$gutter:20px;
