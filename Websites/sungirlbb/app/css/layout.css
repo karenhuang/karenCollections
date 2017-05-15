@@ -24,7 +24,7 @@ img { display: block; border: none; }
 
 nav ul li:before, .th-share ul li:before, .footer-content .md-iconlink .btn-share li:before, .th-album header h2:before, .th-video header h2:before, .th-download header h2:before { display: inline-block; vertical-align: middle; width: 0px; height: 100%; content: ""; visibility: hidden; }
 
-.header-content:after, .footer-content .md-textlink ul:after, .footer-content .md-iconlink .btn-share:after, .th-album header:after, .th-video header:after, .th-download header:after, .th-album .md-list:after, .th-video .md-list:after, .th-download .md-list:after, .th-album .md-list .pt-cont figure figcaption:after, .th-video .md-list .pt-cont figure figcaption:after, .th-download .md-list .pt-cont figure figcaption:after, .fullbar:after, .main-content .main-aside .th-asideInfo:after, .main-content .main-aside .album-cont figure figcaption:after, .main-content .main-aside .video-cont figure figcaption:after, .main-content .main-sub .btn-share:after, .md-album-popup .pt-btnList:after, .th-albumCont .md-albumBlock:after, .md-download-popup .downloadCont:after, .th-textlink ul:after { content: ""; display: block; clear: both; }
+.header-content:after, .footer-content .md-textlink ul:after, .footer-content .md-iconlink .btn-share:after, .th-album header:after, .th-video header:after, .th-download header:after, .th-album .md-list:after, .th-video .md-list:after, .th-download .md-list:after, .th-album .md-list .pt-cont figure figcaption:after, .th-video .md-list .pt-cont figure figcaption:after, .th-download .md-list .pt-cont figure figcaption:after, .fullbar:after, .main-content:after, .main-content .main-aside .album-cont figure figcaption:after, .main-content .main-aside .video-cont figure figcaption:after, .main-content .main-sub .btn-share:after, .md-album-popup .pt-btnList:after, .th-albumCont .md-albumBlock:after, .md-download-popup .downloadCont:after, .th-textlink ul:after { content: ""; display: block; clear: both; }
 
 .th-album .md-moreBtn a, .th-video .md-moreBtn a, .th-download .md-moreBtn a, .main-content .main-aside .md-moreBtn a, .fixedHdBg, .footer-content { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjEuMCIgeTE9IjEuMCIgeDI9IjAuMCIgeTI9IjAuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmNTJjMyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2M2MzYzOSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -moz-linear-gradient(135deg, #ff52c3, #c63639); background-image: -webkit-linear-gradient(135deg, #ff52c3, #c63639); background-image: linear-gradient(-45deg, #ff52c3, #c63639); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c63639', endColorstr='#ff52c3',GradientType=1 ); }
 
@@ -267,7 +267,14 @@ nav ul .li-info { display: none; }
 .main-content .main-aside .md-album { width: 47.91667%; float: left; margin-left: 1.04167%; margin-right: 1.04167%; margin-bottom: 20px; }
 .main-content .main-aside .md-album a { text-decoration: none; }
 .main-content .main-aside .md-video { width: 47.91667%; float: left; margin-left: 1.04167%; margin-right: 1.04167%; margin-bottom: 20px; }
+.main-content .main-aside .md-adCont { display: none; width: 97.91667%; float: left; margin-left: 1.04167%; margin-right: 1.04167%; margin-bottom: 20px; }
+.main-content .main-aside .md-adCont a { display: block; width: 100%; text-decoration: none; }
+.main-content .main-aside .md-adCont a img { width: 100%; }
 .main-content .main-aside .md-moreBtn { width: 97.91667%; float: left; margin-left: 1.04167%; margin-right: 1.04167%; }
+.main-content .main-aside .th-appbanner { width: 97.91667%; float: left; margin-left: 1.04167%; margin-right: 1.04167%; }
+.main-content .main-aside .th-appbanner a { display: block; width: 100%; }
+.main-content .main-aside .th-appbanner a img { display: block; width: 98%; margin: 0 auto 15px; }
+.main-content .main-aside .th-asideInfo { width: 97.91667%; float: left; margin-left: 1.04167%; margin-right: 1.04167%; }
 .main-content .main-aside .th-bottomadCont { display: none; width: 97.91667%; float: left; margin-left: 1.04167%; margin-right: 1.04167%; margin-bottom: 20px; text-align: center; }
 .main-content .main-aside .th-bottomadCont a { display: inline-block; width: 50%; }
 .main-content .main-aside .th-bottomadCont a img { width: 100%; }
@@ -336,6 +343,7 @@ nav ul .li-info { display: none; }
   .main-content .main-aside .th-bottomadCont a img { width: 100%; }
   .main-content .main-aside .md-album { width: 97.91667%; float: left; margin-left: 1.04167%; margin-right: 1.04167%; }
   .main-content .main-aside .md-video { width: 97.91667%; float: left; margin-left: 1.04167%; margin-right: 1.04167%; }
+  .main-content .main-aside .md-adCont { display: block; }
   .main-content .main-sub { display: none; } }
 .main-album { max-width: 1400px; margin: 0 auto; }
 

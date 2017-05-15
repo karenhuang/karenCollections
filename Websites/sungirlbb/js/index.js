@@ -99,6 +99,23 @@ kn.index = {
 kn.common.setData(newlist);    
 kn.index.setList("indexNew");
 
+// 插入廣告(首頁m版)
+function appendAdbanner(){
+  var adCont = '<div class="md-adCont">'+
+        '<div class="adCont">'+
+            '<a href="" target="_blank">'+
+                '<img src="images/300x250_wechat.jpg">'+
+            '</a>'+
+        '</div>'+
+    '</div>'
+  if($(".th-asideInfo > div").length>4){
+    $(".th-asideInfo > div").eq(3).after(adCont)
+  }  
+}
+
+appendAdbanner();
+
+
 //index 最新更新
 $("#indexNew").click(function(){
   kn.common.setData(newlist);  
