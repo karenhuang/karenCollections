@@ -73,7 +73,10 @@ $(".block32 .pt-country").off('click').on('click',function(){
     var groupName = self.attr('data-group').toLowerCase();
     var grouplength = self.parent().find('.pt-country').length;
     var nextNum = self.siblings('.selected').length+1;
-     if(!self.hasClass('selected')){
+    if((self.parent().attr('data-num')/1)>=3){
+      self.parent().removeClass('nonefinish');
+    }
+    if(!self.hasClass('selected')){
       self.addClass('selected').attr('data-num', nextNum).find('.num').text(nextNum);  
       self.siblings().not('.selected').find('.num').text(nextNum+1);
       self.parent().attr('data-num',nextNum);
@@ -121,20 +124,20 @@ $(".block32 .pt-country").off('click').on('click',function(){
 $(".block16 .pt-group >div").off('click').on('click',function(){
   var self = $(this);
   var keys = Object.keys(fcst.team32);
-  var g32 = 0;  
+  var g32 = 0;
   for(var i=0; i<keys.length; i++){
     for(var j=0; j<fcst.team32[keys[i]].length; j++){
       g32++;
     }
   }
   if(g32==32){
-    fcst.status32 = false;
     if(self.parent().find('.setCountry').length>1){
       self.siblings().find('.setCountry').removeClass('active');
       self.find('.setCountry').toggleClass('active');
     }
     if(self.find('.competition').length>0 ){
       self.find('.competition li').off('click').on('click',function(){
+        fcst.status32 = false;
         if($(this).attr('data-result')=="1"){
           self.find('.setCountry').attr('data-after',$(this).text()).addClass('win');
           self.siblings().find('.setCountry').attr('data-after','負').removeClass('win');
@@ -144,5 +147,14 @@ $(".block16 .pt-group >div").off('click').on('click',function(){
         }
       });
     }
+    
+  }else{
+    $(".block32").each(function(){
+      if($(this).attr('data-num')!='4'){
+        $(this).addClass('nonefinish');
+      }else{
+        $(this).removeClass('nonefinish');
+      }
+    });
   }
 });
