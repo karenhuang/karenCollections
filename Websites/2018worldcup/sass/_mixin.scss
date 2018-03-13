@@ -1,0 +1,25 @@
+@mixin imgWH($img){
+	width: image-width($img);
+	height: image-height($img);
+}
+
+@mixin img_WH($img){
+	width: image-width($img);
+	height: image-height($img);
+	background-image: url($img);
+}
+
+@mixin margin_halfWH($img){
+	margin-left: image-width($img)*-0.5;
+	margin-top: image-height($img)*-0.5;
+}
+
+
+
+// @include animation(hover-color 3s ease infinite);
+//keyframes前綴詞
+// @include keyframes(hover-color){
+//   0%{background-position:0% 88%}
+//   50%{background-position:100% 45%}
+//   100%{background-position:0% 88%}
+// }

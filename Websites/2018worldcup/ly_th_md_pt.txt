@@ -1,0 +1,46 @@
+
+
+ly_xxx
+
+<div class="th_xxx">
+    <header>
+
+    </header>
+    <div>
+
+    </div>
+    <footer>
+
+    </footer>
+</div>
+
+<div class="md_xxx">
+    <header>
+
+    </header>
+    <div>
+
+    </div>
+    <footer>
+
+    </footer>
+</div>
+
+pt_xxx
+
+
+
+        <ul>
+            <li><a href="javascript:;">選單一</a>
+                <ul>
+                    <li><a href="javascript:;">分類一</a></li>
+                    <li><a href="javascript:;">分類二</a></li>
+                </ul>
+            </li>
+            <li><a href="javascript:;">選單二</a>
+                <ul>
+                    <li><a href="javascript:;">分類三</a></li>
+                    <li><a href="javascript:;">分類四</a></li>
+                </ul>
+            </li>
+        </ul>
