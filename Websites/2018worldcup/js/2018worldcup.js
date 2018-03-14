@@ -1,6 +1,4 @@
-var fcst = {
-  status32:true,
-  status16:true,
+var fcstData = {
   team32:{
     A:[],
     B:[],
@@ -10,33 +8,44 @@ var fcst = {
     F:[],
     G:[],
     H:[]    
+  },
+  team16:{
+    A:[],
+    B:[],
+    C:[],
+    D:[]
   }
+
+}
+var fcstStatus={
+  t32:true,
+  t16:true
 }
 
-function setData(group,el){
-  var index = fcst.team32[group].map(function(e){ return e.id;}).indexOf(el.attr('data-id'));
+function setT32Data(group,el){
+  var index = fcstData.team32[group].map(function(e){ return e.id;}).indexOf(el.attr('data-id'));
   if(index>=0){
-    fcst.team32[group].splice(index,1);
+    fcstData.team32[group].splice(index,1);
   }else{
-    fcst.team32[group].push({'id':el.attr('data-id'),'num':el.attr('data-num')}); 
+    fcstData.team32[group].push({'id':el.attr('data-id'),'num':el.attr('data-num')}); 
   }
-  // console.log(fcst.team32);
+  // console.log(fcstData.team32);
 }
 
-function removeNumDom(dom){
-  fcst.status32 = false;
-  $(".block16").find('.'+dom+'').find('.setCountry').stop().animate({
+function removeT32NumDom(dom){
+  fcstStatus.t32 = false;
+  $(".block16").find('.'+dom+'').removeClass('set').find('.setCountry').stop().animate({
     top: $(".block16").find('.'+dom+'').find('.setCountry').attr("data-Y")+'px',
     left: $(".block16").find('.'+dom+'').find('.setCountry').attr("data-X")+'px'
   },350,function(){
     var timer = setTimeout(function(){
       $(".block16").find('.'+dom+'').find('.setCountry').remove();
-      fcst.status32 = true;
+      fcstStatus.t32 = true;
     },200);
   });   
 }
 
-function removeNum(el,pNum){
+function removeT32Num(el,pNum){
   var num = pNum/1;
   var country = el.parent().find('.pt-country');
   var groupName = el.attr('data-group').toLowerCase();
@@ -44,21 +53,21 @@ function removeNum(el,pNum){
   el.removeClass('selected').siblings().not('.selected').find('.num').text(num);
   el.parent().attr('data-num',num-1);
   if(num<3){
-    removeNumDom((groupName+num)); 
+    removeT32NumDom((groupName+num)); 
     if(num==1){
       $(".block16 .pt-group >div").removeClass('hover');
       for(var i=0; i<(country.length); i++){  
         if(country.eq(i).attr('data-num')== 2){
-          removeNumDom((groupName+(num+1)));         
+          removeT32NumDom((groupName+(num+1)));         
         }
       }
     }
   }  
-  setData(groupName.toUpperCase(),el);
+  setT32Data(groupName.toUpperCase(),el);
   for(var i=0; i<(country.length); i++){    
     for(var j=1; j<=(country.length-num); j++){  
       if(country.eq(i).attr('data-num')== (num+j)){
-        setData(country.eq(i).attr('data-group'),country.eq(i));
+        setT32Data(country.eq(i).attr('data-group'),country.eq(i));
         country.eq(i).attr('data-num',0).find('.num').text(num);
         country.eq(i).removeClass('selected');
       }
@@ -68,7 +77,7 @@ function removeNum(el,pNum){
 
 
 $(".block32 .pt-country").off('click').on('click',function(){
-  if(fcst.status32){
+  if(fcstStatus.t32){
     var self = $(this);
     var groupName = self.attr('data-group').toLowerCase();
     var grouplength = self.parent().find('.pt-country').length;
@@ -81,9 +90,9 @@ $(".block32 .pt-country").off('click').on('click',function(){
       self.siblings().not('.selected').find('.num').text(nextNum+1);
       self.parent().attr('data-num',nextNum);
       if(nextNum<grouplength-1){
-        fcst.status32 = false;
+        fcstStatus.t32 = false;
         // "1,2的animate動作";     
-        var item16 = $(".block16").find('.'+groupName+nextNum+'');
+        var item16 = $(".block16").find('.'+groupName+nextNum+'').addClass('set');
         var disX = self.offset().left - item16.offset().left;
         var disY = self.offset().top - item16.offset().top;
         var dom = '<div class="setCountry" data-X="'+ disX +'" data-Y="'+ disY +'" style="position:absolute; left:'
@@ -92,16 +101,16 @@ $(".block32 .pt-country").off('click').on('click',function(){
                   +'<ul class="competition"><li data-result="1">勝</li><li data-result="0">負</li></ul>'
                   +'</div>'
         item16.append(dom).find('.setCountry').stop().animate({top:0,left:0},350,function(){
-          fcst.status32 = true;
+          fcstStatus.t32 = true;
         });     
       }
       if((grouplength-2) == self.siblings('.selected').length){
         // "按3的時候自動觸發第4個";     
         self.siblings().not('.selected').click();
       }
-      setData(self.attr('data-group'),self);      
+      setT32Data(self.attr('data-group'),self);      
     }else{
-      removeNum(self,self.attr('data-num'));
+      removeT32Num(self,self.attr('data-num'));
     }
   }
 }).hover(function(){
@@ -123,38 +132,85 @@ $(".block32 .pt-country").off('click').on('click',function(){
 
 $(".block16 .pt-group >div").off('click').on('click',function(){
   var self = $(this);
-  var keys = Object.keys(fcst.team32);
-  var g32 = 0;
-  for(var i=0; i<keys.length; i++){
-    for(var j=0; j<fcst.team32[keys[i]].length; j++){
-      g32++;
+  if($(this).hasClass('set')){
+    var keys = Object.keys(fcstData.team32);
+    var g32 = 0;    
+    for(var i=0; i<keys.length; i++){
+      for(var j=0; j<fcstData.team32[keys[i]].length; j++){
+        g32++;
+      }
     }
-  }
-  if(g32==32){
-    if(self.parent().find('.setCountry').length>1){
-      self.siblings().find('.setCountry').removeClass('active');
-      self.find('.setCountry').toggleClass('active');
-    }
-    if(self.find('.competition').length>0 ){
-      self.find('.competition li').off('click').on('click',function(){
-        fcst.status32 = false;
-        if($(this).attr('data-result')=="1"){
-          self.find('.setCountry').attr('data-after',$(this).text()).addClass('win');
-          self.siblings().find('.setCountry').attr('data-after','負').removeClass('win');
+    if(g32==32){
+    // 暫時關閉檢查
+      if(self.parent().find('.setCountry').length>1){
+        self.siblings().find('.setCountry').removeClass('active');
+        self.find('.setCountry').toggleClass('active');
+      }
+      if(self.find('.competition').length>0 ){
+        self.find('.competition li').off('click').on('click',function(){
+          fcstStatus.t32 = false;
+          var liEl = $(this);
+          var name = self.parent().attr('data-group');
+          var num = self.parent().attr('data-item');
+
+          if(self.attr('data-result')!= liEl.attr('data-result')){
+            if(liEl.attr('data-result')=="1"){
+              self.attr('data-result',liEl.attr('data-result')).find('.setCountry').attr('data-after',liEl.text()).addClass('win');
+              self.siblings().attr('data-result',0).find('.setCountry').attr('data-after','負').removeClass('win');
+      
+            }else{
+              self.attr('data-result',liEl.attr('data-result')).find('.setCountry').attr('data-after',liEl.text()).removeClass('win');
+              self.siblings().attr('data-result',1).find('.setCountry').attr('data-after','勝').addClass('win');            
+  
+            }
+            var item8 = $(".block8").find('.'+name+num+'');
+            var disX = self.offset().left - item8.offset().left;
+            var disY = self.offset().top - item8.offset().top;            
+            var dom = '<div class="setCountry set" data-X="'+ disX +'" data-Y="'+ disY +'" style="position:absolute; left:'
+                    + disX +'px; top:'+ disY +'px;" data-after="-">'
+                    +'<span class="name">'+ self.parent().find('.win').find('.name').text() +'</span>'
+                    +'<ul class="competition"><li data-result="1">勝</li><li data-result="0">負</li></ul>'
+                    +'</div>'
+
+            if(item8.find('.setCountry').length>0){
+              item8.append(dom).find('.setCountry').stop().animate({top:0,left:0},350,function(){
+                // fcstStatus.t32 = true;
+              }); 
+              var first = item8.find('.setCountry').first();
+              first.stop().animate({
+                top: first.attr("data-Y")+'px',
+                left: first.attr("data-X")+'px'
+              },350,function(){
+                var timer = setTimeout(function(){
+                  first.remove();
+                  // fcstStatus.t32 = true;
+                },200);
+              });
+            }else{
+              item8.append(dom).find('.setCountry').stop().animate({top:0,left:0},350,function(){
+                // fcstStatus.t32 = true;
+              }); 
+            }            
+          }
+
+
+
+
+
+
+
+        });
+      }
+
+    // 暫時關閉檢查
+    }else{
+      $(".block32").each(function(){
+        if($(this).attr('data-num')!='4'){
+          $(this).addClass('nonefinish');
         }else{
-          self.find('.setCountry').attr('data-after',$(this).text()).removeClass('win');
-          self.siblings().find('.setCountry').attr('data-after','勝').addClass('win');
+          $(this).removeClass('nonefinish');
         }
       });
-    }
-    
-  }else{
-    $(".block32").each(function(){
-      if($(this).attr('data-num')!='4'){
-        $(this).addClass('nonefinish');
-      }else{
-        $(this).removeClass('nonefinish');
-      }
-    });
+    }   
   }
 });
