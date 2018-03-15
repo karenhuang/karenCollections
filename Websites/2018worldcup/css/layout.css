@@ -24,6 +24,7 @@ html { font-family: "Microsoft JhengHei", sans-serif, "serif"; }
 html, body { width: 100%; }
 
 @media (min-width: 0px) { html, body { min-width: 320px; } }
+.th-2018worldCup > h3 { font-size: 36px; font-weight: bold; text-align: center; }
 .th-2018worldCup .md-block32 { width: 1200px; margin: 50px auto 100px; text-align: left; }
 .th-2018worldCup .md-block32 .block32 { display: inline-block; width: 240px; margin: 10px 10px 30px; }
 .th-2018worldCup .md-block32 .block32.nonefinish { border: 2px solid red; }
