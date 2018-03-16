@@ -17,17 +17,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 img { display: block; border: none; }
 
-.th-2018worldCup .md-block16 .block16:after, .th-2018worldCup .md-block8 .block8:after { content: ""; display: block; clear: both; }
+.th-2018worldCup .md-block16 .block16:after, .th-2018worldCup .md-block8 .block8:after, .th-2018worldCup .md-block4 .block4:after { content: ""; display: block; clear: both; }
 
 html { font-family: "Microsoft JhengHei", sans-serif, "serif"; }
 
 html, body { width: 100%; }
 
 @media (min-width: 0px) { html, body { min-width: 320px; } }
-.th-2018worldCup > h3 { font-size: 36px; font-weight: bold; text-align: center; }
-.th-2018worldCup .md-block32 { width: 1200px; margin: 50px auto 100px; text-align: left; }
-.th-2018worldCup .md-block32 .block32 { display: inline-block; width: 240px; margin: 10px 10px 30px; }
+.th-2018worldCup > h3 { font-size: 36px; font-weight: bold; text-align: center; margin: 20px auto; }
+.th-2018worldCup .md-block32 { width: 1200px; margin: 0 auto 100px; text-align: center; }
+.th-2018worldCup .md-block32 .block32 { display: inline-block; margin: 0 0 20px 20px; }
 .th-2018worldCup .md-block32 .block32.nonefinish { border: 2px solid red; }
+.th-2018worldCup .md-block32 .block32.finish .pt-country:not(.selected):hover .num { -moz-transform: translate3d(36px, 0, 0); -ms-transform: translate3d(36px, 0, 0); -webkit-transform: translate3d(36px, 0, 0); transform: translate3d(36px, 0, 0); -moz-transition: all, 0s; -o-transition: all, 0s; -webkit-transition: all, 0s; transition: all, 0s; }
 .th-2018worldCup .md-block32 .block32 .pt-country { width: 220px; height: 36px; background-color: #e1e3e7; padding: 10px; margin-bottom: 3px; box-sizing: border-box; position: relative; overflow: hidden; cursor: pointer; }
 .th-2018worldCup .md-block32 .block32 .pt-country .num { position: absolute; width: 36px; height: 100%; top: 0; right: 0; -moz-transform: translate3d(36px, 0, 0); -ms-transform: translate3d(36px, 0, 0); -webkit-transform: translate3d(36px, 0, 0); transform: translate3d(36px, 0, 0); background-color: grey; color: #fff; text-align: center; padding-top: 10px; box-sizing: border-box; -moz-transition: all, 0.2s; -o-transition: all, 0.2s; -webkit-transition: all, 0.2s; transition: all, 0.2s; }
 .th-2018worldCup .md-block32 .block32 .pt-country:hover .num { -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); -moz-transition: all, 0.2s; -o-transition: all, 0.2s; -webkit-transition: all, 0.2s; transition: all, 0.2s; }
@@ -38,8 +39,8 @@ html, body { width: 100%; }
 .th-2018worldCup .md-block32 .block32[data-num="2"] .pt-country:not(.selected) .num { background-color: #c2a345; }
 .th-2018worldCup .md-block32 .block32[data-num="3"] .pt-country:not(.selected) .num { background-color: #b0b4bd; }
 .th-2018worldCup .md-block16 { background-color: gray; padding: 20px; box-sizing: border-box; margin-bottom: 100px; }
-.th-2018worldCup .md-block16 .block16 { width: 1200px; margin: 0 auto; }
-.th-2018worldCup .md-block16 .block16 .pt-group { float: left; border: 2px dashed #e1e3e7; width: 220px; padding: 4px; border-radius: 5px; margin: 0 0 20px 20px; }
+.th-2018worldCup .md-block16 .block16 { width: 1200px; margin: 0 auto; text-align: center; }
+.th-2018worldCup .md-block16 .block16 .pt-group { display: inline-block; border: 2px dashed #e1e3e7; width: 220px; padding: 4px; border-radius: 5px; margin: 0 0 20px 20px; }
 .th-2018worldCup .md-block16 .block16 .pt-group > div { width: 100%; height: 36px; background-color: #ccd6de; position: relative; -moz-transition: all, 0.3s; -o-transition: all, 0.3s; -webkit-transition: all, 0.3s; transition: all, 0.3s; }
 .th-2018worldCup .md-block16 .block16 .pt-group > div + div { margin-top: 3px; }
 .th-2018worldCup .md-block16 .block16 .pt-group > div .g-num { text-align: center; padding: 10px 0; box-sizing: border-box; }
@@ -50,18 +51,31 @@ html, body { width: 100%; }
 .th-2018worldCup .md-block16 .block16 .pt-group > div .setCountry .competition { display: none; position: absolute; right: 0; top: 36px; background-color: #fff; z-index: 10; }
 .th-2018worldCup .md-block16 .block16 .pt-group > div .setCountry .competition li { width: 36px; height: 36px; text-align: center; padding-top: 9px; box-sizing: border-box; cursor: pointer; }
 .th-2018worldCup .md-block16 .block16 .pt-group > div.hover { background-color: #bbbbbb; -moz-transition: all, 0.3s; -o-transition: all, 0.3s; -webkit-transition: all, 0.3s; transition: all, 0.3s; }
-.th-2018worldCup .md-block8 { background-color: gray; padding: 20px; box-sizing: border-box; }
-.th-2018worldCup .md-block8 .block8 { width: 1200px; margin: 0 auto; }
-.th-2018worldCup .md-block8 .block8 .pt-group { float: left; border: 2px dashed #e1e3e7; width: 220px; padding: 4px; border-radius: 5px; margin: 0 0 20px 20px; }
+.th-2018worldCup .md-block8 { background-color: #535b6b; padding: 20px; box-sizing: border-box; margin-bottom: 100px; }
+.th-2018worldCup .md-block8 .block8 { width: 1200px; margin: 0 auto; text-align: center; }
+.th-2018worldCup .md-block8 .block8 .pt-group { display: inline-block; border: 2px dashed #e1e3e7; width: 220px; padding: 4px; border-radius: 5px; margin: 0 0 20px 20px; }
 .th-2018worldCup .md-block8 .block8 .pt-group > div { width: 100%; height: 36px; background-color: #e1e3e7; position: relative; -moz-transition: all, 0.3s; -o-transition: all, 0.3s; -webkit-transition: all, 0.3s; transition: all, 0.3s; }
 .th-2018worldCup .md-block8 .block8 .pt-group > div + div { margin-top: 3px; }
 .th-2018worldCup .md-block8 .block8 .pt-group > div .g-num { text-align: center; padding: 10px 0; box-sizing: border-box; }
-.th-2018worldCup .md-block8 .block8 .pt-group > div .setCountry { position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 10px; box-sizing: border-box; background-color: #b7b3c7; cursor: pointer; }
-.th-2018worldCup .md-block8 .block8 .pt-group > div .setCountry:after { content: attr(data-after); position: absolute; width: 36px; height: 36px; top: 0; right: 0; text-align: center; padding-top: 9px; box-sizing: border-box; border: 1px solid #b7b3c7; background-color: gray; }
+.th-2018worldCup .md-block8 .block8 .pt-group > div .setCountry { position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 10px; box-sizing: border-box; background-color: #e1e3e7; cursor: pointer; }
+.th-2018worldCup .md-block8 .block8 .pt-group > div .setCountry:after { content: attr(data-after); position: absolute; width: 36px; height: 36px; top: 0; right: 0; text-align: center; padding-top: 9px; box-sizing: border-box; border: 1px solid #e1e3e7; background-color: gray; }
 .th-2018worldCup .md-block8 .block8 .pt-group > div .setCountry.active .competition { display: block; }
-.th-2018worldCup .md-block8 .block8 .pt-group > div .setCountry.win:after { background-color: #e1e3e7; -moz-transition: all, 0.2s; -o-transition: all, 0.2s; -webkit-transition: all, 0.2s; transition: all, 0.2s; }
+.th-2018worldCup .md-block8 .block8 .pt-group > div .setCountry.win:after { background-color: #808080; -moz-transition: all, 0.2s; -o-transition: all, 0.2s; -webkit-transition: all, 0.2s; transition: all, 0.2s; }
 .th-2018worldCup .md-block8 .block8 .pt-group > div .setCountry .competition { display: none; position: absolute; right: 0; top: 36px; background-color: #fff; z-index: 10; }
 .th-2018worldCup .md-block8 .block8 .pt-group > div .setCountry .competition li { width: 36px; height: 36px; text-align: center; padding-top: 9px; box-sizing: border-box; cursor: pointer; }
 .th-2018worldCup .md-block8 .block8 .pt-group > div.hover { background-color: #bbbbbb; -moz-transition: all, 0.3s; -o-transition: all, 0.3s; -webkit-transition: all, 0.3s; transition: all, 0.3s; }
+.th-2018worldCup .md-block4 { background-color: gray; padding: 20px; box-sizing: border-box; margin-bottom: 100px; }
+.th-2018worldCup .md-block4 .block4 { width: 1200px; margin: 0 auto; text-align: center; }
+.th-2018worldCup .md-block4 .block4 .pt-group { display: inline-block; border: 2px dashed #e1e3e7; width: 220px; padding: 4px; border-radius: 5px; margin: 0 0 20px 20px; }
+.th-2018worldCup .md-block4 .block4 .pt-group > div { width: 100%; height: 36px; background-color: #e1e3e7; position: relative; -moz-transition: all, 0.3s; -o-transition: all, 0.3s; -webkit-transition: all, 0.3s; transition: all, 0.3s; }
+.th-2018worldCup .md-block4 .block4 .pt-group > div + div { margin-top: 3px; }
+.th-2018worldCup .md-block4 .block4 .pt-group > div .g-num { text-align: center; padding: 10px 0; box-sizing: border-box; }
+.th-2018worldCup .md-block4 .block4 .pt-group > div .setCountry { position: absolute; top: 0; left: 0; width: 100%; height: 100%; padding: 10px; box-sizing: border-box; background-color: #b7b3c7; cursor: pointer; }
+.th-2018worldCup .md-block4 .block4 .pt-group > div .setCountry:after { content: attr(data-after); position: absolute; width: 36px; height: 36px; top: 0; right: 0; text-align: center; padding-top: 9px; box-sizing: border-box; border: 1px solid #b7b3c7; background-color: gray; }
+.th-2018worldCup .md-block4 .block4 .pt-group > div .setCountry.active .competition { display: block; }
+.th-2018worldCup .md-block4 .block4 .pt-group > div .setCountry.win:after { background-color: #e1e3e7; -moz-transition: all, 0.2s; -o-transition: all, 0.2s; -webkit-transition: all, 0.2s; transition: all, 0.2s; }
+.th-2018worldCup .md-block4 .block4 .pt-group > div .setCountry .competition { display: none; position: absolute; right: 0; top: 36px; background-color: #fff; z-index: 10; }
+.th-2018worldCup .md-block4 .block4 .pt-group > div .setCountry .competition li { width: 36px; height: 36px; text-align: center; padding-top: 9px; box-sizing: border-box; cursor: pointer; }
+.th-2018worldCup .md-block4 .block4 .pt-group > div.hover { background-color: #bbbbbb; -moz-transition: all, 0.3s; -o-transition: all, 0.3s; -webkit-transition: all, 0.3s; transition: all, 0.3s; }
 
 /*# sourceMappingURL=layout.css.map */
