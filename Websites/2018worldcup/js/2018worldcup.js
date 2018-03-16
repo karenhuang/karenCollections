@@ -33,9 +33,9 @@ function setT16Data(group,el){
   if(index>=0){
     fcstData.team16[group].splice(index,1);
   }else{
-    fcstData.team16[group].push({'id':el.attr('data-id'),'num':el.attr('data-num')}); 
+    fcstData.team16[group].push({'id':el.attr('data-id'),'num':el.attr('data-num'),'name':el.find('.name').text()}); 
   }
-  // console.log(fcstData.team16);
+  console.log(fcstData.team16);
 
 }
 
@@ -186,7 +186,7 @@ function setWinnerData(group,el,target,teams){
   }
   index = array.map(function(e){ return e.groupName;}).indexOf(group+el.parent().attr('data-item'));
   if(index>=0){ array.splice(index,1); }
-  array.push({'groupName': group+el.parent().attr('data-item'),'id':target.attr('data-id')}); 
+  array.push({'groupName': group+el.parent().attr('data-item'),'id':target.attr('data-id'), 'name':target.find('.name').text()}); 
   console.log(fcstData.team8);
   console.log(fcstData.team4);
 }
@@ -276,49 +276,39 @@ $(".block16 .pt-group >div").off('click').on('click',function(){
         g8++;
       }
     } 
-    if(self.hasClass('set')){
-      console.log('choose 4');
-      if(g8==8){
-        if(fcstStatus.t8){
-          if(self.parent().find('.setCountry').length>1){
-            self.siblings().find('.setCountry').removeClass('active');
-            self.parent().siblings().find('.setCountry').removeClass('active');
-            self.find('.setCountry').toggleClass('active');
+    if(self.hasClass('set')&&(g8==8)&&fcstStatus.t8){
+      if(self.parent().find('.setCountry').length>1){
+        self.siblings().find('.setCountry').removeClass('active');
+        self.parent().siblings().find('.setCountry').removeClass('active');
+        self.find('.setCountry').toggleClass('active');
+      }
+      if(self.find('.competition').length>0 ){
+        self.find('.competition li').off('click').on('click',function(e){
+          e.stopPropagation();
+          self.find('.setCountry').toggleClass('active'); 
+          fcstStatus.t16 = false;//T8的勝負按下去後才鎖死T16
+          fcstStatus.t8 = false;
+          var liEl = $(this);
+          var name = self.parent().attr('data-group');
+          var num = self.parent().attr('data-item');
+          if(self.attr('data-result')!= liEl.attr('data-result')){
+            if(liEl.attr('data-result')=="1"){
+              self.attr('data-result',liEl.attr('data-result')).find('.setCountry').attr('data-after',liEl.text()).addClass('win');
+              self.siblings().attr('data-result',0).find('.setCountry').attr('data-after','負').removeClass('win');
+              moveWinner(self,$(".block4").find('.'+name+num+''),'t8');
+              setWinnerData(name,self,self.find('.setCountry'),'T4');
+            }else{
+              self.attr('data-result',liEl.attr('data-result')).find('.setCountry').attr('data-after',liEl.text()).removeClass('win');
+              self.siblings().attr('data-result',1).find('.setCountry').attr('data-after','勝').addClass('win');            
+              moveWinner(self.siblings(),$(".block4").find('.'+name+num+''),'t8');
+              setWinnerData(name,self,self.siblings().find('.setCountry'),'T4');
+            }
+            self.find('.setCountry').removeClass('active'); 
+          }else{
+            fcstStatus.t8 = true;
           }
-          if(self.find('.competition').length>0 ){
-            self.find('.competition li').off('click').on('click',function(e){
-              e.stopPropagation();
-              self.find('.setCountry').toggleClass('active'); 
-              fcstStatus.t16 = false;//T8的勝負按下去後才鎖死T16
-              fcstStatus.t8 = false;
-              var liEl = $(this);
-              var name = self.parent().attr('data-group');
-              var num = self.parent().attr('data-item');
-              if(self.attr('data-result')!= liEl.attr('data-result')){
-                if(liEl.attr('data-result')=="1"){
-                  self.attr('data-result',liEl.attr('data-result')).find('.setCountry').attr('data-after',liEl.text()).addClass('win');
-                  self.siblings().attr('data-result',0).find('.setCountry').attr('data-after','負').removeClass('win');
-                  moveWinner(self,$(".block4").find('.'+name+num+''),'t8');
-                  setWinnerData(name,self,self.find('.setCountry'),'T4');
-                }else{
-                  self.attr('data-result',liEl.attr('data-result')).find('.setCountry').attr('data-after',liEl.text()).removeClass('win');
-                  self.siblings().attr('data-result',1).find('.setCountry').attr('data-after','勝').addClass('win');            
-                  moveWinner(self.siblings(),$(".block4").find('.'+name+num+''),'t8');
-                  setWinnerData(name,self,self.siblings().find('.setCountry'),'T4');
-                }
-                self.find('.setCountry').removeClass('active'); 
-              }else{
-                fcstStatus.t8 = true;
-              }
-              
-            });
-          }  
-        }
-      }else{
-        self.find('.setCountry').removeClass('active'); 
-        alert("2222")
-      }    
+        });
+      }  
     }
-    
   });
 });
