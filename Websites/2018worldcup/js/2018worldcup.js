@@ -154,7 +154,7 @@ function moveWinner(el,target,teams){
             fcstStatus.t16 = true;
             break;
           case 't8':
-            fcstStatus.t16 = true;
+            fcstStatus.t8 = true;
             break;
         }
       },200);
