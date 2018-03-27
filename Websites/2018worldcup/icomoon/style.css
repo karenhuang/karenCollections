@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?qb2p0y');
+  src:  url('fonts/icomoon.eot?qb2p0y#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?qb2p0y') format('truetype'),
+    url('fonts/icomoon.woff?qb2p0y') format('woff'),
+    url('fonts/icomoon.svg?qb2p0y#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sungirlbaby:before {
+  content: "\e900";
+}
+.icon-sungamelogo:before {
+  content: "\e901";
+}
+.icon-share-line:before {
+  content: "\e919";
+}
+.icon-share-link:before {
+  content: "\e91a";
+}
+.icon-share-pin:before {
+  content: "\e91b";
+}
+.icon-share-fb:before {
+  content: "\e908";
+}
+.icon-share-twitter:before {
+  content: "\e90b";
+}
+.icon-share-weibo:before {
+  content: "\e90c";
+}
