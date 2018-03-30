@@ -58,7 +58,6 @@ $.fn.sliderShow = function(){
 }
 
 
-
 //cheerleading輪播plugin
 $.fn.cheerleadingSliderShow = function(){
   var element = $(this),//輪播最大外框
@@ -95,9 +94,13 @@ $.fn.cheerleadingSliderShow = function(){
   function moveNext(num) {
     imgNext = num;
     startPos = imgNext > imgNow ? 100: -100;
-    nowAnimate = imgNext > imgNow ? "-100%": "100%";          
+    nowAnimate = imgNext > imgNow ? "-100%": "100%";    
     imgNext = imgNext > imgNow ? imgNext%imgMax : (imgNext+imgMax)%imgMax;  
-    btnfigure.eq(imgNext).addClass("active").siblings().removeClass("active");
+    btnfigure.removeClass("active").each(function(){
+      if($(this).attr('data-idx')==imgNext){
+        $(this).addClass('active');
+      }
+    });
     bigLi.eq(imgNow).removeClass("active").stop().animate({left: nowAnimate},animateV);
     bigLi.eq(imgNext).addClass('active').css({"left": startPos+"%"})
     .stop().animate({left: '0%'},animateV, function() {    
@@ -127,9 +130,8 @@ $.fn.cheerleadingSliderShow = function(){
   });
   
   btnfigure.on("click",function(e){
-    var _this = $(this);
-    if (imgNext != null) return;
-    moveNext(_this.index());
+    if (imgNext != null ) return;
+    moveNext(($(this).attr('data-idx')/1));
     if(!bigCont.hasClass('show')){
       bigCont.addClass('show');
       $('body').addClass('mask');
@@ -139,7 +141,8 @@ $.fn.cheerleadingSliderShow = function(){
   bigCont.on('click',function(){
     bigCont.removeClass('show');
     $('body').removeClass('mask');     
-  })
+  });
+
   return element;
 }
 

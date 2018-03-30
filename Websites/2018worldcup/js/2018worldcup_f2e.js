@@ -2,9 +2,9 @@ $(function(){
   $(".th-sliderShow").sliderShow();
   $(window).scroll(function(){
     if($(this).scrollTop() > ($(".th-sliderShow").height()*4/5)){
-      $('nav').addClass('fixednav');
+      $('body').addClass('fixednav');
     }else{
-      $('nav').removeClass('fixednav');
+      $('body').removeClass('fixednav');
     }
   });
 

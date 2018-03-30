@@ -19,15 +19,62 @@ input[type='submit']{
 
 html, body {
   width: 100%;
-  min-width:1845px;
-  min-height: 2000px;
-  // height: 100%;
+  min-width:1240px;
 
 }
 
 body{
   &.mask{
     overflow-y: hidden;
+  }
+  &.fixednav{
+    nav{
+      height: auto;
+      top:0;
+      margin-top:0;
+      width: 100%;
+      background-color: #000;
+      ul{
+        float: right;
+        height: 50px;
+        li{
+          width: 225px;
+          height: 50px;
+          float: left;
+          a{
+            width: 100%;
+            height: 100%;
+            &:before{
+              top:4px;
+              left:7px;
+            }
+            &:after{
+              top:5px;
+              background-size: 70%;
+            }
+          }
+          span{
+            display: inline;
+          }
+          &.nav-login{
+            float: right;
+            a{
+              padding:15px 0;
+            }
+          }
+          &.nav-finals{
+            a{
+              padding:17px 10px 15px;
+            }
+          }
+          &.nav-competition{
+            a{
+              padding:17px 10px 15px;
+            }
+          }   
+        }
+      }      
+    }
   }
 }
 
@@ -127,53 +174,6 @@ nav{
       }
     }
   }
-  &.fixednav{
-    height: auto;
-    top:0;
-    margin-top:0;
-    width: 100%;
-    background-color: #000;
-    ul{
-      float: right;
-      height: 50px;
-      li{
-        width: 225px;
-        height: 50px;
-        float: left;
-        a{
-          width: 100%;
-          height: 100%;
-          &:before{
-            top:4px;
-            left:7px;
-          }
-          &:after{
-            top:5px;
-            background-size: 70%;
-          }
-        }
-        span{
-          display: inline;
-        }
-        &.nav-login{
-          float: right;
-          a{
-            padding:15px 0;
-          }
-        }
-        &.nav-finals{
-          a{
-            padding:17px 10px 15px;
-          }
-        }
-        &.nav-competition{
-          a{
-            padding:17px 10px 15px;
-          }
-        }   
-      }
-    }
-  }
 }
 
 
@@ -209,9 +209,10 @@ nav{
       h1{
         display: block;
         position: relative;
-        margin: 230px 0 14px;
+        margin: 10% 0 14px;
         img{
           margin: 0 auto;
+          width: 45%;
         }        
       }
       a{
@@ -320,7 +321,7 @@ nav{
   .md-header{
     background-image: url(../images/bg_r.jpg);
     .cont{
-      width: 1300px;
+      width: 1240px;
       height: 435px;
       margin: 0 auto;
       background-image: url(../images/block2img.png);
@@ -397,14 +398,15 @@ nav{
     background-image: url(../images/bg_br.jpg);
   }
   .md-teams32{
-    width: 1700px;
+    width: 1240px;
     margin: 0 auto;
     padding-top: 30px;
     .block32{
-      width: 400px;
+      // width: 400px;
+      width: 290px;
       height: 240px;
       display: inline-block;
-      margin: 0 0 40px 20px;
+      margin: 0 8px 40px 8px;
       padding-top:20px;
       border:1px solid #fff;
       border-top:none;
@@ -448,11 +450,13 @@ nav{
         background-image: url(../images/border.jpg);
         background-repeat: no-repeat;
         background-position: center 15px;
+        background-size: 97%;
       }
       .pt-country{
-        width: 398px;
+        // width: 398px;
+        width: 288px;
         height: 45px;
-        padding: 10px 10px 10px 40px;
+        padding: 10px 10px 10px 25px;
         margin-bottom:10px;
         box-sizing: border-box;
         position: relative;
@@ -556,7 +560,7 @@ nav{
       }
     }
     .pt-clearBtn{
-      .clearBtn{
+      .clearAllBtn{
         width: 60px;
         margin:30px auto 0;
         padding:10px 0;
@@ -577,7 +581,7 @@ nav{
       margin-bottom: 170px;
     }
     .block16{
-      width: 1760px;
+      width: 1240px;
       margin:0 auto;
       @extend %clear;
       .blockLeft{
@@ -588,7 +592,7 @@ nav{
       }
       .pt-group{
         border:1px solid #fff;
-        width: 300px;
+        width: 220px;
         height: 130px;
         padding: 15px 0;
         border-radius: 10px;
@@ -659,7 +663,7 @@ nav{
             z-index: 5;
             width: 100%;
             height: 100%;
-            padding: 10px 10px 10px 40px;
+            padding: 10px 10px 10px 15px;
             box-sizing: border-box;
             cursor: pointer;
             font-size: 16px;
@@ -702,7 +706,7 @@ nav{
               border-radius: 50%;
               background-color:#e92a34; 
               position: absolute;
-              right: 20px;
+              right: 5px;
               top: 5px;
               z-index: 10;
               color:#fff;
@@ -804,12 +808,12 @@ nav{
     }
     
     .block8{
-      width: 1060px;
+      width: 760px;
       margin:0 auto ;      
       position: absolute;
       top: 50%;
       left: 50%;
-      margin-left: -530px;
+      margin-left: -380px;
       margin-top: -215px;
       @extend %clear;
       .blockLeft{
@@ -989,74 +993,48 @@ nav{
           background-color:#fff;
         }
         &[data-session='57']{
-          &:before,&:after{
-            right: -80px;    
-            top: 65px;
-          }
-          &:before{
-            width: 80px;
-            height: 1px;
-          }
           &:after{
+            right: 24px;    
+            bottom: -17px;
             width: 1px;
-            height: 80px;
+            height: 16px;
           }
         }
         &[data-session='58']{
-          &:before,&:after{
-            right: -80px;    
-            top: 65px;
-          }
-          &:before{
-            width: 80px;
-            height: 1px;
-          }
           &:after{
+            right: 24px;    
             width: 1px;
-            height: 80px;
-            top:-15px;
+            height: 16px;
+            top:-16px;
           }
         }
         &[data-session='59']{
-          &:before,&:after{
-            left: -80px;    
-            top: 65px;
-          }
-          &:before{
-            width: 80px;
-            height: 1px;
-          }
           &:after{
+            left: 24px;    
+            bottom: -16px;
             width: 1px;
-            height: 80px;
+            height: 16px;            
           }
         }
         &[data-session='60']{
-          &:before,&:after{
-            left: -80px;    
-            top: 65px;
-          }
-          &:before{
-            width: 80px;
-            height: 1px;
-          }
           &:after{
+            left: 24px;    
+            top: -16px;
+            height: 16px;
             width: 1px;
-            height: 80px;
-            top:-15px;
           }
         }
       }
     }
 
     .block4{
-      width: 760px;
+      width: 660px;
       margin:0 auto ;  
       position: absolute;
       left: 50%;
       top: 50%;
-      margin-left: -380px;
-      margin-top: -70px;
+      margin-left: -330px;
+      margin-top: -71px;
       @extend %clear;
       .blockLeft{
         float: left;
@@ -1223,29 +1201,196 @@ nav{
         }
         &[data-session='61']{
           &:before{
-            right: -22px;    
+            right: -31px;    
             top: 40px;
-            width: 22px;
+            width: 31px;
             height: 1px;
           }
         }
         &[data-session='62']{
           &:before{
-            left: -22px;    
+            left: -31px;    
             top: 40px;
-            width: 22px;
+            width: 31px;
             height: 1px;
           }
         }
       }
     }
+    .block3{
+      width: 240px;
+      margin:0 auto ;  
+      position: absolute;
+      left: 50%;
+      bottom: 85px;
+      margin-left: -120px;
+      @extend %clear;
+      .pt-group{
+        border:1px solid #fff;
+        width: 100%;
+        height: 130px;
+        padding: 15px 0;
+        border-radius: 10px;
+        box-sizing: border-box;
+        position: relative;
+        &.nonefinish{
+          border:1px solid red;
+        } 
+        >div{
+          width: 100%;
+          height: 45px;
+          margin-bottom: 10px;
+          position: relative;
+          @include transition(all,0.3s);
+          &:after{
+            content: "";
+            display:block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left:0;
+            top:0;
+            z-index: 0;
+            background-color:#000;
+            opacity: 0.25;
+          }
+          &+div{
+            margin-top:3px;
+          }
+          .g-num{
+            line-height: 45px;
+            text-align: center;
+            font-size: 32px;
+            font-family: Arial;
+            font-weight: bold;
+            color:#fff;
+            position: relative;
+            z-index: 5;
+          }
+
+          &.active{
+            .setCountry{
+              .competition{
+                opacity: 1;
+              }              
+            }
+          }
+          &.unchoose{
+            .setCountry{
+              .competition{
+                opacity: 0;
+              }   
+              &:hover{
+                .competition{
+                  opacity: 0;
+                  @include transition(all,0s);
+                }
+              }
+              &:after{
+                z-index: 50;
+                background-color:#000;
+              }                  
+            }            
+          }
+          .setCountry{
+            position: absolute;
+            top:0;
+            left:0;
+            z-index: 5;
+            width: 100%;
+            height: 100%;
+            padding: 10px 10px 10px 5px;
+            box-sizing: border-box;
+            cursor: pointer;
+            font-size: 16px;
+            color:#fff;
+            &:after{
+              content:"";
+              position: absolute;
+              top: 0;
+              right: 0;              
+              width: 100%;
+              height: 100%;
+              background-color:#fff;
+              opacity: 0.25;
+              z-index: 1;
+            }
+            figure{
+              position: relative;
+              z-index: 5;
+              display: inline-block;
+              vertical-align: middle;
+              width: 50px;
+              margin-right: 5px;
+              img{
+                width: 100%;
+              }
+            }
+            .name{
+              display: inline-block;
+              vertical-align: middle;
+              position: relative;
+              z-index: 5;
+              color:#fff;
+              font-size: 16px;
+            }
+            .competition{
+              opacity: 0;
+              display: block;
+              width: 35px;
+              height: 35px;
+              border-radius: 50%;
+              background-color:#e92a34; 
+              position: absolute;
+              right: 2px;
+              top: 5px;
+              z-index: 10;
+              color:#fff;
+              text-align: center;
+              font-size: 27px;
+              font-weight: bold;
+              padding-top: 4px;
+              box-sizing: border-box;
+              @include transition(all,0.3s);
+            }
+            &:hover{
+              .competition{
+                opacity: 1;
+                @include transition(all,0.3s);
+              }
+            }
+          }
+          &.hover{
+            &:after{
+              background-color: #000;
+              @include transition(all,0.3s);
+            }
+          }
+          &.set{
+            .g-num{
+              opacity: 0;
+            }
+            &:after{
+              opacity: 0;
+              @include transition(all,1s);
+            }
+          }
+        }
+        &:before{
+          content:"";
+          display: block;
+          position: absolute;
+          background-color:#fff;
+        }
+      }
+    }
     .champion{
-      width: 360px;
+      width: 240px;
       height: 300px;
       position: absolute;
       top:49px;
       left:50%;
-      margin-left:-180px;
+      margin-left:-120px;
       border:1px solid #fff;
       border-radius: 10px;
       border-top:none;  
@@ -1261,6 +1406,7 @@ nav{
         background-position: center top;
         position: absolute;
         top: 1px;
+        background-size: 97%;
       }
       .fifa{
         position: absolute;
@@ -1268,7 +1414,7 @@ nav{
         left:50%;
         margin-left:-88px;
       }             
-      
+
       .block2{
         width: 100%;
         position: absolute;
@@ -1280,7 +1426,7 @@ nav{
             border:1px solid red;
           }
           >div{
-            width: 160px;
+            width: 100px;
             height: 45px;
             position: relative;
             @include transition(all,0.3s);
@@ -1338,7 +1484,7 @@ nav{
               z-index: 5;
               width: 100%;
               height: 100%;
-              padding: 10px 10px 10px 30px;
+              padding: 10px 10px 10px 8px;
               box-sizing: border-box;
               cursor: pointer;
               font-size: 16px;
@@ -1382,7 +1528,7 @@ nav{
                 border-radius: 50%;
                 background-color:#e92a34; 
                 position: absolute;
-                right: 20px;
+                right: 3px;
                 top: 5px;
                 z-index: 10;
                 color:#fff;
@@ -1454,7 +1600,7 @@ nav{
                 z-index: 5;
                 img{
                   width: 100%;
-                  margin-top:10px
+                  margin-top:10px;
                 }
               }
               .name{
@@ -1581,7 +1727,7 @@ nav{
   }
   .md-rule{
     h3{
-      width: 1500px;
+      width: 1240px;
       margin:0 auto;
       position: relative;
       text-align: center;
@@ -1667,49 +1813,37 @@ nav{
       box-sizing: border-box;
     }
     .cheerleading{
-      width: 1845px;
+      width: 100%;
       margin:40px auto 0;
       position: relative;
       @extend %clear;
       figure{
         float: left;
-        margin:0 10px 10px 0;
+        padding:0 5px 10px;
+        box-sizing: border-box;
         cursor: pointer;
         img{
           width: 100%;
         }
       }
-      .small{
-        width: 195px;
+      .smallWBlock{
+        float: left;
+        width: calc(100% / 9);
+        .small{
+          width: 100%;
+        }
+      }
+      .bigWBlock{
+        float: left;
+        width: calc((100% / 9 ) * 2);
+        .small{
+          width: 50%;
+        }
       }
       .bigger{
-        width: 400px;
+        width: calc((100% / 9 ) * 2);
       }
-      .img8{
-        position: absolute;
-        top:50%;
-        left:0;
-      }
-      .img9{
-        position: absolute;
-        top:50%;
-        left: 205px;
-      }
-      .img10{
-        position: absolute;
-        top:50%;
-        left: 820px;
-      }
-      .img11{
-        position: absolute;
-        top:50%;
-        left: 1025px;
-      }
-      .img12{
-        position: absolute;
-        top:50%;
-        right:0;
-      }
+
       .active{
         img{
           border:1px solid red;

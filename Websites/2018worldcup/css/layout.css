@@ -17,7 +17,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 img { display: block; border: none; }
 
-.th-finals .md-header .steps:after, .th-finals .md-finalsForm .block16:after, .th-finals .md-finalsForm .block8:after, .th-finals .md-finalsForm .block4:after, .th-rule .md-cheerleading .cheerleading:after, #footer .footer-content:after { content: ""; display: block; clear: both; }
+.th-finals .md-header .steps:after, .th-finals .md-finalsForm .block16:after, .th-finals .md-finalsForm .block8:after, .th-finals .md-finalsForm .block4:after, .th-finals .md-finalsForm .block3:after, .th-rule .md-cheerleading .cheerleading:after, #footer .footer-content:after { content: ""; display: block; clear: both; }
 
 @font-face { font-family: FZSKJWGB10; src: url(../font/FZSKJWGB10.ttf); }
 @font-face { font-family: FZLTTHKGBK10; src: url(../font/FZLTTHKGBK10.ttf); }
@@ -25,9 +25,20 @@ html { font-family: "Microsoft JhengHei", sans-serif, "serif"; }
 
 input[type='submit'] { font-family: "Microsoft JhengHei", sans-serif, "serif"; }
 
-html, body { width: 100%; min-width: 1845px; min-height: 2000px; }
+html, body { width: 100%; min-width: 1240px; }
 
 body.mask { overflow-y: hidden; }
+body.fixednav nav { height: auto; top: 0; margin-top: 0; width: 100%; background-color: #000; }
+body.fixednav nav ul { float: right; height: 50px; }
+body.fixednav nav ul li { width: 225px; height: 50px; float: left; }
+body.fixednav nav ul li a { width: 100%; height: 100%; }
+body.fixednav nav ul li a:before { top: 4px; left: 7px; }
+body.fixednav nav ul li a:after { top: 5px; background-size: 70%; }
+body.fixednav nav ul li span { display: inline; }
+body.fixednav nav ul li.nav-login { float: right; }
+body.fixednav nav ul li.nav-login a { padding: 15px 0; }
+body.fixednav nav ul li.nav-finals a { padding: 17px 10px 15px; }
+body.fixednav nav ul li.nav-competition a { padding: 17px 10px 15px; }
 
 nav { height: 300px; position: fixed; right: 0; top: 50%; margin-top: -150px; z-index: 70; }
 nav ul li { position: relative; width: 115px; height: 100px; }
@@ -41,24 +52,13 @@ nav ul li.nav-finals a { padding: 32px 10px 30px; background-color: #fdc80e; }
 nav ul li.nav-finals a:hover:after { background-image: url(../images/navimg01.png); }
 nav ul li.nav-competition a { padding: 32px 10px 30px; background-color: #00972e; }
 nav ul li.nav-competition a:hover:after { background-image: url(../images/bouns.png); }
-nav.fixednav { height: auto; top: 0; margin-top: 0; width: 100%; background-color: #000; }
-nav.fixednav ul { float: right; height: 50px; }
-nav.fixednav ul li { width: 225px; height: 50px; float: left; }
-nav.fixednav ul li a { width: 100%; height: 100%; }
-nav.fixednav ul li a:before { top: 4px; left: 7px; }
-nav.fixednav ul li a:after { top: 5px; background-size: 70%; }
-nav.fixednav ul li span { display: inline; }
-nav.fixednav ul li.nav-login { float: right; }
-nav.fixednav ul li.nav-login a { padding: 15px 0; }
-nav.fixednav ul li.nav-finals a { padding: 17px 10px 15px; }
-nav.fixednav ul li.nav-competition a { padding: 17px 10px 15px; }
 
 .th-sliderShow { padding: 25px; box-sizing: border-box; }
 .th-sliderShow .md-slider { position: relative; overflow: hidden; width: 100%; border-top: 10px solid #000; border-left: 2px solid #000; box-sizing: border-box; }
 .th-sliderShow .md-slider:before { content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url(../images/slider_mask.png); z-index: 2; }
 .th-sliderShow .md-slider .pt-h1 { position: absolute; z-index: 5; top: 0; right: 0; bottom: 0; left: 0; margin: auto; }
-.th-sliderShow .md-slider .pt-h1 h1 { display: block; position: relative; margin: 230px 0 14px; }
-.th-sliderShow .md-slider .pt-h1 h1 img { margin: 0 auto; }
+.th-sliderShow .md-slider .pt-h1 h1 { display: block; position: relative; margin: 10% 0 14px; }
+.th-sliderShow .md-slider .pt-h1 h1 img { margin: 0 auto; width: 45%; }
 .th-sliderShow .md-slider .pt-h1 a { display: block; position: relative; left: 50%; margin-left: -240px; margin-bottom: 30px; width: 440px; height: 45px; background-color: #cd0001; -webkit-transform-origin: left; -o-transform-origin: left; -ms-transform-origin: left; transform-origin: left; -moz-transform: skewY(-7deg); -ms-transform: skewY(-7deg); -webkit-transform: skewY(-7deg); transform: skewY(-7deg); -moz-transition: all, 0.2s; -o-transition: all, 0.2s; -webkit-transition: all, 0.2s; transition: all, 0.2s; }
 .th-sliderShow .md-slider .pt-h1 a:hover { background-color: #fdc80e; -moz-transform: skewY(-7deg) scaleX(1.02); -ms-transform: skewY(-7deg) scaleX(1.02); -webkit-transform: skewY(-7deg) scaleX(1.02); transform: skewY(-7deg) scaleX(1.02); -moz-transition: all, 0.2s; -o-transition: all, 0.2s; -webkit-transition: all, 0.2s; transition: all, 0.2s; }
 .th-sliderShow .md-slider .pt-h1 a img { position: absolute; left: 22px; -moz-transform: skewY(7deg) scaleX(1); -ms-transform: skewY(7deg) scaleX(1); -webkit-transform: skewY(7deg) scaleX(1); transform: skewY(7deg) scaleX(1); margin-top: -13px; }
@@ -76,7 +76,7 @@ nav.fixednav ul li.nav-competition a { padding: 17px 10px 15px; }
 .th-sliderShow .pt-next { right: -40px; }
 
 .th-finals .md-header { background-image: url(../images/bg_r.jpg); }
-.th-finals .md-header .cont { width: 1300px; height: 435px; margin: 0 auto; background-image: url(../images/block2img.png); background-repeat: no-repeat; background-position: 45px 0px; padding: 315px 0 0 142px; box-sizing: border-box; }
+.th-finals .md-header .cont { width: 1240px; height: 435px; margin: 0 auto; background-image: url(../images/block2img.png); background-repeat: no-repeat; background-position: 45px 0px; padding: 315px 0 0 142px; box-sizing: border-box; }
 .th-finals .md-header .text { width: 733px; height: 60px; background-image: url(../images/textbg.png); background-repeat: no-repeat; color: #fff; font-size: 14px; font-weight: bold; padding: 8px 0 0 82px; line-height: 22px; box-sizing: border-box; float: right; margin: 0 100px 10px 0; }
 .th-finals .md-header .text span { display: block; }
 .th-finals .md-header .text a { display: inline-block; color: #fff; margin-left: 12px; }
@@ -86,15 +86,15 @@ nav.fixednav ul li.nav-competition a { padding: 17px 10px 15px; }
 .th-finals .md-header .steps li + li:before { content: ""; display: inline-block; position: absolute; left: -18px; top: 8px; width: 0; height: 0; border-style: solid; border-width: 13px 0 13px 25px; border-color: transparent transparent transparent #00972e; }
 .th-finals .blockCont { position: relative; }
 .th-finals .gpmdCont { background-color: #490000; background-image: url(../images/bg_br.jpg); }
-.th-finals .md-teams32 { width: 1700px; margin: 0 auto; padding-top: 30px; }
-.th-finals .md-teams32 .block32 { width: 400px; height: 240px; display: inline-block; margin: 0 0 40px 20px; padding-top: 20px; border: 1px solid #fff; border-top: none; border-radius: 10px; box-sizing: border-box; position: relative; }
+.th-finals .md-teams32 { width: 1240px; margin: 0 auto; padding-top: 30px; }
+.th-finals .md-teams32 .block32 { width: 290px; height: 240px; display: inline-block; margin: 0 8px 40px 8px; padding-top: 20px; border: 1px solid #fff; border-top: none; border-radius: 10px; box-sizing: border-box; position: relative; }
 .th-finals .md-teams32 .block32.nonefinish { border: 2px solid red; }
 .th-finals .md-teams32 .block32.nonefinish header { background-image: none; }
 .th-finals .md-teams32 .block32.finish .pt-country:not(.selected):hover .num { opacity: 0; -moz-transition: all, 0s; -o-transition: all, 0s; -webkit-transition: all, 0s; transition: all, 0s; }
 .th-finals .md-teams32 .block32.finish .pt-country:not(.selected):hover:after { background-color: #000; }
 .th-finals .md-teams32 .block32.finish .pt-country:not(.selected):after { z-index: 10; }
-.th-finals .md-teams32 .block32 header { width: 100%; position: absolute; top: -14px; left: 0; color: #fff; text-align: center; font-size: 24px; font-weight: bold; text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.8); background-image: url(../images/border.jpg); background-repeat: no-repeat; background-position: center 15px; }
-.th-finals .md-teams32 .block32 .pt-country { width: 398px; height: 45px; padding: 10px 10px 10px 40px; margin-bottom: 10px; box-sizing: border-box; position: relative; overflow: hidden; cursor: pointer; }
+.th-finals .md-teams32 .block32 header { width: 100%; position: absolute; top: -14px; left: 0; color: #fff; text-align: center; font-size: 24px; font-weight: bold; text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.8); background-image: url(../images/border.jpg); background-repeat: no-repeat; background-position: center 15px; background-size: 97%; }
+.th-finals .md-teams32 .block32 .pt-country { width: 288px; height: 45px; padding: 10px 10px 10px 25px; margin-bottom: 10px; box-sizing: border-box; position: relative; overflow: hidden; cursor: pointer; }
 .th-finals .md-teams32 .block32 .pt-country figure { position: relative; z-index: 5; display: inline-block; vertical-align: middle; width: 50px; margin-right: 8px; }
 .th-finals .md-teams32 .block32 .pt-country figure img { width: 100%; }
 .th-finals .md-teams32 .block32 .pt-country .num { position: absolute; width: 35px; height: 35px; border-radius: 50%; font-size: 32px; font-weight: bold; font-family: Arial; font-style: italic; top: 5px; right: 20px; z-index: 5; opacity: 0; color: #fff; box-sizing: border-box; -moz-transition: all, 0.2s; -o-transition: all, 0.2s; -webkit-transition: all, 0.2s; transition: all, 0.2s; }
@@ -107,13 +107,13 @@ nav.fixednav ul li.nav-competition a { padding: 17px 10px 15px; }
 .th-finals .md-teams32 .block32 .pt-country.selected:after { background-color: #fff; }
 .th-finals .md-teams32 .block32[data-num='0'] .pt-country .num { padding-top: 2px; padding-left: 6px; background-color: #e92a34; }
 .th-finals .md-teams32 .block32[data-num="1"] .pt-country:not(.selected) .num { padding-top: 1px; padding-left: 7px; background-color: #2a8a33; }
-.th-finals .md-teams32 .pt-clearBtn .clearBtn { width: 60px; margin: 30px auto 0; padding: 10px 0; color: #fff; text-decoration: underline; text-align: center; font-size: 16px; font-weight: bold; cursor: pointer; }
+.th-finals .md-teams32 .pt-clearBtn .clearAllBtn { width: 60px; margin: 30px auto 0; padding: 10px 0; color: #fff; text-decoration: underline; text-align: center; font-size: 16px; font-weight: bold; cursor: pointer; }
 .th-finals .md-finalsForm { margin-top: 75px; padding-bottom: 30px; }
 .th-finals .md-finalsForm .finalsBlock { position: relative; margin-bottom: 170px; }
-.th-finals .md-finalsForm .block16 { width: 1760px; margin: 0 auto; }
+.th-finals .md-finalsForm .block16 { width: 1240px; margin: 0 auto; }
 .th-finals .md-finalsForm .block16 .blockLeft { float: left; }
 .th-finals .md-finalsForm .block16 .blockRight { float: right; }
-.th-finals .md-finalsForm .block16 .pt-group { border: 1px solid #fff; width: 300px; height: 130px; padding: 15px 0; border-radius: 10px; box-sizing: border-box; margin-bottom: 14px; position: relative; }
+.th-finals .md-finalsForm .block16 .pt-group { border: 1px solid #fff; width: 220px; height: 130px; padding: 15px 0; border-radius: 10px; box-sizing: border-box; margin-bottom: 14px; position: relative; }
 .th-finals .md-finalsForm .block16 .pt-group > div { width: 100%; height: 45px; margin-bottom: 10px; position: relative; -moz-transition: all, 0.3s; -o-transition: all, 0.3s; -webkit-transition: all, 0.3s; transition: all, 0.3s; }
 .th-finals .md-finalsForm .block16 .pt-group > div:after { content: ""; display: block; width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 0; background-color: #000; opacity: 0.25; }
 .th-finals .md-finalsForm .block16 .pt-group > div + div { margin-top: 3px; }
@@ -122,12 +122,12 @@ nav.fixednav ul li.nav-competition a { padding: 17px 10px 15px; }
 .th-finals .md-finalsForm .block16 .pt-group > div.unchoose .setCountry .competition { opacity: 0; }
 .th-finals .md-finalsForm .block16 .pt-group > div.unchoose .setCountry:hover .competition { opacity: 0; -moz-transition: all, 0s; -o-transition: all, 0s; -webkit-transition: all, 0s; transition: all, 0s; }
 .th-finals .md-finalsForm .block16 .pt-group > div.unchoose .setCountry:after { z-index: 50; background-color: #000; }
-.th-finals .md-finalsForm .block16 .pt-group > div .setCountry { position: absolute; top: 0; left: 0; z-index: 5; width: 100%; height: 100%; padding: 10px 10px 10px 40px; box-sizing: border-box; cursor: pointer; font-size: 16px; color: #fff; }
+.th-finals .md-finalsForm .block16 .pt-group > div .setCountry { position: absolute; top: 0; left: 0; z-index: 5; width: 100%; height: 100%; padding: 10px 10px 10px 15px; box-sizing: border-box; cursor: pointer; font-size: 16px; color: #fff; }
 .th-finals .md-finalsForm .block16 .pt-group > div .setCountry:after { content: ""; position: absolute; top: 0; right: 0; width: 100%; height: 100%; background-color: #fff; opacity: 0.25; z-index: 1; }
 .th-finals .md-finalsForm .block16 .pt-group > div .setCountry figure { position: relative; z-index: 5; display: inline-block; vertical-align: middle; width: 50px; margin-right: 12px; }
 .th-finals .md-finalsForm .block16 .pt-group > div .setCountry figure img { width: 100%; }
 .th-finals .md-finalsForm .block16 .pt-group > div .setCountry .name { display: inline-block; vertical-align: middle; position: relative; z-index: 5; color: #fff; font-size: 16px; }
-.th-finals .md-finalsForm .block16 .pt-group > div .setCountry .competition { opacity: 0; display: block; width: 35px; height: 35px; border-radius: 50%; background-color: #e92a34; position: absolute; right: 20px; top: 5px; z-index: 10; color: #fff; text-align: center; font-size: 27px; font-weight: bold; padding-top: 4px; box-sizing: border-box; -moz-transition: all, 0.3s; -o-transition: all, 0.3s; -webkit-transition: all, 0.3s; transition: all, 0.3s; }
+.th-finals .md-finalsForm .block16 .pt-group > div .setCountry .competition { opacity: 0; display: block; width: 35px; height: 35px; border-radius: 50%; background-color: #e92a34; position: absolute; right: 5px; top: 5px; z-index: 10; color: #fff; text-align: center; font-size: 27px; font-weight: bold; padding-top: 4px; box-sizing: border-box; -moz-transition: all, 0.3s; -o-transition: all, 0.3s; -webkit-transition: all, 0.3s; transition: all, 0.3s; }
 .th-finals .md-finalsForm .block16 .pt-group > div .setCountry:hover .competition { opacity: 1; -moz-transition: all, 0.3s; -o-transition: all, 0.3s; -webkit-transition: all, 0.3s; transition: all, 0.3s; }
 .th-finals .md-finalsForm .block16 .pt-group > div.hover:after { background-color: #fff; -moz-transition: all, 0.3s; -o-transition: all, 0.3s; -webkit-transition: all, 0.3s; transition: all, 0.3s; }
 .th-finals .md-finalsForm .block16 .pt-group > div.set .g-num { opacity: 0; }
@@ -145,7 +145,7 @@ nav.fixednav ul li.nav-competition a { padding: 17px 10px 15px; }
 .th-finals .md-finalsForm .block16 .pt-group[data-session='52']:before, .th-finals .md-finalsForm .block16 .pt-group[data-session='52']:after, .th-finals .md-finalsForm .block16 .pt-group[data-session='56']:before, .th-finals .md-finalsForm .block16 .pt-group[data-session='56']:after { left: -100px; }
 .th-finals .md-finalsForm .block16 .pt-group[data-session='52']:before, .th-finals .md-finalsForm .block16 .pt-group[data-session='56']:before { width: 100px; height: 1px; top: 65px; }
 .th-finals .md-finalsForm .block16 .pt-group[data-session='52']:after, .th-finals .md-finalsForm .block16 .pt-group[data-session='56']:after { width: 1px; height: 8px; top: 58px; }
-.th-finals .md-finalsForm .block8 { width: 1060px; margin: 0 auto; position: absolute; top: 50%; left: 50%; margin-left: -530px; margin-top: -215px; }
+.th-finals .md-finalsForm .block8 { width: 760px; margin: 0 auto; position: absolute; top: 50%; left: 50%; margin-left: -380px; margin-top: -215px; }
 .th-finals .md-finalsForm .block8 .blockLeft { float: left; height: 420px; }
 .th-finals .md-finalsForm .block8 .blockLeft .pt-group + div { margin-top: 158px; }
 .th-finals .md-finalsForm .block8 .blockRight { float: right; height: 420px; }
@@ -171,19 +171,11 @@ nav.fixednav ul li.nav-competition a { padding: 17px 10px 15px; }
 .th-finals .md-finalsForm .block8 .pt-group > div.set .g-num { opacity: 0; }
 .th-finals .md-finalsForm .block8 .pt-group > div.set:after { opacity: 0; -moz-transition: all, 1s; -o-transition: all, 1s; -webkit-transition: all, 1s; transition: all, 1s; }
 .th-finals .md-finalsForm .block8 .pt-group:before, .th-finals .md-finalsForm .block8 .pt-group:after { content: ""; display: block; position: absolute; background-color: #fff; }
-.th-finals .md-finalsForm .block8 .pt-group[data-session='57']:before, .th-finals .md-finalsForm .block8 .pt-group[data-session='57']:after { right: -80px; top: 65px; }
-.th-finals .md-finalsForm .block8 .pt-group[data-session='57']:before { width: 80px; height: 1px; }
-.th-finals .md-finalsForm .block8 .pt-group[data-session='57']:after { width: 1px; height: 80px; }
-.th-finals .md-finalsForm .block8 .pt-group[data-session='58']:before, .th-finals .md-finalsForm .block8 .pt-group[data-session='58']:after { right: -80px; top: 65px; }
-.th-finals .md-finalsForm .block8 .pt-group[data-session='58']:before { width: 80px; height: 1px; }
-.th-finals .md-finalsForm .block8 .pt-group[data-session='58']:after { width: 1px; height: 80px; top: -15px; }
-.th-finals .md-finalsForm .block8 .pt-group[data-session='59']:before, .th-finals .md-finalsForm .block8 .pt-group[data-session='59']:after { left: -80px; top: 65px; }
-.th-finals .md-finalsForm .block8 .pt-group[data-session='59']:before { width: 80px; height: 1px; }
-.th-finals .md-finalsForm .block8 .pt-group[data-session='59']:after { width: 1px; height: 80px; }
-.th-finals .md-finalsForm .block8 .pt-group[data-session='60']:before, .th-finals .md-finalsForm .block8 .pt-group[data-session='60']:after { left: -80px; top: 65px; }
-.th-finals .md-finalsForm .block8 .pt-group[data-session='60']:before { width: 80px; height: 1px; }
-.th-finals .md-finalsForm .block8 .pt-group[data-session='60']:after { width: 1px; height: 80px; top: -15px; }
-.th-finals .md-finalsForm .block4 { width: 760px; margin: 0 auto; position: absolute; left: 50%; top: 50%; margin-left: -380px; margin-top: -70px; }
+.th-finals .md-finalsForm .block8 .pt-group[data-session='57']:after { right: 24px; bottom: -17px; width: 1px; height: 16px; }
+.th-finals .md-finalsForm .block8 .pt-group[data-session='58']:after { right: 24px; width: 1px; height: 16px; top: -16px; }
+.th-finals .md-finalsForm .block8 .pt-group[data-session='59']:after { left: 24px; bottom: -16px; width: 1px; height: 16px; }
+.th-finals .md-finalsForm .block8 .pt-group[data-session='60']:after { left: 24px; top: -16px; height: 16px; width: 1px; }
+.th-finals .md-finalsForm .block4 { width: 660px; margin: 0 auto; position: absolute; left: 50%; top: 50%; margin-left: -330px; margin-top: -71px; }
 .th-finals .md-finalsForm .block4 .blockLeft { float: left; }
 .th-finals .md-finalsForm .block4 .blockRight { float: right; }
 .th-finals .md-finalsForm .block4 .pt-group { border: 1px solid #fff; width: 180px; height: 130px; padding: 15px 0; border-radius: 10px; box-sizing: border-box; position: relative; }
@@ -207,27 +199,49 @@ nav.fixednav ul li.nav-competition a { padding: 17px 10px 15px; }
 .th-finals .md-finalsForm .block4 .pt-group > div.set .g-num { opacity: 0; }
 .th-finals .md-finalsForm .block4 .pt-group > div.set:after { opacity: 0; -moz-transition: all, 1s; -o-transition: all, 1s; -webkit-transition: all, 1s; transition: all, 1s; }
 .th-finals .md-finalsForm .block4 .pt-group:before { content: ""; display: block; position: absolute; background-color: #fff; }
-.th-finals .md-finalsForm .block4 .pt-group[data-session='61']:before { right: -22px; top: 40px; width: 22px; height: 1px; }
-.th-finals .md-finalsForm .block4 .pt-group[data-session='62']:before { left: -22px; top: 40px; width: 22px; height: 1px; }
-.th-finals .md-finalsForm .champion { width: 360px; height: 300px; position: absolute; top: 49px; left: 50%; margin-left: -180px; border: 1px solid #fff; border-radius: 10px; border-top: none; padding-top: 120px; box-sizing: border-box; }
-.th-finals .md-finalsForm .champion:before { content: ""; display: block; width: 100%; height: 1px; background-image: url(../images/border.png); background-repeat: no-repeat; background-position: center top; position: absolute; top: 1px; }
+.th-finals .md-finalsForm .block4 .pt-group[data-session='61']:before { right: -31px; top: 40px; width: 31px; height: 1px; }
+.th-finals .md-finalsForm .block4 .pt-group[data-session='62']:before { left: -31px; top: 40px; width: 31px; height: 1px; }
+.th-finals .md-finalsForm .block3 { width: 240px; margin: 0 auto; position: absolute; left: 50%; bottom: 85px; margin-left: -120px; }
+.th-finals .md-finalsForm .block3 .pt-group { border: 1px solid #fff; width: 100%; height: 130px; padding: 15px 0; border-radius: 10px; box-sizing: border-box; position: relative; }
+.th-finals .md-finalsForm .block3 .pt-group.nonefinish { border: 1px solid red; }
+.th-finals .md-finalsForm .block3 .pt-group > div { width: 100%; height: 45px; margin-bottom: 10px; position: relative; -moz-transition: all, 0.3s; -o-transition: all, 0.3s; -webkit-transition: all, 0.3s; transition: all, 0.3s; }
+.th-finals .md-finalsForm .block3 .pt-group > div:after { content: ""; display: block; width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 0; background-color: #000; opacity: 0.25; }
+.th-finals .md-finalsForm .block3 .pt-group > div + div { margin-top: 3px; }
+.th-finals .md-finalsForm .block3 .pt-group > div .g-num { line-height: 45px; text-align: center; font-size: 32px; font-family: Arial; font-weight: bold; color: #fff; position: relative; z-index: 5; }
+.th-finals .md-finalsForm .block3 .pt-group > div.active .setCountry .competition { opacity: 1; }
+.th-finals .md-finalsForm .block3 .pt-group > div.unchoose .setCountry .competition { opacity: 0; }
+.th-finals .md-finalsForm .block3 .pt-group > div.unchoose .setCountry:hover .competition { opacity: 0; -moz-transition: all, 0s; -o-transition: all, 0s; -webkit-transition: all, 0s; transition: all, 0s; }
+.th-finals .md-finalsForm .block3 .pt-group > div.unchoose .setCountry:after { z-index: 50; background-color: #000; }
+.th-finals .md-finalsForm .block3 .pt-group > div .setCountry { position: absolute; top: 0; left: 0; z-index: 5; width: 100%; height: 100%; padding: 10px 10px 10px 5px; box-sizing: border-box; cursor: pointer; font-size: 16px; color: #fff; }
+.th-finals .md-finalsForm .block3 .pt-group > div .setCountry:after { content: ""; position: absolute; top: 0; right: 0; width: 100%; height: 100%; background-color: #fff; opacity: 0.25; z-index: 1; }
+.th-finals .md-finalsForm .block3 .pt-group > div .setCountry figure { position: relative; z-index: 5; display: inline-block; vertical-align: middle; width: 50px; margin-right: 5px; }
+.th-finals .md-finalsForm .block3 .pt-group > div .setCountry figure img { width: 100%; }
+.th-finals .md-finalsForm .block3 .pt-group > div .setCountry .name { display: inline-block; vertical-align: middle; position: relative; z-index: 5; color: #fff; font-size: 16px; }
+.th-finals .md-finalsForm .block3 .pt-group > div .setCountry .competition { opacity: 0; display: block; width: 35px; height: 35px; border-radius: 50%; background-color: #e92a34; position: absolute; right: 2px; top: 5px; z-index: 10; color: #fff; text-align: center; font-size: 27px; font-weight: bold; padding-top: 4px; box-sizing: border-box; -moz-transition: all, 0.3s; -o-transition: all, 0.3s; -webkit-transition: all, 0.3s; transition: all, 0.3s; }
+.th-finals .md-finalsForm .block3 .pt-group > div .setCountry:hover .competition { opacity: 1; -moz-transition: all, 0.3s; -o-transition: all, 0.3s; -webkit-transition: all, 0.3s; transition: all, 0.3s; }
+.th-finals .md-finalsForm .block3 .pt-group > div.hover:after { background-color: #000; -moz-transition: all, 0.3s; -o-transition: all, 0.3s; -webkit-transition: all, 0.3s; transition: all, 0.3s; }
+.th-finals .md-finalsForm .block3 .pt-group > div.set .g-num { opacity: 0; }
+.th-finals .md-finalsForm .block3 .pt-group > div.set:after { opacity: 0; -moz-transition: all, 1s; -o-transition: all, 1s; -webkit-transition: all, 1s; transition: all, 1s; }
+.th-finals .md-finalsForm .block3 .pt-group:before { content: ""; display: block; position: absolute; background-color: #fff; }
+.th-finals .md-finalsForm .champion { width: 240px; height: 300px; position: absolute; top: 49px; left: 50%; margin-left: -120px; border: 1px solid #fff; border-radius: 10px; border-top: none; padding-top: 120px; box-sizing: border-box; }
+.th-finals .md-finalsForm .champion:before { content: ""; display: block; width: 100%; height: 1px; background-image: url(../images/border.png); background-repeat: no-repeat; background-position: center top; position: absolute; top: 1px; background-size: 97%; }
 .th-finals .md-finalsForm .champion .fifa { position: absolute; top: -90px; left: 50%; margin-left: -88px; }
 .th-finals .md-finalsForm .champion .block2 { width: 100%; position: absolute; bottom: 20px; }
 .th-finals .md-finalsForm .champion .block2 .pt-group { width: 100%; height: 45px; }
 .th-finals .md-finalsForm .champion .block2 .pt-group.nonefinish { border: 1px solid red; }
-.th-finals .md-finalsForm .champion .block2 .pt-group > div { width: 160px; height: 45px; position: relative; -moz-transition: all, 0.3s; -o-transition: all, 0.3s; -webkit-transition: all, 0.3s; transition: all, 0.3s; }
+.th-finals .md-finalsForm .champion .block2 .pt-group > div { width: 100px; height: 45px; position: relative; -moz-transition: all, 0.3s; -o-transition: all, 0.3s; -webkit-transition: all, 0.3s; transition: all, 0.3s; }
 .th-finals .md-finalsForm .champion .block2 .pt-group > div:after { content: ""; display: block; width: 100%; height: 100%; position: absolute; left: 0; top: 0; z-index: 0; background-color: #000; opacity: 0.25; }
 .th-finals .md-finalsForm .champion .block2 .pt-group > div .g-num { line-height: 45px; text-align: center; font-size: 32px; font-family: Arial; font-weight: bold; color: #fff; position: relative; z-index: 5; }
 .th-finals .md-finalsForm .champion .block2 .pt-group > div.active .setCountry .competition { opacity: 1; }
 .th-finals .md-finalsForm .champion .block2 .pt-group > div.unchoose .setCountry .competition { opacity: 0; }
 .th-finals .md-finalsForm .champion .block2 .pt-group > div.unchoose .setCountry:hover .competition { opacity: 0; -moz-transition: all, 0s; -o-transition: all, 0s; -webkit-transition: all, 0s; transition: all, 0s; }
 .th-finals .md-finalsForm .champion .block2 .pt-group > div.unchoose .setCountry:after { z-index: 50; background-color: #000; }
-.th-finals .md-finalsForm .champion .block2 .pt-group > div .setCountry { position: absolute; top: 0; left: 0; z-index: 5; width: 100%; height: 100%; padding: 10px 10px 10px 30px; box-sizing: border-box; cursor: pointer; font-size: 16px; color: #fff; }
+.th-finals .md-finalsForm .champion .block2 .pt-group > div .setCountry { position: absolute; top: 0; left: 0; z-index: 5; width: 100%; height: 100%; padding: 10px 10px 10px 8px; box-sizing: border-box; cursor: pointer; font-size: 16px; color: #fff; }
 .th-finals .md-finalsForm .champion .block2 .pt-group > div .setCountry:after { content: ""; position: absolute; top: 0; right: 0; width: 100%; height: 100%; background-color: #fff; opacity: 0.25; z-index: 1; }
 .th-finals .md-finalsForm .champion .block2 .pt-group > div .setCountry figure { position: relative; z-index: 5; display: inline-block; vertical-align: middle; width: 50px; margin-right: 5px; }
 .th-finals .md-finalsForm .champion .block2 .pt-group > div .setCountry figure img { width: 100%; }
 .th-finals .md-finalsForm .champion .block2 .pt-group > div .setCountry .name { display: inline-block; vertical-align: middle; position: relative; z-index: 5; color: #fff; font-size: 16px; display: none; }
-.th-finals .md-finalsForm .champion .block2 .pt-group > div .setCountry .competition { opacity: 0; display: block; width: 35px; height: 35px; border-radius: 50%; background-color: #e92a34; position: absolute; right: 20px; top: 5px; z-index: 10; color: #fff; text-align: center; font-size: 27px; font-weight: bold; padding-top: 4px; box-sizing: border-box; -moz-transition: all, 0.3s; -o-transition: all, 0.3s; -webkit-transition: all, 0.3s; transition: all, 0.3s; }
+.th-finals .md-finalsForm .champion .block2 .pt-group > div .setCountry .competition { opacity: 0; display: block; width: 35px; height: 35px; border-radius: 50%; background-color: #e92a34; position: absolute; right: 3px; top: 5px; z-index: 10; color: #fff; text-align: center; font-size: 27px; font-weight: bold; padding-top: 4px; box-sizing: border-box; -moz-transition: all, 0.3s; -o-transition: all, 0.3s; -webkit-transition: all, 0.3s; transition: all, 0.3s; }
 .th-finals .md-finalsForm .champion .block2 .pt-group > div .setCountry:hover .competition { opacity: 1; -moz-transition: all, 0.3s; -o-transition: all, 0.3s; -webkit-transition: all, 0.3s; transition: all, 0.3s; }
 .th-finals .md-finalsForm .champion .block2 .pt-group > div.hover:after { background-color: #000; -moz-transition: all, 0.3s; -o-transition: all, 0.3s; -webkit-transition: all, 0.3s; transition: all, 0.3s; }
 .th-finals .md-finalsForm .champion .block2 .pt-group > div.set .g-num { opacity: 0; }
@@ -258,7 +272,7 @@ nav.fixednav ul li.nav-competition a { padding: 17px 10px 15px; }
 .th-rule .md-banner .cont .text a { display: inline-block; color: #fff; margin-left: 12px; }
 .th-rule .md-banner .cont .img { position: absolute; right: 52px; bottom: 13px; }
 .th-rule .commonWBg { background-image: url(../images/bg-w.jpg); }
-.th-rule .md-rule h3 { width: 1500px; margin: 0 auto; position: relative; text-align: center; padding: 40px 0; box-sizing: border-box; }
+.th-rule .md-rule h3 { width: 1240px; margin: 0 auto; position: relative; text-align: center; padding: 40px 0; box-sizing: border-box; }
 .th-rule .md-rule h3 > img { display: inline-block; vertical-align: middle; }
 .th-rule .md-rule h3 > span { display: inline-block; vertical-align: middle; font-size: 24px; color: #ca120d; font-weight: bold; text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.8); }
 .th-rule .md-rule h3:after { content: ""; display: block; width: 100%; height: 8px; position: absolute; bottom: 24px; left: 0; background-image: url(../images/dashedborder.png); }
@@ -270,16 +284,14 @@ nav.fixednav ul li.nav-competition a { padding: 17px 10px 15px; }
 .th-rule .md-rule .rule header:before { content: ""; display: block; width: 25px; height: 30px; background-image: url(../images/icon.png); position: absolute; left: 0; top: -3px; }
 .th-rule .md-cheerleading { padding-bottom: 40px; }
 .th-rule .md-cheerleading h3 { font-size: 24px; font-weight: bold; color: #fff; width: 404px; height: 45px; margin: 0 auto; background-image: url(../images/titlebg.png); background-repeat: no-repeat; text-align: center; padding-top: 10px; box-sizing: border-box; }
-.th-rule .md-cheerleading .cheerleading { width: 1845px; margin: 40px auto 0; position: relative; }
-.th-rule .md-cheerleading .cheerleading figure { float: left; margin: 0 10px 10px 0; cursor: pointer; }
+.th-rule .md-cheerleading .cheerleading { width: 100%; margin: 40px auto 0; position: relative; }
+.th-rule .md-cheerleading .cheerleading figure { float: left; padding: 0 5px 10px; box-sizing: border-box; cursor: pointer; }
 .th-rule .md-cheerleading .cheerleading figure img { width: 100%; }
-.th-rule .md-cheerleading .cheerleading .small { width: 195px; }
-.th-rule .md-cheerleading .cheerleading .bigger { width: 400px; }
-.th-rule .md-cheerleading .cheerleading .img8 { position: absolute; top: 50%; left: 0; }
-.th-rule .md-cheerleading .cheerleading .img9 { position: absolute; top: 50%; left: 205px; }
-.th-rule .md-cheerleading .cheerleading .img10 { position: absolute; top: 50%; left: 820px; }
-.th-rule .md-cheerleading .cheerleading .img11 { position: absolute; top: 50%; left: 1025px; }
-.th-rule .md-cheerleading .cheerleading .img12 { position: absolute; top: 50%; right: 0; }
+.th-rule .md-cheerleading .cheerleading .smallWBlock { float: left; width: calc(100% / 9); }
+.th-rule .md-cheerleading .cheerleading .smallWBlock .small { width: 100%; }
+.th-rule .md-cheerleading .cheerleading .bigWBlock { float: left; width: calc((100% / 9 ) * 2); }
+.th-rule .md-cheerleading .cheerleading .bigWBlock .small { width: 50%; }
+.th-rule .md-cheerleading .cheerleading .bigger { width: calc((100% / 9 ) * 2); }
 .th-rule .md-cheerleading .cheerleading .active img { border: 1px solid red; box-sizing: border-box; }
 .th-rule .md-cheerleading .bigimgCont { position: fixed; top: 0; left: 0; height: 100%; width: 100%; overflow-y: auto; overflow-x: hidden; opacity: 0; z-index: -100; }
 .th-rule .md-cheerleading .bigimgCont.show { opacity: 1; z-index: 99; }
